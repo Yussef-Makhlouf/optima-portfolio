@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { useTheme } from '@/components/ThemeProvider'
@@ -38,21 +39,15 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          {/* Crosshair SVG */}
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            className="transition-transform duration-300 group-hover:rotate-45"
-            aria-hidden="true"
-          >
-            <circle cx="14" cy="14" r="5" stroke="currentColor" strokeWidth="1.5" className="text-accent" />
-            <line x1="14" y1="0" x2="14" y2="7" stroke="currentColor" strokeWidth="1.5" className="text-accent" />
-            <line x1="14" y1="21" x2="14" y2="28" stroke="currentColor" strokeWidth="1.5" className="text-accent" />
-            <line x1="0" y1="14" x2="7" y2="14" stroke="currentColor" strokeWidth="1.5" className="text-accent" />
-            <line x1="21" y1="14" x2="28" y2="14" stroke="currentColor" strokeWidth="1.5" className="text-accent" />
-          </svg>
+          {/* Logo symbol - switches between dark/light */}
+          <div className="relative w-7 h-7 transition-transform duration-300 group-hover:rotate-45">
+            <Image
+              src={theme === 'dark' ? '/logos/optima-05-symbol-light.svg' : '/logos/optima-04-symbol-dark.svg'}
+              alt="Optima"
+              fill
+              className="object-contain"
+            />
+          </div>
           <span className="font-display font-bold text-sm tracking-widest uppercase text-navy dark:text-off-white">
             OPTIMA
           </span>

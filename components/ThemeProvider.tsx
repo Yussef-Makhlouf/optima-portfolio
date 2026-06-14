@@ -50,8 +50,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   if (!mounted) {
     return (
-      <div className="fixed inset-0 flex items-center justify-center bg-off-white">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+      <div className="fixed inset-0 flex items-center justify-center bg-navy">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-accent animate-pulse">
+          <circle cx="20" cy="20" r="8" stroke="currentColor" strokeWidth="1.5" />
+          <line x1="20" y1="0" x2="20" y2="10" stroke="currentColor" strokeWidth="1.5" />
+          <line x1="20" y1="30" x2="20" y2="40" stroke="currentColor" strokeWidth="1.5" />
+          <line x1="0" y1="20" x2="10" y2="20" stroke="currentColor" strokeWidth="1.5" />
+          <line x1="30" y1="20" x2="40" y2="20" stroke="currentColor" strokeWidth="1.5" />
+        </svg>
       </div>
     )
   }

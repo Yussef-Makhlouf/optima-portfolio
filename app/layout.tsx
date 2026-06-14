@@ -4,6 +4,7 @@ import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { ScrollToTop } from '@/components/ui/ScrollToTop'
+import { LogoLoader } from '@/components/ui/LogoLoader'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://optima.dev'),
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-off-white text-navy antialiased dark:bg-navy dark:text-off-white">
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <ThemeProvider>
+          <LogoLoader />
           <Navbar />
           <main id="main-content" className="min-h-screen">{children}</main>
           <Footer />

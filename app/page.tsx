@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getFeaturedProjects, getPortfolioStats, getCoverImage, getAllProjects } from '@/lib/projects'
 import { RevealSection } from '@/components/ui/RevealSection'
+import { HeroBanner } from '@/components/ui/HeroBanner'
+import { PartnersBanner } from '@/components/ui/PartnersBanner'
 
 export default function HomePage() {
   const featured = getFeaturedProjects()
@@ -52,7 +54,7 @@ export default function HomePage() {
           {/* Brand label */}
           <div className="section-label mb-6 animate-fade-in flex items-center gap-3">
             <span className="w-8 h-px bg-accent" />
-            Yussef Makhlouf Ali &middot; OPTIMA Digital Transformations
+           OPTIMA Digital Transformations
           </div>
 
           {/* Crosshair logo */}
@@ -134,6 +136,11 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+      </RevealSection>
+
+      {/* ── Partners Banner ─────────────────────────────── */}
+      <RevealSection>
+        <PartnersBanner />
       </RevealSection>
 
       {/* ── Featured Projects ─────────────────────────────── */}
@@ -336,7 +343,7 @@ export default function HomePage() {
                       alt={tech.name}
                       width={24}
                       height={24}
-                      className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="object-contain grayscale dark:grayscale-0 group-hover:grayscale-0 transition-all duration-300"
                     />
                     <span className="font-mono text-xs text-muted group-hover:text-accent tracking-wide whitespace-nowrap transition-colors">
                       {tech.name}
@@ -409,6 +416,11 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+      </RevealSection>
+
+      {/* ── Why Optima Banner ────────────────────────────── */}
+      <RevealSection>
+        <HeroBanner />
       </RevealSection>
 
       {/* ── CTA ───────────────────────────────────────────── */}

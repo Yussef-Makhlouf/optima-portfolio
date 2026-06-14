@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="rgba(86,165,221,0.07)" stroke-width="0.4"/>
+    </pattern>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.086  0 0 0 0 0.365  0 0 0 0 0.565  0 0 0 0 0.5 0" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" fill="#162427"/>
+  <rect width="200" height="200" fill="url(#grid)"/>
+
+  <!-- Corner marks -->
+  <path d="M 0,14 L 0,0 L 14,0" fill="none" stroke="rgba(86,165,221,0.3)" stroke-width="0.7"/>
+  <path d="M 186,0 L 200,0 L 200,14" fill="none" stroke="rgba(86,165,221,0.3)" stroke-width="0.7"/>
+  <path d="M 0,186 L 0,200 L 14,200" fill="none" stroke="rgba(86,165,221,0.3)" stroke-width="0.7"/>
+  <path d="M 186,200 L 200,200 L 200,186" fill="none" stroke="rgba(86,165,221,0.3)" stroke-width="0.7"/>
+
+  <!-- Symbol at center 100,100 -->
+  <g transform="translate(100,100)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#56A5DD" stroke-width="1" opacity="0.25"/>
+    <!-- Major ticks -->
+    <line x1="68" y1="0" x2="78" y2="0" stroke="#56A5DD" stroke-width="1.8" opacity="0.65"/>
+    <line x1="-68" y1="0" x2="-78" y2="0" stroke="#56A5DD" stroke-width="1.8" opacity="0.65"/>
+    <line x1="0" y1="-68" x2="0" y2="-78" stroke="#56A5DD" stroke-width="1.8" opacity="0.65"/>
+    <line x1="0" y1="68" x2="0" y2="78" stroke="#56A5DD" stroke-width="1.8" opacity="0.65"/>
+    <!-- Minor ticks diagonal -->
+    <line x1="48.08" y1="-48.08" x2="53.6" y2="-53.6" stroke="#56A5DD" stroke-width="0.9" opacity="0.3"/>
+    <line x1="-48.08" y1="-48.08" x2="-53.6" y2="-53.6" stroke="#56A5DD" stroke-width="0.9" opacity="0.3"/>
+    <line x1="48.08" y1="48.08" x2="53.6" y2="53.6" stroke="#56A5DD" stroke-width="0.9" opacity="0.3"/>
+    <line x1="-48.08" y1="48.08" x2="-53.6" y2="53.6" stroke="#56A5DD" stroke-width="0.9" opacity="0.3"/>
+    <!-- Modular arcs r=54 -->
+    <path d="M 53.19,9.38 A 54 54 0 0 1 9.38,53.19" fill="none" stroke="#56A5DD" stroke-width="7" stroke-linecap="butt"/>
+    <path d="M -9.38,53.19 A 54 54 0 0 1 -53.19,9.38" fill="none" stroke="#56A5DD" stroke-width="7" stroke-linecap="butt"/>
+    <path d="M -53.19,-9.38 A 54 54 0 0 1 -9.38,-53.19" fill="none" stroke="#56A5DD" stroke-width="7" stroke-linecap="butt"/>
+    <path d="M 9.38,-53.19 A 54 54 0 0 1 53.19,-9.38" fill="none" stroke="#56A5DD" stroke-width="7" stroke-linecap="butt"/>
+    <!-- Internal grid -->
+    <line x1="-36" y1="0" x2="36" y2="0" stroke="#145D90" stroke-width="1.2" opacity="0.8"/>
+    <line x1="0" y1="-36" x2="0" y2="36" stroke="#145D90" stroke-width="1.2" opacity="0.8"/>
+    <line x1="-25" y1="-25" x2="25" y2="25" stroke="#145D90" stroke-width="0.7" opacity="0.4"/>
+    <line x1="25" y1="-25" x2="-25" y2="25" stroke="#145D90" stroke-width="0.7" opacity="0.4"/>
+    <!-- Inner ring -->
+    <circle cx="0" cy="0" r="27" fill="none" stroke="#145D90" stroke-width="1.5" opacity="0.55"/>
+    <!-- Center node -->
+    <circle cx="0" cy="0" r="7.5" fill="#56A5DD"/>
+    <circle cx="0" cy="0" r="3.8" fill="#162427"/>
+    <!-- Cardinal connector nodes -->
+    <circle cx="68" cy="0" r="3.5" fill="#56A5DD" opacity="0.75"/>
+    <circle cx="-68" cy="0" r="3.5" fill="#56A5DD" opacity="0.75"/>
+    <circle cx="0" cy="-68" r="3.5" fill="#56A5DD" opacity="0.75"/>
+    <circle cx="0" cy="68" r="3.5" fill="#56A5DD" opacity="0.75"/>
+  </g>
+</svg>

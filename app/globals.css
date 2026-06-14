@@ -654,3 +654,119 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* ── Logo Loader ──────────────────────────────────────────── */
+
+.loader-circle {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: loaderDrawCircle 0.8s ease forwards 0.1s;
+}
+
+.loader-dot {
+  animation: loaderPulseDot 1.2s ease-in-out infinite 0.6s;
+  opacity: 0;
+}
+
+.loader-line {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+}
+.loader-line-1 { animation: loaderDrawLine 0.4s ease forwards 0.2s; }
+.loader-line-2 { animation: loaderDrawLine 0.4s ease forwards 0.35s; }
+.loader-line-3 { animation: loaderDrawLine 0.4s ease forwards 0.5s; }
+.loader-line-4 { animation: loaderDrawLine 0.4s ease forwards 0.65s; }
+
+.loader-ticks {
+  animation: loaderSpinTicks 4s linear infinite;
+  transform-origin: 40px 40px;
+}
+
+.loader-line-h {
+  animation: loaderExpandLine 0.5s ease forwards 0.8s;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.loader-progress {
+  animation: loaderProgressFill 2s ease forwards 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.loader-scan-line {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(210, 140, 100, 0.3) 50%, transparent 100%);
+  animation: loaderScan 1.8s ease-in-out infinite;
+}
+
+.loader-bracket-tl { animation: loaderBracketIn 0.5s ease forwards 0.1s; opacity: 0; transform: translate(-8px, -8px); }
+.loader-bracket-tr { animation: loaderBracketIn 0.5s ease forwards 0.2s; opacity: 0; transform: translate(8px, -8px); }
+.loader-bracket-bl { animation: loaderBracketIn 0.5s ease forwards 0.3s; opacity: 0; transform: translate(-8px, 8px); }
+.loader-bracket-br { animation: loaderBracketIn 0.5s ease forwards 0.4s; opacity: 0; transform: translate(8px, 8px); }
+
+@keyframes loaderDrawCircle {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes loaderDrawLine {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes loaderPulseDot {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.2; }
+}
+@keyframes loaderSpinTicks {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes loaderExpandLine {
+  to { transform: scaleX(1); }
+}
+@keyframes loaderProgressFill {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+@keyframes loaderScan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+@keyframes loaderBracketIn {
+  to { opacity: 1; transform: translate(0, 0); }
+}
+
+/* ── Banner marquee ───────────────────────────────────────── */
+
+.banner-marquee {
+  animation: bannerMarquee 30s linear infinite;
+}
+.banner-marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes bannerMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Banner badge pulse ───────────────────────────────────── */
+
+.banner-badge {
+  animation: bannerBadgePulse 2.5s ease-in-out infinite;
+}
+@keyframes bannerBadgePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(210, 140, 100, 0.3); }
+  50% { box-shadow: 0 0 0 6px rgba(210, 140, 100, 0); }
+}
+
+/* ── Crosshair rotate on hover (for banner icons) ────────── */
+
+.crosshair-spin {
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.crosshair-spin:hover {
+  transform: rotate(90deg);
+}
