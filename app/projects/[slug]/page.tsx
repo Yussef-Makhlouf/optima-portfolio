@@ -21,6 +21,8 @@ import { TechRadar } from '@/components/ui/TechRadar'
 import { CloneConsole } from '@/components/ui/CloneConsole'
 import { ProjectTerminal } from '@/components/ui/ProjectTerminal'
 
+export const dynamicParams = false
+
 interface Props { params: { slug: string } }
 
 export function generateStaticParams() {
@@ -59,7 +61,7 @@ export default function ProjectPage({ params }: Props) {
   const coverUrl = getCoverImage(params.slug, 1400, 900)
 
   return (
-    <article className="min-h-screen bg-off-white dark:bg-navy text-navy dark:text-off-white overflow-x-hidden relative transition-colors duration-300">
+    <article className="min-h-screen bg-off-white dark:bg-navy text-navy dark:text-off-white overflow-x-hidden relative transition-colors duration-300" style={{ fontFeatureSettings: '"kern" 1, "liga" 1', textRendering: 'optimizeLegibility' }}>
 
       {/* ── Cybernetic background grid ─────────────────── */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -78,29 +80,29 @@ export default function ProjectPage({ params }: Props) {
             <span className="absolute bottom-0 right-0 w-2.5 h-1 border-b border-r border-primary dark:border-cyber" />
 
             <div className="flex items-center gap-2 md:gap-3 min-w-0">
-              <Link href="/projects" className="flex-shrink-0 font-mono text-[9px] md:text-[10px] text-primary dark:text-cyber hover:text-primary-light dark:hover:text-white flex items-center gap-1 md:gap-1.5 uppercase tracking-wider transition-colors">
+              <Link href="/projects" className="flex-shrink-0 font-mono text-[9px] md:text-[10px] text-primary dark:text-cyber hover:text-primary-light dark:hover:text-white flex items-center gap-1 md:gap-1.5 uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyber focus-visible:ring-offset-1">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
                 [ALL_PR]
               </Link>
-              <span className="text-primary/20 dark:text-cyber/20">|</span>
+              <span className="text-primary/20 dark:text-cyber/20" aria-hidden="true">|</span>
               <span className="font-mono text-[9px] md:text-[10px] text-muted-dark/60 dark:text-muted-light/60 tracking-widest truncate uppercase">
                 {project.title}
               </span>
             </div>
             <div className="flex items-center gap-2 md:gap-4">
               {prevProject && (
-                <Link href={`/projects/${prevProject.slug}`} className="font-mono text-[8px] md:text-[9px] text-muted-dark/60 dark:text-muted-light/60 hover:text-primary dark:hover:text-cyber flex items-center gap-1 uppercase tracking-wider transition-colors">
-                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hidden sm:block"><polyline points="15 18 9 12 15 6" /></svg>
+                <Link href={`/projects/${prevProject.slug}`} className="font-mono text-[8px] md:text-[9px] text-muted-dark/60 dark:text-muted-light/60 hover:text-primary dark:hover:text-cyber flex items-center gap-1 uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyber focus-visible:ring-offset-1">
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hidden sm:block" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
                   PREV
                 </Link>
               )}
-              <span className="font-mono text-[9px] md:text-[10px] text-primary dark:text-cyber font-bold tracking-widest">
+              <span className="font-mono text-[9px] md:text-[10px] text-primary dark:text-cyber font-bold tracking-widest" aria-label={`Project ${currentIndex + 1} of ${allProjects.length}`}>
                 {`${String(currentIndex + 1).padStart(2, '0')} / ${String(allProjects.length).padStart(2, '0')}`}
               </span>
               {nextProject && (
-                <Link href={`/projects/${nextProject.slug}`} className="font-mono text-[8px] md:text-[9px] text-muted-dark/60 dark:text-muted-light/60 hover:text-primary dark:hover:text-cyber flex items-center gap-1 uppercase tracking-wider transition-colors">
+                <Link href={`/projects/${nextProject.slug}`} className="font-mono text-[8px] md:text-[9px] text-muted-dark/60 dark:text-muted-light/60 hover:text-primary dark:hover:text-cyber flex items-center gap-1 uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyber focus-visible:ring-offset-1">
                   NEXT
-                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hidden sm:block"><polyline points="9 18 15 12 9 6" /></svg>
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hidden sm:block" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
                 </Link>
               )}
             </div>
@@ -133,18 +135,18 @@ export default function ProjectPage({ params }: Props) {
           LOC // 25.2048° N · 55.2708° E
         </div>
         <div className="absolute top-20 md:top-28 right-4 md:right-8 font-mono text-[7px] md:text-[8px] tracking-[0.15em] md:tracking-[0.2em] text-primary/30 dark:text-cyber/40 hidden sm:block">
-          REF // {`NC-${project.id.padStart(3,'0')}`}
+          REF // NC-{project.id.padStart(3, '0')}
         </div>
 
         <div className="relative max-w-7xl mx-auto w-full z-10">
           {/* Breadcrumb */}
-          <div className="flex flex-wrap items-center gap-1.5 md:gap-2 font-mono text-[9px] md:text-[10px] text-muted-dark/60 dark:text-muted-light/60 mb-4 md:mb-6 uppercase tracking-wider">
+          <nav className="flex flex-wrap items-center gap-1.5 md:gap-2 font-mono text-[9px] md:text-[10px] text-muted-dark/60 dark:text-muted-light/60 mb-5 md:mb-6 uppercase tracking-wider" aria-label="Breadcrumb">
             <Link href="/projects" className="hover:text-primary dark:hover:text-cyber transition-colors">[PROJECTS]</Link>
             <span className="text-primary/30 dark:text-cyber/30 hidden sm:inline">›</span>
             <span className="truncate max-w-[150px] md:max-w-none">{project.category}</span>
             <span className="text-primary/30 dark:text-cyber/30 hidden sm:inline">›</span>
             <span className="text-primary dark:text-cyber truncate">{project.title}</span>
-          </div>
+          </nav>
 
           {/* Status + badges */}
           <div className="flex flex-wrap items-center gap-2 mb-4 md:mb-6">
@@ -194,7 +196,7 @@ export default function ProjectPage({ params }: Props) {
           {/* Market tags */}
           <div className="flex flex-wrap gap-2">
             {project.market.slice(0, 8).map((m) => (
-              <span key={m} className="font-mono text-[9px] tracking-wider text-primary/70 dark:text-cyber/70 border border-primary/15 dark:border-cyber/15 px-2 py-0.5 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary/40 dark:hover:border-cyber/40 hover:text-primary dark:hover:text-cyber transition-all duration-200">
+              <span key={m} className="font-mono text-[9px] tracking-[0.05em] text-primary/70 dark:text-cyber/70 border border-primary/15 dark:border-cyber/15 px-2 py-0.5 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary/40 dark:hover:border-cyber/40 hover:text-primary dark:hover:text-cyber transition-all duration-200">
                 {`#${m}`}
               </span>
             ))}
@@ -284,7 +286,7 @@ export default function ProjectPage({ params }: Props) {
             {/* Overview */}
             <RevealSection>
               <HudPanel title="PROJECT OVERVIEW" sectionCode="PROJ.01" status="STABLE">
-                <p className="text-muted-dark dark:text-muted-light text-base leading-relaxed">
+                <p className="text-muted-dark dark:text-muted-light text-base leading-relaxed max-w-[65ch]">
                   {project.description}
                 </p>
               </HudPanel>
@@ -292,10 +294,10 @@ export default function ProjectPage({ params }: Props) {
 
             {/* Key Features */}
             <RevealSection>
-              <div>
-                <div className="flex items-center gap-3 mb-6">
+              <div id="section-core-capabilities">
+                <div className="flex items-center gap-3 mb-5 md:mb-6">
                   <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
-                  <h3 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[CORE_CAPABILITIES]</h3>
+                  <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[CORE_CAPABILITIES]</h2>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {project.features.map((feature, i) => (
@@ -311,6 +313,87 @@ export default function ProjectPage({ params }: Props) {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Business value */}
+            <RevealSection>
+              <HudPanel title="BUSINESS VALUE & IMPACT" sectionCode="VAL.02" status="ACTIVE">
+                <div className="space-y-3" id="section-business-value">
+                  {project.value.map((v, i) => (
+                    <div key={i} className="flex items-start gap-4 p-3 border-l-2 border-primary/40 dark:border-cyber/40 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary dark:hover:border-cyber transition-all duration-200">
+                      <span className="font-mono text-[10px] text-primary dark:text-cyber font-bold mt-0.5 flex-shrink-0">
+                        {`> ${String(i+1).padStart(2,'0')}`}
+                      </span>
+                      <p className="text-muted-dark dark:text-muted-light text-sm leading-relaxed">{v}</p>
+                    </div>
+                  ))}
+                </div>
+              </HudPanel>
+            </RevealSection>
+
+            {/* Tech highlights terminal */}
+            <RevealSection>
+              <div id="section-tech-highlights">
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
+                  <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[TECH_HIGHLIGHTS]</h2>
+                </div>
+                <div className="bg-white dark:bg-navy-mid/50 border border-primary/10 dark:border-cyber/10 overflow-hidden shadow-sm dark:shadow-none">
+                  {/* Terminal title bar */}
+                  <div className="bg-gray-50 dark:bg-navy-soft flex items-center gap-2 px-4 py-2 border-b border-primary/10 dark:border-cyber/10">
+                    <div className="flex gap-1.5">
+                      <div className="w-2 h-2 rounded-full bg-rose-500/50" />
+                      <div className="w-2 h-2 rounded-full bg-amber-400/50" />
+                      <div className="w-2 h-2 rounded-full bg-emerald-400/50" />
+                    </div>
+                    <span className="font-mono text-[9px] text-primary/50 dark:text-cyber/50 tracking-wider ml-2">
+                      optima@project ~ tech-highlights
+                    </span>
+                  </div>
+                  <div className="p-5 space-y-2.5">
+                    {project.techHighlights.map((t, i) => (
+                      <div key={i} className="flex items-start gap-3 group">
+                        <span className="text-primary dark:text-cyber font-mono text-[10px] font-bold mt-0.5 flex-shrink-0">$</span>
+                        <p className="font-mono text-xs text-muted-dark dark:text-muted-light group-hover:text-primary dark:group-hover:text-cyber transition-colors duration-200 leading-relaxed">{t}</p>
+                      </div>
+                    ))}
+                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-primary/5 dark:border-cyber/5">
+                      <span className="text-primary dark:text-cyber font-mono text-[10px] font-bold">$</span>
+                      <span className="font-mono text-[10px] text-primary/40 dark:text-cyber/40 animate-pulse">_</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Before / After */}
+            <RevealSection>
+              <div id="section-before-after">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
+                  <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[BEFORE_AFTER_COMPARISON]</h2>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {Array.from({ length: 2 }, (_, i) => {
+                    const seed1 = (parseInt(project.id) * 10) + i * 10
+                    const seed2 = seed1 + 1
+                    return (
+                      <div key={i} className="relative border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy/70 hover:border-primary/30 dark:hover:border-cyber/30 transition-all duration-300 p-1 shadow-sm dark:shadow-none">
+                        <span className="absolute top-1.5 left-1.5 font-mono text-[8px] text-primary dark:text-cyber tracking-widest z-10 bg-white/95 dark:bg-navy/90 px-1.5 py-0.5">
+                          {`COMPARISON #${String(i+1).padStart(2,'0')}`}
+                        </span>
+                        <BeforeAfterSlider
+                          beforeSrc={`https://picsum.photos/seed/${seed1}/1400/900`}
+                          afterSrc={`https://picsum.photos/seed/${seed2}/1400/900`}
+                          beforeLabel="LEGACY"
+                          afterLabel="REDESIGNED"
+                          alt={`${project.title} comparison ${i + 1}`}
+                        />
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             </RevealSection>
@@ -336,7 +419,7 @@ export default function ProjectPage({ params }: Props) {
               <div>
                 <div className="flex items-center gap-3 mb-5">
                   <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
-                  <h3 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[TECH_HIGHLIGHTS]</h3>
+                  <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[TECH_HIGHLIGHTS]</h2>
                 </div>
                 <div className="bg-white dark:bg-navy-mid/50 border border-primary/10 dark:border-cyber/10 overflow-hidden shadow-sm dark:shadow-none">
                   {/* Terminal title bar */}
@@ -354,7 +437,7 @@ export default function ProjectPage({ params }: Props) {
                     {project.techHighlights.map((t, i) => (
                       <div key={i} className="flex items-start gap-3 group">
                         <span className="text-primary dark:text-cyber font-mono text-[10px] font-bold mt-0.5 flex-shrink-0">$</span>
-                        <p className="font-mono text-xs text-muted-dark dark:text-muted-light group-hover:text-primary dark:group-hover:text-cyber transition-colors duration-200">{t}</p>
+                        <p className="font-mono text-xs text-muted-dark dark:text-muted-light group-hover:text-primary dark:group-hover:text-cyber transition-colors duration-200 leading-relaxed max-w-[65ch]">{t}</p>
                       </div>
                     ))}
                     <div className="flex items-center gap-2 mt-4 pt-4 border-t border-primary/5 dark:border-cyber/5">
