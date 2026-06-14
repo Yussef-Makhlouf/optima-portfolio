@@ -51,7 +51,7 @@ export function TechRadar({ projectTitle, stack, metrics, category, type, year, 
           <p className="font-mono text-[9px] tracking-[0.2em] text-primary dark:text-cyber uppercase">[QUALITY_METRICS]</p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
           {displayMetrics.map((metric) => {
             const col = colorMap[metric.color ?? 'cyber']
             const pct = parseInt(metric.value)

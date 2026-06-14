@@ -56,40 +56,43 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
 
   return (
     <>
-      <div className="w-full space-y-4">
+      <div className="w-full space-y-3 md:space-y-4">
         {/* ── Main viewport ───────────────────────────── */}
         <div className="relative group border border-primary/15 dark:border-cyber/15 overflow-hidden bg-white dark:bg-navy-mid">
           {/* HUD corner brackets */}
-          <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-primary dark:border-cyber z-10 pointer-events-none" />
-          <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-primary dark:border-cyber z-10 pointer-events-none" />
-          <span className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-primary dark:border-cyber z-10 pointer-events-none" />
-          <span className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-primary dark:border-cyber z-10 pointer-events-none" />
+          <span className="absolute top-0 left-0 w-2 md:w-3 h-2 md:h-3 border-t border-l border-primary dark:border-cyber z-10 pointer-events-none" />
+          <span className="absolute top-0 right-0 w-2 md:w-3 h-2 md:h-3 border-t border-r border-primary dark:border-cyber z-10 pointer-events-none" />
+          <span className="absolute bottom-0 left-0 w-2 md:w-3 h-2 md:h-3 border-b border-l border-primary dark:border-cyber z-10 pointer-events-none" />
+          <span className="absolute bottom-0 right-0 w-2 md:w-3 h-2 md:h-3 border-b border-r border-primary dark:border-cyber z-10 pointer-events-none" />
 
           {/* Top HUD bar */}
-          <div className="flex items-center justify-between bg-off-white/90 dark:bg-navy-soft/90 backdrop-blur-sm border-b border-primary/10 dark:border-cyber/10 px-4 py-2">
-            <div className="flex items-center gap-3">
-              <div className="flex gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-rose-500/60" />
-                <div className="w-2.5 h-2.5 rounded-full bg-amber-400/60" />
-                <div className="w-2.5 h-2.5 rounded-full bg-emerald-400/60" />
+          <div className="flex items-center justify-between bg-off-white/90 dark:bg-navy-soft/90 backdrop-blur-sm border-b border-primary/10 dark:border-cyber/10 px-3 md:px-4 py-1.5 md:py-2">
+            <div className="flex items-center gap-2 md:gap-3">
+              <div className="flex gap-1 md:gap-1.5">
+                <div className="w-1.5 md:w-2.5 h-1.5 md:h-2.5 rounded-full bg-rose-500/60" />
+                <div className="w-1.5 md:w-2.5 h-1.5 md:h-2.5 rounded-full bg-amber-400/60" />
+                <div className="w-1.5 md:w-2.5 h-1.5 md:h-2.5 rounded-full bg-emerald-400/60" />
               </div>
-              <div className="flex items-center gap-2 bg-white/50 dark:bg-navy/50 border border-primary/10 dark:border-cyber/10 rounded-sm px-3 py-0.5">
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-400/60 flex-shrink-0" />
-                <span className="font-mono text-[9px] text-primary/60 dark:text-cyber/60 tracking-wider truncate max-w-[280px]">
+              <div className="flex items-center gap-1.5 md:gap-2 bg-white/50 dark:bg-navy/50 border border-primary/10 dark:border-cyber/10 rounded-sm px-2 md:px-3 py-0.5">
+                <div className="w-1 h-1 md:w-1.5 md:h-1.5 rounded-full bg-emerald-400/60 flex-shrink-0" />
+                <span className="font-mono text-[7px] md:text-[9px] text-primary/60 dark:text-cyber/60 tracking-wider truncate max-w-[140px] md:max-w-[280px]">
                   {liveUrl ?? `https://${projectTitle.toLowerCase().replace(/\s+/g, '-')}.vercel.app`}
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-[8px] text-primary/40 dark:text-cyber/40 tracking-widest">
-                {`${String(active + 1).padStart(2,'0')} / ${String(screenshots.length).padStart(2,'0')}`}
+            <div className="flex items-center gap-1.5 md:gap-2">
+              <span className="font-mono text-[7px] md:text-[8px] text-primary/40 dark:text-cyber/40 tracking-widest">
+                {`${String(active + 1).padStart(2,'0')}/${String(screenshots.length).padStart(2,'0')}`}
               </span>
               <button
                 onClick={() => setIsFullscreen(true)}
-                className="flex items-center justify-center w-6 h-6 border border-primary/20 dark:border-cyber/20 hover:border-primary/60 dark:hover:border-cyber/60 hover:bg-primary/5 dark:hover:bg-cyber/5 text-primary/50 dark:text-cyber/50 hover:text-primary dark:hover:text-cyber transition-all duration-200"
+                className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 border border-primary/20 dark:border-cyber/20 hover:border-primary/60 dark:hover:border-cyber/60 hover:bg-primary/5 dark:hover:bg-cyber/5 text-primary/50 dark:text-cyber/50 hover:text-primary dark:hover:text-cyber transition-all duration-200"
                 title="Fullscreen"
               >
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="md:hidden">
+                  <polyline points="15 3 21 3 21 9" /><polyline points="9 21 3 21" /><polyline points="21 9 15 21" /><polyline points="3 15 9 21" />
+                </svg>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hidden md:block">
                   <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
                 </svg>
               </button>
@@ -105,26 +108,28 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
             />
             {/* Scan line */}
             <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-primary/30 dark:via-cyber/30 to-transparent animate-scan pointer-events-none" />
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-white/0 dark:bg-navy/0 group-hover:bg-primary/10 dark:group-hover:bg-navy/20 transition-colors duration-300 flex items-end justify-start p-4 pointer-events-none">
-              <span className="font-mono text-[9px] text-primary dark:text-cyber/70 tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 dark:bg-navy/80 px-2 py-1 border border-primary/20 dark:border-cyber/20">
+            {/* Touch-friendly click indicator */}
+            <div className="absolute inset-0 bg-white/0 dark:bg-navy/0 group-active:bg-primary/5 dark:group-active:bg-navy/10 transition-colors duration-300 md:hidden" />
+            {/* Hover overlay (desktop only) */}
+            <div className="absolute inset-0 bg-white/0 dark:bg-navy/0 group-hover:bg-primary/10 dark:group-hover:bg-navy/20 transition-colors duration-300 flex items-end justify-start p-3 md:p-4 pointer-events-none hidden md:flex">
+              <span className="font-mono text-[8px] md:text-[9px] text-primary dark:text-cyber/70 tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 dark:bg-navy/80 px-1.5 md:px-2 py-0.5 md:py-1 border border-primary/20 dark:border-cyber/20">
                 [CLICK TO EXPAND]
               </span>
             </div>
-            {/* Prev / next arrows */}
+            {/* Prev / next arrows - desktop only */}
             {screenshots.length > 1 && (
               <>
                 <button
                   onClick={(e) => { e.stopPropagation(); goPrev() }}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 border border-primary/30 dark:border-cyber/30 bg-white/70 dark:bg-navy/70 hover:border-primary dark:hover:border-cyber hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100"
+                  className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-7 h-7 md:w-8 md:h-8 border border-primary/30 dark:border-cyber/30 bg-white/70 dark:bg-navy/70 hover:border-primary dark:hover:border-cyber hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100 hidden md:flex"
                 >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="15 18 9 12 15 6" /></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="15 18 9 12 15 6" /></svg>
                 </button>
                 <button
                   onClick={(e) => { e.stopPropagation(); goNext() }}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 border border-primary/30 dark:border-cyber/30 bg-white/70 dark:bg-navy/70 hover:border-primary dark:hover:border-cyber hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100"
+                  className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-7 h-7 md:w-8 md:h-8 border border-primary/30 dark:border-cyber/30 bg-white/70 dark:bg-navy/70 hover:border-primary dark:hover:border-cyber hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100 hidden md:flex"
                 >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 18 15 12 9 6" /></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 18 15 12 9 6" /></svg>
                 </button>
               </>
             )}
@@ -132,8 +137,8 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
 
           {/* Bottom status bar */}
           {current.label && (
-            <div className="bg-off-white dark:bg-navy-soft border-t border-primary/10 dark:border-cyber/10 px-4 py-2">
-              <span className="font-mono text-[9px] text-primary/60 dark:text-cyber/60 tracking-wider uppercase">{current.label}</span>
+            <div className="bg-off-white dark:bg-navy-soft border-t border-primary/10 dark:border-cyber/10 px-3 md:px-4 py-1.5 md:py-2">
+              <span className="font-mono text-[8px] md:text-[9px] text-primary/60 dark:text-cyber/60 tracking-wider uppercase">{current.label}</span>
             </div>
           )}
         </div>
@@ -142,25 +147,25 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
         {screenshots.length > 1 && (
           <div
             ref={stripRef}
-            className="flex gap-2 overflow-x-auto pb-1"
-            style={{ scrollbarWidth: 'none' }}
+            className="flex gap-1.5 md:gap-2 overflow-x-auto pb-1 -mx-1 px-1 md:mx-0 md:px-0"
+            style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}
           >
             {screenshots.map((shot, i) => (
               <button
                 key={i}
                 onClick={() => goTo(i)}
                 className={`
-                  flex-shrink-0 w-20 h-14 relative overflow-hidden border transition-all duration-200
+                  flex-shrink-0 w-14 h-10 sm:w-16 sm:h-14 md:w-20 md:h-14 relative overflow-hidden border transition-all duration-200 touch-manipulation
                   ${i === active
-                    ? 'border-primary shadow-[0_0_8px_rgba(43,95,165,0.2)] dark:border-cyber dark:shadow-[0_0_8px_rgba(0,255,204,0.3)]'
+                    ? 'border-primary shadow-[0_0_6px_rgba(43,95,165,0.2)] dark:border-cyber dark:shadow-[0_0_6px_rgba(0,255,204,0.3)]'
                     : 'border-primary/15 dark:border-cyber/15 opacity-50 hover:opacity-80 hover:border-primary/40 dark:hover:border-cyber/40'}
                 `}
               >
-                <img src={shot.src} alt={shot.alt} className="w-full h-full object-cover object-top" />
+                <img src={shot.src} alt={shot.alt} className="w-full h-full object-cover object-top" loading="lazy" />
                 {i === active && (
                   <div className="absolute inset-x-0 bottom-0 h-[2px] bg-primary dark:bg-cyber" />
                 )}
-                <span className="absolute top-1 left-1 font-mono text-[7px] text-white bg-primary/80 dark:text-cyber dark:bg-navy/80 px-1">
+                <span className="absolute top-0.5 left-0.5 font-mono text-[6px] sm:text-[7px] text-white bg-primary/80 dark:text-cyber dark:bg-navy/80 px-0.5">
                   {String(i + 1).padStart(2, '0')}
                 </span>
               </button>
@@ -170,12 +175,12 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
 
         {/* ── Progress dots ────────────────────────────── */}
         {screenshots.length > 1 && (
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-1.5 md:gap-2">
             {screenshots.map((_, i) => (
               <button
                 key={i}
                 onClick={() => goTo(i)}
-                className={`transition-all duration-300 ${i === active ? 'w-4 h-1.5 bg-primary dark:bg-cyber' : 'w-1.5 h-1.5 rounded-full bg-primary/20 hover:bg-primary/50 dark:bg-cyber/25 dark:hover:bg-cyber/50'}`}
+                className={`transition-all duration-300 touch-manipulation ${i === active ? 'w-3 md:w-4 h-1 md:h-1.5 bg-primary dark:bg-cyber' : 'w-1.5 h-1.5 rounded-full bg-primary/20 hover:bg-primary/50 dark:bg-cyber/25 dark:hover:bg-cyber/50'}`}
               />
             ))}
           </div>
@@ -189,17 +194,20 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
           onClick={() => setIsFullscreen(false)}
         >
           {/* Top bar */}
-          <div className="absolute top-0 inset-x-0 flex items-center justify-between px-6 py-4 border-b border-primary/10 dark:border-cyber/10">
-            <span className="font-hud text-[10px] tracking-[0.2em] text-primary dark:text-cyber uppercase">{projectTitle}</span>
-            <div className="flex items-center gap-4">
-              <span className="font-mono text-[9px] text-primary/50 dark:text-cyber/50 tracking-wider">
-                {`${String(active + 1).padStart(2,'0')} / ${String(screenshots.length).padStart(2,'0')}`}
+          <div className="absolute top-0 inset-x-0 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 border-b border-primary/10 dark:border-cyber/10">
+            <span className="font-hud text-[9px] md:text-[10px] tracking-[0.15em] md:tracking-[0.2em] text-primary dark:text-cyber uppercase truncate max-w-[50%]">{projectTitle}</span>
+            <div className="flex items-center gap-2 md:gap-4">
+              <span className="font-mono text-[8px] md:text-[9px] text-primary/50 dark:text-cyber/50 tracking-wider">
+                {`${String(active + 1).padStart(2,'0')}/${String(screenshots.length).padStart(2,'0')}`}
               </span>
               <button
                 onClick={() => setIsFullscreen(false)}
-                className="w-8 h-8 border border-primary/30 dark:border-cyber/30 hover:border-primary dark:hover:border-cyber text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all"
+                className="w-7 h-7 md:w-8 md:h-8 border border-primary/30 dark:border-cyber/30 hover:border-primary dark:hover:border-cyber text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all touch-manipulation"
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="md:hidden">
+                  <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hidden md:block">
                   <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </button>
@@ -208,13 +216,13 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
 
           {/* Image */}
           <div
-            className="relative max-w-6xl max-h-[80vh] px-16"
+            className="relative max-w-[95vw] max-h-[70vh] md:max-w-6xl md:max-h-[80vh] px-4 md:px-16"
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={screenshots[active].src}
               alt={screenshots[active].alt}
-              className={`max-w-full max-h-[80vh] object-contain transition-all duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
+              className={`max-w-full max-h-[70vh] md:max-h-[80vh] object-contain transition-all duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
             />
           </div>
 
@@ -223,24 +231,26 @@ export function ScreenshotViewer({ screenshots, projectTitle, liveUrl }: Props) 
             <>
               <button
                 onClick={(e) => { e.stopPropagation(); goPrev() }}
-                className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 border border-primary/30 dark:border-cyber/30 hover:border-primary dark:hover:border-cyber bg-white/80 dark:bg-navy/80 hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all"
+                className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 border border-primary/30 dark:border-cyber/30 hover:border-primary dark:hover:border-cyber bg-white/80 dark:bg-navy/80 hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all touch-manipulation"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="15 18 9 12 15 6" /></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="md:hidden"><polyline points="15 18 9 12 15 6" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="hidden md:block"><polyline points="15 18 9 12 15 6" /></svg>
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); goNext() }}
-                className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 border border-primary/30 dark:border-cyber/30 hover:border-primary dark:hover:border-cyber bg-white/80 dark:bg-navy/80 hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all"
+                className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 border border-primary/30 dark:border-cyber/30 hover:border-primary dark:hover:border-cyber bg-white/80 dark:bg-navy/80 hover:bg-primary/10 dark:hover:bg-cyber/10 text-primary/60 dark:text-cyber/60 hover:text-primary dark:hover:text-cyber flex items-center justify-center transition-all touch-manipulation"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="9 18 15 12 9 6" /></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="md:hidden"><polyline points="9 18 15 12 9 6" /></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="hidden md:block"><polyline points="9 18 15 12 9 6" /></svg>
               </button>
             </>
           )}
 
           {/* HUD corners */}
-          <span className="absolute top-16 left-4 w-3 h-3 border-t border-l border-primary/40 dark:border-cyber/40 pointer-events-none" />
-          <span className="absolute top-16 right-4 w-3 h-3 border-t border-r border-primary/40 dark:border-cyber/40 pointer-events-none" />
-          <span className="absolute bottom-4 left-4 w-3 h-3 border-b border-l border-primary/40 dark:border-cyber/40 pointer-events-none" />
-          <span className="absolute bottom-4 right-4 w-3 h-3 border-b border-r border-primary/40 dark:border-cyber/40 pointer-events-none" />
+          <span className="absolute top-12 md:top-16 left-2 md:left-4 w-2 md:w-3 h-2 md:h-3 border-t border-l border-primary/40 dark:border-cyber/40 pointer-events-none" />
+          <span className="absolute top-12 md:top-16 right-2 md:right-4 w-2 md:w-3 h-2 md:h-3 border-t border-r border-primary/40 dark:border-cyber/40 pointer-events-none" />
+          <span className="absolute bottom-3 md:bottom-4 left-2 md:left-4 w-2 md:w-3 h-2 md:h-3 border-b border-l border-primary/40 dark:border-cyber/40 pointer-events-none" />
+          <span className="absolute bottom-3 md:bottom-4 right-2 md:right-4 w-2 md:w-3 h-2 md:h-3 border-b border-r border-primary/40 dark:border-cyber/40 pointer-events-none" />
         </div>
       )}
     </>
