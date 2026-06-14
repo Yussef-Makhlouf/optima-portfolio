@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Orbitron:wght@400;500;700;900&family=Michroma&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,6 +10,8 @@
   --font-ibm-plex: 'IBM Plex Sans', sans-serif;
   --font-ibm-serif: 'IBM Plex Serif', serif;
   --font-ibm-mono: 'IBM Plex Mono', monospace;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-michroma: 'Michroma', sans-serif;
 
   --primary: #2B5FA5;
   --primary-light: #4A80D9;
@@ -770,3 +772,82 @@ input[type="number"] {
 .crosshair-spin:hover {
   transform: rotate(90deg);
 }
+
+/* ── Cybernetic HUD Styling System ───────────────────────── */
+
+.hud-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(43, 95, 165, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(43, 95, 165, 0.08) 1px, transparent 1px);
+}
+.dark .hud-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 204, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 204, 0.05) 1px, transparent 1px);
+}
+
+.hud-grid-dots {
+  background-size: 20px 20px;
+  background-image: radial-gradient(rgba(43, 95, 165, 0.15) 1px, transparent 1px);
+}
+.dark .hud-grid-dots {
+  background-image: radial-gradient(rgba(0, 255, 204, 0.15) 1px, transparent 1px);
+}
+
+.cyber-glow-text {
+  text-shadow: 0 0 10px rgba(43, 95, 165, 0.3), 0 0 20px rgba(43, 95, 165, 0.1);
+}
+.dark .cyber-glow-text {
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5), 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.cyber-glow-border {
+  box-shadow: 0 0 15px rgba(43, 95, 165, 0.1), inset 0 0 15px rgba(43, 95, 165, 0.05);
+}
+.dark .cyber-glow-border {
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.15), inset 0 0 15px rgba(0, 255, 204, 0.1);
+}
+
+.terminal-line::before {
+  content: "> ";
+  color: var(--cyber, #00FFCC);
+  font-weight: bold;
+}
+
+/* Multilingual Arabic Safeguards */
+html[lang="ar"] h1, 
+html[lang="ar"] h2, 
+html[lang="ar"] h3,
+html[lang="ar"] .font-hud {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="ar"] p {
+  line-height: 1.8 !important;
+  font-size: 1.05rem !important;
+}
+
+/* ── Tips ticker scroll ─────────────────────────────────────── */
+
+.animate-tips-scroll {
+  animation: tipsScroll 60s linear infinite;
+}
+
+.animate-tips-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tipsScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-tips-scroll {
+    animation: none;
+  }
+}
+

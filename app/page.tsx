@@ -4,6 +4,7 @@ import { getFeaturedProjects, getPortfolioStats, getCoverImage, getAllProjects }
 import { RevealSection } from '@/components/ui/RevealSection'
 import { HeroBanner } from '@/components/ui/HeroBanner'
 import { PartnersBanner } from '@/components/ui/PartnersBanner'
+import { ServicesBanner, TipsBanner, ServiceSpotlightBanner } from '@/components/ui/ServicesBanner'
 
 export default function HomePage() {
   const featured = getFeaturedProjects()
@@ -138,9 +139,19 @@ export default function HomePage() {
         </section>
       </RevealSection>
 
+      {/* ── Tips Ticker ──────────────────────────────────── */}
+      <RevealSection>
+        <TipsBanner />
+      </RevealSection>
+
       {/* ── Partners Banner ─────────────────────────────── */}
       <RevealSection>
         <PartnersBanner />
+      </RevealSection>
+
+      {/* ── Service Spotlight (How We Work) ──────────────── */}
+      <RevealSection>
+        <ServiceSpotlightBanner />
       </RevealSection>
 
       {/* ── Featured Projects ─────────────────────────────── */}
@@ -356,48 +367,11 @@ export default function HomePage() {
         </section>
       </RevealSection>
 
-      {/* ── Services ──────────────────────────────────────── */}
+      {/* ── Services ──────────────────────────────────────────── */}
       <RevealSection>
-        <section className="py-28 px-6 bg-off-white dark:bg-navy-soft transition-colors duration-300">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-14">
-              <div className="section-label mb-4 flex items-center gap-3">
-                <span className="w-6 h-px bg-accent" />
-                002
-              </div>
-              <h2 className="font-display font-bold text-4xl md:text-5xl text-navy dark:text-off-white tracking-tight">
-                Core<br />
-                <span className="text-accent">Services</span>
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border border-navy/5 dark:border-off-white/5">
-              {[
-                { num: '01', title: 'Full-Stack Development', desc: 'Next.js, React, Node.js, .NET \u2014 production-grade from day one. RTL Arabic & bilingual built-in.', icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
-                { num: '02', title: 'UX & Interface Design', desc: 'From Figma systems to pixel-perfect code. Design tokens, component libraries, GSAP animations.', icon: 'M12 19l9 2-9-18-9 18 9-2zm0 0v-8' },
-                { num: '03', title: 'AI Solutions & SaaS', desc: 'Claude API, Groq, custom LLM integrations. Content tools, automation, and AI-native product features.', icon: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z' },
-                { num: '04', title: 'E-Commerce Platforms', desc: 'Arabic-first stores with Tabby, Tamara, Stripe. Saudi ZATCA compliance. Gulf-market UX patterns.', icon: 'M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z' },
-                { num: '05', title: 'Enterprise Portals', desc: 'Multi-tenant SaaS, ERPs, dashboards, secure portals. Built for Gulf enterprise scale and compliance.', icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' },
-                { num: '06', title: 'Gulf Market Strategy', desc: 'Deep UAE/KSA/Kuwait market expertise. Bilingual positioning, local payment gateways, cultural UX.', icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
-              ].map(({ num, title, desc, icon }) => (
-                <div
-                  key={num}
-                  className="p-8 bg-off-white dark:bg-navy group hover:bg-primary/[0.02] dark:hover:bg-primary/[0.04] transition-colors relative"
-                >
-                  <div className="absolute left-0 top-0 bottom-0 w-px bg-accent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent/60 dark:text-accent/60 mb-4 group-hover:text-accent transition-colors">
-                    <path d={icon} />
-                  </svg>
-                  <div className="font-mono text-[11px] text-accent/70 dark:text-accent/70 mb-5 tracking-wider">{num}</div>
-                  <h3 className="font-display font-bold text-navy dark:text-off-white text-lg mb-3 group-hover:text-accent dark:group-hover:text-accent transition-colors">
-                    {title}
-                  </h3>
-                  <p className="text-muted dark:text-muted text-sm leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ServicesBanner />
       </RevealSection>
+
 
       {/* ── Design philosophy / about strip ────────────────── */}
       <RevealSection>

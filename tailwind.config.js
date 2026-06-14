@@ -24,6 +24,14 @@ module.exports = {
           soft: '#0F121F',
           mid: '#141829',
         },
+        cyber: {
+          DEFAULT: '#00FFCC',
+          dark: '#00ccaa',
+        },
+        surface: {
+          DEFAULT: '#162427',
+          card: '#1c2e32',
+        },
         'off-white': '#F4F2EE',
         muted: {
           DEFAULT: '#8A9AB5',
@@ -35,6 +43,7 @@ module.exports = {
         display: ['var(--font-ibm-plex)', 'sans-serif'],
         serif: ['var(--font-ibm-serif)', 'serif'],
         mono: ['var(--font-ibm-mono)', 'monospace'],
+        hud: ['var(--font-orbitron)', 'Orbitron', 'Michroma', 'monospace'],
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease forwards',
@@ -45,6 +54,9 @@ module.exports = {
         'float': 'float 6s ease-in-out infinite',
         'scroll-x': 'scrollX 40s linear infinite',
         'stagger-fade': 'staggerFadeIn 0.5s ease forwards',
+        'scan': 'scan 3s linear infinite',
+        'glitch': 'glitch 1s linear infinite',
+        'grid-scroll': 'gridScroll 20s linear infinite',
       },
       keyframes: {
         fadeUp: {
@@ -75,6 +87,23 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(12px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        scan: {
+          '0%': { transform: 'translateY(0%)', opacity: '0.3' },
+          '50%': { opacity: '1' },
+          '100%': { transform: 'translateY(100%)', opacity: '0.3' },
+        },
+        glitch: {
+          '0%': { transform: 'translate(0)' },
+          '20%': { transform: 'translate(-2px, 2px)' },
+          '40%': { transform: 'translate(-2px, -2px)' },
+          '60%': { transform: 'translate(2px, 2px)' },
+          '80%': { transform: 'translate(2px, -2px)' },
+          '100%': { transform: 'translate(0)' },
+        },
+        gridScroll: {
+          '0%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '40px 40px' },
+        },
       },
       gridTemplateColumns: {
         projects: 'repeat(auto-fill, minmax(340px, 1fr))',
@@ -83,6 +112,7 @@ module.exports = {
       boxShadow: {
         'gold': '0 4px 24px rgba(210, 140, 100, 0.15)',
         'primary': '0 4px 24px rgba(43, 95, 165, 0.12)',
+        'cyber': '0 0 15px rgba(0, 255, 204, 0.4)',
       },
     },
   },

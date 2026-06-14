@@ -68,6 +68,13 @@ export interface Project {
   featured: boolean
   liveUrl: string | null
   githubUrl: string | null
+  stars: number
+  forks: number
+  openIssues: number
+  sizeKb: number
+  defaultBranch: string
+  cloneUrl: string | null
+  language: string | null
 }
 
 // Picsum seeds per project for consistent placeholder images
@@ -177,6 +184,13 @@ function rawRepoToProject(repo: RawRepo): Project {
     featured: repo.stars > 0 || repo.forks > 0,
     liveUrl: repo.homepage || null,
     githubUrl: repo.url || null,
+    stars: repo.stars,
+    forks: repo.forks,
+    openIssues: repo.open_issues,
+    sizeKb: repo.size_kb,
+    defaultBranch: repo.default_branch || 'main',
+    cloneUrl: repo.clone_url || null,
+    language: repo.language || 'TypeScript',
   }
 }
 

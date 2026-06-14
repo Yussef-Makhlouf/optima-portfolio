@@ -5,6 +5,8 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { ScrollToTop } from '@/components/ui/ScrollToTop'
 import { LogoLoader } from '@/components/ui/LogoLoader'
+import { HudCursor } from '@/components/ui/HudCursor'
+import { ProjectTerminal } from '@/components/ui/ProjectTerminal'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://optima.dev'),
@@ -55,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main-content" className="min-h-screen">{children}</main>
           <Footer />
           <ScrollToTop />
+          <HudCursor />
+          <ProjectTerminal />
         </ThemeProvider>
       </body>
     </html>
