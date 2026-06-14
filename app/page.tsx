@@ -301,17 +301,47 @@ export default function HomePage() {
             {[...Array(2)].map((_, dup) => (
               <div key={dup} className="flex gap-4 shrink-0">
                 {[
-                  'Next.js 15', 'React 19', 'TypeScript', 'Node.js',
-                  'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Firebase',
-                  'Framer Motion', 'GSAP', 'Claude AI', 'OpenAI',
-                  '.NET', 'Express.js', 'Prisma', 'Redis',
+                  { name: 'Next.js', img: '/skills/next.png' },
+                  { name: 'React', img: '/skills/react.png' },
+                  { name: 'TypeScript', img: '/skills/ts.png' },
+                  { name: 'JavaScript', img: '/skills/js.png' },
+                  { name: 'Node.js', img: '/skills/node.png' },
+                  { name: 'Tailwind CSS', img: '/skills/tailwind.png' },
+                  { name: 'MongoDB', img: '/skills/mongodb.png' },
+                  { name: 'PostgreSQL', img: '/skills/postgresql.png' },
+                  { name: 'Firebase', img: '/skills/firebase.png' },
+                  { name: 'Framer Motion', img: '/skills/framer.png' },
+                  { name: 'Express.js', img: '/skills/express.png' },
+                  { name: 'Prisma', img: '/skills/prisma.png' },
+                  { name: 'Docker', img: '/skills/docker.png' },
+                  { name: 'GraphQL', img: '/skills/graphql.png' },
+                  { name: 'React Native', img: '/skills/reactnative.png' },
+                  { name: 'Redux', img: '/skills/redux.png' },
+                  { name: 'MySQL', img: '/skills/mysql.png' },
+                  { name: 'Go', img: '/skills/go.png' },
+                  { name: 'Stripe', img: '/skills/stripe.png' },
+                  { name: 'Tauri', img: '/skills/tauri.png' },
+                  { name: 'MUI', img: '/skills/mui.png' },
+                  { name: 'React Query', img: '/skills/reactquery.png' },
+                  { name: 'Figma', img: '/skills/figma.png' },
+                  { name: 'CSS', img: '/skills/css.png' },
+                  { name: 'HTML', img: '/skills/html.png' },
                 ].map((tech) => (
-                  <span
-                    key={`${dup}-${tech}`}
-                    className="shrink-0 px-5 py-2.5 border border-navy/8 dark:border-off-white/8 font-mono text-xs text-muted tracking-wide hover:border-accent hover:text-accent transition-colors cursor-default"
+                  <div
+                    key={`${dup}-${tech.name}`}
+                    className="shrink-0 flex items-center gap-2.5 px-4 py-2.5 border border-navy/8 dark:border-off-white/8 hover:border-accent transition-colors cursor-default group"
                   >
-                    {tech}
-                  </span>
+                    <Image
+                      src={tech.img}
+                      alt={tech.name}
+                      width={24}
+                      height={24}
+                      className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
+                    <span className="font-mono text-xs text-muted group-hover:text-accent tracking-wide whitespace-nowrap transition-colors">
+                      {tech.name}
+                    </span>
+                  </div>
                 ))}
               </div>
             ))}
