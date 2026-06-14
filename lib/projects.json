@@ -1,0 +1,4180 @@
+{
+  "extracted_at": "2026-06-14T05:10:19.131Z",
+  "analyzed_at": "2026-06-14T06:00:00.000Z",
+  "user": {
+    "login": "Yussef-Makhlouf",
+    "name": "Yussef Makhlouf",
+    "bio": "MEARN stack developer",
+    "location": "Cairo, Egypt",
+    "blog": "",
+    "public_repos": 129,
+    "followers": 52,
+    "avatar_url": "https://avatars.githubusercontent.com/u/170136351?v=4",
+    "html_url": "https://github.com/Yussef-Makhlouf"
+  },
+  "stats": {
+    "total_extracted": 54,
+    "total_analyzed": 41,
+    "total_stars": 0,
+    "total_forks": 7,
+    "with_description": 46,
+    "with_homepage": 18,
+    "languages": {
+      "TypeScript": 38,
+      "JavaScript": 10,
+      "HTML": 4,
+      "N/A": 1,
+      "Python": 1
+    },
+    "types": {
+      "original": 53,
+      "fork": 1,
+      "archived": 0
+    },
+    "with_topics": 54
+  },
+  "repos": [
+    {
+      "index": 1,
+      "name": "beginius-academy",
+      "full_name": "Yussef-Makhlouf/beginius-academy",
+      "description": "Full-featured educational platform for B-Genius Academy — a children's behavioral coaching and coding academy with 4 age tracks (5-7, 8-10, 11-13, 14-16), Google Generative AI integration, and Motion animations.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "educational-platform",
+        "children-academy",
+        "behavioral-coaching",
+        "coding-education",
+        "google-generative-ai",
+        "motion-animations",
+        "radix-ui",
+        "age-based-tracks",
+        "firebase",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/beginius-academy",
+      "clone_url": "https://github.com/Yussef-Makhlouf/beginius-academy.git",
+      "homepage": "https://beginius.vercel.app",
+      "created_at": "2026-05-28T15:53:57Z",
+      "updated_at": "2026-06-12T01:18:37Z",
+      "pushed_at": "2026-06-12T01:18:33Z",
+      "size_kb": 21090,
+      "analysis": {
+        "tech_stack": [
+          "Next.js 15",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "Google Generative AI",
+          "Motion (Framer Motion)",
+          "Radix UI",
+          "Lucide React",
+          "React Hook Form",
+          "CVA + clsx + tailwind-merge",
+          "Firebase Tools",
+          "Vercel"
+        ],
+        "problem_solved": "Bridges the gap between emotional/behavioral coaching and technical education for children. Presents a holistic approach combining EQ development with coding education.",
+        "strengths": [
+          "Modern tech stack (Next.js 15 + React 19)",
+          "AI integration via Google Generative AI",
+          "Real commercial platform for an actual academy",
+          "Strong UX with age-based track selection",
+          "Accessibility-first with Radix UI",
+          "shadcn/ui-style component architecture"
+        ],
+        "portfolio_summary": "Designed and built a production educational platform for a children's coaching academy serving multiple age groups. Implemented AI-powered content features using Google Generative AI, age-based program tracks, and an accessible component system using Radix UI."
+      }
+    },
+    {
+      "index": 2,
+      "name": "Generatefigmadesignsystem",
+      "full_name": "Yussef-Makhlouf/Generatefigmadesignsystem",
+      "description": "Khapeer (خبير) — A full-featured Arabic Q&A platform (Stack Overflow-style) with user authentication, reputation system, badges, streaks, leaderboards, topic-based Spaces, daily challenges, and advanced search. RTL-first design with 25+ Radix UI components.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "vite",
+        "qna-platform",
+        "arabic-first",
+        "rtl-design",
+        "shadcn-ui",
+        "radix-ui",
+        "gamification",
+        "reputation-system",
+        "badges",
+        "leaderboard",
+        "supabase",
+        "tanstack-query",
+        "zod"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Generatefigmadesignsystem",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Generatefigmadesignsystem.git",
+      "homepage": "https://generatefigmadesignsystem.vercel.app",
+      "created_at": "2026-05-19T16:42:05Z",
+      "updated_at": "2026-06-11T07:02:01Z",
+      "pushed_at": "2026-06-11T07:01:54Z",
+      "size_kb": 6125,
+      "analysis": {
+        "tech_stack": [
+          "React 18",
+          "TypeScript",
+          "Vite 6",
+          "Tailwind CSS v4",
+          "shadcn/ui (25+ Radix components)",
+          "React Router v7",
+          "Motion (Framer Motion)",
+          "Supabase",
+          "TanStack Query",
+          "Zod v4",
+          "React Hook Form",
+          "Sonner",
+          "Embla Carousel",
+          "Recharts",
+          "date-fns",
+          "cmdk",
+          "IBM Plex Sans Arabic"
+        ],
+        "problem_solved": "Arabic-language Q&A platforms are scarce and poorly designed. Khapeer fills this gap with a culturally aware, RTL-native platform that gamifies knowledge sharing.",
+        "strengths": [
+          "RTL-first architecture",
+          "25+ Radix UI primitives with full shadcn/ui",
+          "Gamification engine (badges, streaks, leaderboards)",
+          "WCAG accessible with keyboard navigation",
+          "Supabase backend + Zod validation + TanStack Query caching",
+          "Glassmorphism and gradient design elements"
+        ],
+        "portfolio_summary": "Architected and built a comprehensive Arabic-first Q&A platform with gamification features including reputation systems, badges, and leaderboards. Built with React + TypeScript + Supabase, featuring 25+ accessible UI components and RTL-native design."
+      }
+    },
+    {
+      "index": 3,
+      "name": "deemmedical",
+      "full_name": "Yussef-Makhlouf/deemmedical",
+      "description": "Deem Medical — A professional healthcare/medical services website with appointment booking, service listings, and patient information. Built with Lovable (AI-assisted development) and includes comprehensive testing infrastructure.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "vite",
+        "healthcare",
+        "medical-website",
+        "appointment-booking",
+        "patient-portal",
+        "shadcn-ui",
+        "supabase",
+        "playwright-e2e",
+        "vitest",
+        "testing-library",
+        "lovable-ai"
+      ],
+      "is_fork": true,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/deemmedical",
+      "clone_url": "https://github.com/Yussef-Makhlouf/deemmedical.git",
+      "homepage": "https://deemedicals.vercel.app",
+      "created_at": "2026-05-16T13:13:02Z",
+      "updated_at": "2026-06-08T15:37:10Z",
+      "pushed_at": "2026-06-08T15:36:22Z",
+      "size_kb": 2717,
+      "analysis": {
+        "tech_stack": [
+          "React 18",
+          "TypeScript",
+          "Vite 5",
+          "Tailwind CSS v3",
+          "shadcn/ui (25+ Radix components)",
+          "Supabase",
+          "TanStack Query",
+          "React Router v6",
+          "Embla Carousel (autoplay)",
+          "React Hook Form + Zod v3",
+          "Recharts",
+          "Playwright (E2E testing)",
+          "Vitest + Testing Library",
+          "Lovable (AI-assisted dev)"
+        ],
+        "problem_solved": "Healthcare providers need trustworthy, accessible digital platforms for patient engagement. Provides a clean interface for patients to discover services, book appointments, and access medical information.",
+        "strengths": [
+          "Testing infrastructure (Playwright E2E + Vitest)",
+          "Lovable AI-assisted development integration",
+          "Healthcare domain experience",
+          "Full shadcn/ui implementation",
+          "Supabase backend"
+        ],
+        "portfolio_summary": "Developed a professional healthcare platform with appointment booking and patient services. Implemented comprehensive testing (Playwright E2E + Vitest) and accessible UI components with React + TypeScript + Supabase."
+      }
+    },
+    {
+      "index": 4,
+      "name": "al-qemma",
+      "full_name": "Yussef-Makhlouf/al-qemma",
+      "description": "Al-Qemma (القمة الفريدة) — Professional cleaning services company website based in Dammam, Saudi Arabia. Showcases residential cleaning, post-construction cleanup, and commercial warehouse cleaning services with Google AI integration.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "cleaning-services",
+        "saudi-arabia",
+        "arabic-rtl",
+        "google-generative-ai",
+        "motion-animations",
+        "service-catalog",
+        "commercial-website",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/al-qemma",
+      "clone_url": "https://github.com/Yussef-Makhlouf/al-qemma.git",
+      "homepage": "https://al-qemma.vercel.app",
+      "created_at": "2026-05-17T00:24:08Z",
+      "updated_at": "2026-05-28T15:33:26Z",
+      "pushed_at": "2026-05-28T15:29:15Z",
+      "size_kb": 24243,
+      "analysis": {
+        "tech_stack": [
+          "Next.js 15",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "Google Generative AI (@google/genai)",
+          "Motion (Framer Motion v12)",
+          "Lucide React",
+          "React Hook Form + @hookform/resolvers",
+          "CVA + clsx + tailwind-merge",
+          "Firebase Tools",
+          "Vercel"
+        ],
+        "problem_solved": "Cleaning service companies in Saudi Arabia need professional digital presence. Transforms a traditional service business into a modern brand with clear service categories and easy navigation.",
+        "strengths": [
+          "Real commercial website for an actual business",
+          "AI-powered content via Google Generative AI",
+          "Arabic RTL support for Saudi market",
+          "Service-oriented architecture with clear CTAs",
+          "Next.js 15 + React 19 bleeding-edge adoption"
+        ],
+        "portfolio_summary": "Built a production commercial website for a Saudi cleaning services company with AI-powered content generation and modern Next.js 15 architecture. Features Arabic RTL design and optimized conversion funnels."
+      }
+    },
+    {
+      "index": 5,
+      "name": "b-genius",
+      "full_name": "Yussef-Makhlouf/b-genius",
+      "description": "B-Genius Center — Multi-page bilingual (EN/AR) website for a behavioral coaching and personal development center with 8 specialized programs, registration form with Express.js backend email notifications via Nodemailer.",
+      "language": "JavaScript",
+      "category": "Backend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "express",
+        "bilingual-website",
+        "behavioral-coaching",
+        "personal-development",
+        "registration-form",
+        "nodemailer",
+        "email-automation",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/b-genius",
+      "clone_url": "https://github.com/Yussef-Makhlouf/b-genius.git",
+      "homepage": "https://b-genius.vercel.app",
+      "created_at": "2026-05-15T17:36:09Z",
+      "updated_at": "2026-05-23T00:36:32Z",
+      "pushed_at": "2026-05-23T00:36:28Z",
+      "size_kb": 33368,
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript (vanilla)",
+          "Express.js",
+          "Node.js",
+          "Nodemailer (email notifications)",
+          "dotenv",
+          "CORS",
+          "Vercel"
+        ],
+        "problem_solved": "Personal development centers need an online presence to attract and register new members. Provides a complete registration flow with automated email confirmations.",
+        "strengths": [
+          "Full-stack (frontend + Express backend with email automation)",
+          "Bilingual (English + Arabic)",
+          "Complete registration pipeline",
+          "8 specialized programs with detailed content",
+          "Vanilla frontend showing fundamental mastery"
+        ],
+        "portfolio_summary": "Designed and developed a bilingual website for a personal development center with 8 specialized programs. Implemented full registration pipeline with Express.js backend and automated email notifications via Nodemailer."
+      }
+    },
+    {
+      "index": 6,
+      "name": "capital-smart",
+      "full_name": "Yussef-Makhlouf/capital-smart",
+      "description": "3Capital — Comprehensive bilingual (AR/EN) financial and business consulting website with next-intl internationalization, blog/article system, service catalog, client testimonials, FAQ, and Nodemailer contact forms.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "financial-consulting",
+        "bilingual-arabic-english",
+        "next-intl",
+        "blog-system",
+        "framer-motion",
+        "nodemailer",
+        "lead-generation",
+        "shadcn-ui",
+        "recharts",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/capital-smart",
+      "clone_url": "https://github.com/Yussef-Makhlouf/capital-smart.git",
+      "homepage": "https://capital-smart.vercel.app",
+      "created_at": "2025-04-16T09:38:09Z",
+      "updated_at": "2026-05-20T16:26:03Z",
+      "pushed_at": "2026-05-20T16:25:58Z",
+      "size_kb": 94593,
+      "analysis": {
+        "tech_stack": [
+          "Next.js 15",
+          "React 18",
+          "TypeScript",
+          "next-intl (AR/EN i18n)",
+          "Tailwind CSS v3",
+          "shadcn/ui (25+ Radix components)",
+          "Framer Motion",
+          "react-intersection-observer",
+          "Nodemailer",
+          "React Markdown (blog)",
+          "Embla Carousel",
+          "Recharts",
+          "React Hook Form + Zod",
+          "Heroicons",
+          "Lucide React"
+        ],
+        "problem_solved": "Financial consulting firms need to project credibility online while serving multilingual MENA clients. Provides a polished bilingual storefront with content marketing and lead generation.",
+        "strengths": [
+          "next-intl internationalization (not just translation)",
+          "Content marketing blog with markdown rendering",
+          "Lead generation with email automation",
+          "Rich UI (intersection observer animations, carousels, charts)",
+          "MENA market focus with proper RTL support"
+        ],
+        "portfolio_summary": "Built a bilingual (AR/EN) financial consulting platform with next-intl internationalization, content marketing blog, animated UI with Framer Motion, and automated lead generation for a MENA consulting firm."
+      }
+    },
+    {
+      "index": 7,
+      "name": "technova-main",
+      "full_name": "Yussef-Makhlouf/technova-main",
+      "description": "Technova Main — Core Next.js application for Technova digital agency with striking dark-theme design, animated gradient backgrounds, dynamic particle canvas with mouse tracking, and custom interactive cursor effects.",
+      "language": "JavaScript",
+      "category": "Backend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "javascript",
+        "digital-agency",
+        "dark-theme",
+        "animated-gradients",
+        "particle-canvas",
+        "custom-cursor",
+        "framer-motion",
+        "landing-page"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/technova-main",
+      "clone_url": "https://github.com/Yussef-Makhlouf/technova-main.git",
+      "homepage": "https://technova-main.vercel.app",
+      "created_at": "2025-12-02T05:05:22Z",
+      "updated_at": "2026-05-06T12:09:17Z",
+      "pushed_at": "2026-05-06T12:09:13Z",
+      "size_kb": 110,
+      "analysis": {
+        "tech_stack": [
+          "Next.js 16",
+          "React",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "Framer Motion",
+          "Custom Canvas (particle system with mouse tracking)"
+        ],
+        "problem_solved": "Digital agencies need visually impressive websites that demonstrate technical capabilities. The website itself serves as a living portfolio piece through immersive animations.",
+        "strengths": [
+          "Immersive visuals (animated gradients, particle canvas, custom cursor)",
+          "Next.js 16 adoption",
+          "Component-driven architecture",
+          "Dark theme mastery",
+          "Performance-conscious with code splitting"
+        ],
+        "portfolio_summary": "Created an immersive dark-theme agency landing page with custom particle canvas, animated gradient backgrounds, and interactive cursor effects using Next.js 16 and Framer Motion."
+      }
+    },
+    {
+      "index": 8,
+      "name": "TECHNOVA-website",
+      "full_name": "Yussef-Makhlouf/TECHNOVA-website",
+      "description": "Technova Frontend — Full production website for Technova digital agency with 89 commits, Spline 3D integration, MongoDB, Vercel Analytics, i18n, and comprehensive deployment documentation. The most mature and actively developed project.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "digital-agency",
+        "next-intl",
+        "next-themes",
+        "spline-3d",
+        "mongodb",
+        "framer-motion",
+        "shadcn-ui",
+        "vercel-analytics",
+        "multilingual",
+        "dark-mode",
+        "production-website"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/TECHNOVA-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/TECHNOVA-website.git",
+      "homepage": "https://technova-website-liard.vercel.app",
+      "created_at": "2025-11-21T20:41:21Z",
+      "updated_at": "2026-05-06T11:45:41Z",
+      "pushed_at": "2026-05-06T11:45:37Z",
+      "size_kb": 215605,
+      "analysis": {
+        "tech_stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "next-intl (i18n)",
+          "next-themes (dark mode)",
+          "Tailwind CSS v4",
+          "shadcn/ui",
+          "Framer Motion + Motion",
+          "Spline 3D",
+          "MongoDB (Mongoose)",
+          "Vercel Analytics",
+          "Embla Carousel",
+          "React Fast Marquee",
+          "cobe (3D globe)",
+          "dotted-map",
+          "Recharts",
+          "Tabler Icons",
+          "react-international-phone"
+        ],
+        "problem_solved": "As Technova's primary web presence, handles the complete agency digital experience — multilingual content, 3D visualizations, client engagement, and analytics.",
+        "strengths": [
+          "89 commits — actively developed and maintained",
+          "3D integration with Spline",
+          "MongoDB backend for dynamic content",
+          "Production deployment with Vercel Analytics",
+          "Comprehensive documentation (API guides, deployment guides)",
+          "Multilingual with next-intl"
+        ],
+        "portfolio_summary": "Led development of a multilingual agency website with 3D Spline integrations, MongoDB backend, and Vercel Analytics. 89+ commits of iterative development including i18n, dark mode, and comprehensive deployment documentation."
+      }
+    },
+    {
+      "index": 9,
+      "name": "Enterprisewebportal",
+      "full_name": "Yussef-Makhlouf/Enterprisewebportal",
+      "description": "Enterprise Web Portal — Comprehensive enterprise dashboard combining Material UI with shadcn/ui, featuring drag-and-drop (react-dnd), interactive charts (Recharts), masonry layouts, carousels, and command palette (cmdk). Built from Figma design.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "vite",
+        "enterprise-dashboard",
+        "material-ui",
+        "shadcn-ui",
+        "drag-and-drop",
+        "react-dnd",
+        "recharts",
+        "masonry-layout",
+        "command-palette",
+        "cmdk",
+        "figma-to-code"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Enterprisewebportal",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Enterprisewebportal.git",
+      "homepage": "https://enterprisewebportal.vercel.app",
+      "created_at": "2026-03-16T18:07:47Z",
+      "updated_at": "2026-05-02T06:40:35Z",
+      "pushed_at": "2026-05-02T06:40:32Z",
+      "size_kb": 881,
+      "analysis": {
+        "tech_stack": [
+          "React 18",
+          "Vite 6",
+          "TypeScript",
+          "Material UI 7",
+          "shadcn/ui (Radix primitives)",
+          "Tailwind CSS v4",
+          "Emotion (CSS-in-JS)",
+          "React DnD (drag-and-drop)",
+          "Recharts",
+          "React Router v7",
+          "Motion (animations)",
+          "cmdk (command palette)",
+          "canvas-confetti",
+          "react-slick",
+          "react-responsive-masonry"
+        ],
+        "problem_solved": "Enterprise applications need complex, data-heavy interfaces that remain usable. Demonstrates mastery of enterprise UI patterns — dashboards, data tables, drag-and-drop, charts.",
+        "strengths": [
+          "Dual UI libraries (MUI + shadcn/ui)",
+          "Drag-and-drop with react-dnd",
+          "Data visualization with Recharts",
+          "Figma-to-code workflow",
+          "Rich interactions (masonry, carousels, command palette)"
+        ],
+        "portfolio_summary": "Built a feature-rich enterprise dashboard combining Material UI and shadcn/ui with drag-and-drop interfaces, interactive charts, masonry layouts, and command palette. Demonstrates design-to-code workflow and enterprise UI mastery."
+      }
+    },
+    {
+      "index": 10,
+      "name": "hiring-technova",
+      "full_name": "Yussef-Makhlouf/hiring-technova",
+      "description": "Technova Hiring — Lightweight recruitment marketing micro-site with styled job posting cards and company culture content. Pure HTML/CSS deployed on Vercel.",
+      "language": "HTML",
+      "category": "Other",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "recruitment",
+        "job-postings",
+        "hiring-page",
+        "micro-site",
+        "lightweight",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/hiring-technova",
+      "clone_url": "https://github.com/Yussef-Makhlouf/hiring-technova.git",
+      "homepage": "https://hiring-technova-two.vercel.app",
+      "created_at": "2026-04-22T21:16:49Z",
+      "updated_at": "2026-04-22T22:00:30Z",
+      "pushed_at": "2026-04-22T22:00:27Z",
+      "size_kb": 27,
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3 (vanilla, no framework)",
+          "Vercel (deployment via vercel.json)"
+        ],
+        "problem_solved": "Companies need dedicated pages to showcase job openings. Provides a focused, fast-loading hiring experience without framework overhead.",
+        "strengths": [
+          "Minimalist approach — pure HTML/CSS, zero dependencies",
+          "Fast loading with no JavaScript overhead",
+          "Focused single-page hiring funnel",
+          "Custom CSS architecture"
+        ],
+        "portfolio_summary": "Created a lightweight recruitment micro-site using pure HTML/CSS. Demonstrates choosing the right tool for the job — no framework overhead for a simple, focused hiring page."
+      }
+    },
+    {
+      "index": 11,
+      "name": "optima-studio-v2",
+      "full_name": "Yussef-Makhlouf/optima-studio-v2",
+      "description": "OPTIMA Content Studio — AI-powered bilingual social media content generator using Claude AI (Anthropic API). Generates professional Arabic + English posts for LinkedIn and Instagram across 8 content categories with post history and platform-specific character tracking.",
+      "language": "HTML",
+      "category": "Other",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "express",
+        "html",
+        "css",
+        "javascript",
+        "ai-tool",
+        "content-generator",
+        "claude-ai",
+        "anthropic-api",
+        "bilingual-content",
+        "social-media",
+        "linkedin",
+        "instagram",
+        "server-side-api"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/optima-studio-v2",
+      "clone_url": "https://github.com/Yussef-Makhlouf/optima-studio-v2.git",
+      "homepage": "https://optima-studio-v2.vercel.app",
+      "created_at": "2026-04-05T16:44:12Z",
+      "updated_at": "2026-04-05T19:27:37Z",
+      "pushed_at": "2026-04-05T19:27:32Z",
+      "size_kb": 40,
+      "analysis": {
+        "tech_stack": [
+          "Express.js (Node.js)",
+          "Vanilla HTML/CSS/JS",
+          "Claude AI (Anthropic API)",
+          "Railway / Render / VPS deployment (PM2)",
+          "dotenv (environment variables)"
+        ],
+        "problem_solved": "Creating bilingual social media content (AR + EN) for LinkedIn and Instagram is time-consuming. Automates this with AI — one click generates platform-optimized posts in both languages.",
+        "strengths": [
+          "AI integration (Claude API with server-side key security)",
+          "Bilingual content (Arabic MSA + English in single posts)",
+          "Platform-aware formatting (LinkedIn vs Instagram)",
+          "Production deployment docs (Railway, Render, VPS)",
+          "Post history for content management"
+        ],
+        "portfolio_summary": "Built an AI-powered bilingual content generator using Claude API that creates optimized social media posts in Arabic and English. Features 8 content categories, post history, and secure API architecture."
+      }
+    },
+    {
+      "index": 12,
+      "name": "optima-studio-generate-content",
+      "full_name": "Yussef-Makhlouf/optima-studio-generate-content",
+      "description": "Empty repository — placeholder or work-in-progress related to OPTIMA Content Studio content generation pipeline.",
+      "language": "N/A",
+      "category": "Other",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "placeholder",
+        "content-pipeline",
+        "wip"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/optima-studio-generate-content",
+      "clone_url": "https://github.com/Yussef-Makhlouf/optima-studio-generate-content.git",
+      "homepage": null,
+      "created_at": "2026-04-05T12:15:12Z",
+      "updated_at": "2026-04-05T12:15:12Z",
+      "pushed_at": "2026-04-05T12:15:12Z",
+      "size_kb": 0,
+      "analysis": {
+        "tech_stack": [],
+        "problem_solved": "N/A — empty repository",
+        "strengths": [],
+        "portfolio_summary": "Recommendation: Make this repo private or delete it to maintain a professional portfolio image.",
+        "status": "empty"
+      }
+    },
+    {
+      "index": 13,
+      "name": "Mac",
+      "full_name": "Yussef-Makhlouf/Mac",
+      "description": "Minimal experimental project with JavaScript (41.6%), HTML (36.5%), and CSS (21.9%). Early-stage or WIP repository.",
+      "language": "JavaScript",
+      "category": "Backend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "javascript",
+        "html",
+        "css",
+        "experimental",
+        "wip"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Mac",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Mac.git",
+      "homepage": null,
+      "created_at": "2026-02-17T04:12:40Z",
+      "updated_at": "2026-04-03T18:41:41Z",
+      "pushed_at": "2026-04-03T18:41:38Z",
+      "size_kb": 61,
+      "analysis": {
+        "tech_stack": [
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ],
+        "problem_solved": "N/A — minimal documentation",
+        "strengths": [],
+        "portfolio_summary": "Recommendation: Add a README or make this repo private to clean up the public profile.",
+        "status": "minimal"
+      }
+    },
+    {
+      "index": 14,
+      "name": "optima-main-official",
+      "full_name": "Yussef-Makhlouf/optima-main-official",
+      "description": "OPTIMA Solutions — Flagship company website for OPTIMA Digital Infrastructure & Web Development. Features Three.js 3D elements (React Three Fiber + Drei), i18next bilingual support (AR/EN), Framer Motion animations, and multi-page routing.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "vite",
+        "threejs",
+        "react-three-fiber",
+        "drei",
+        "i18next",
+        "framer-motion",
+        "3d-web",
+        "brand-website",
+        "bilingual",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/optima-main-official",
+      "clone_url": "https://github.com/Yussef-Makhlouf/optima-main-official.git",
+      "homepage": "https://optima-main-official.vercel.app",
+      "created_at": "2026-02-11T13:05:19Z",
+      "updated_at": "2026-03-30T11:26:18Z",
+      "pushed_at": "2026-03-30T11:26:14Z",
+      "size_kb": 43365,
+      "analysis": {
+        "tech_stack": [
+          "React 19",
+          "TypeScript",
+          "Vite 6",
+          "Three.js (React Three Fiber + Drei)",
+          "i18next (AR/EN internationalization)",
+          "Framer Motion",
+          "React Router v7",
+          "Vercel"
+        ],
+        "problem_solved": "OPTIMA needed a flagship brand website demonstrating technical excellence through 3D visuals and bilingual content — proving capabilities through its own digital presence.",
+        "strengths": [
+          "3D web (Three.js integration)",
+          "i18next professional internationalization",
+          "Brand identity with cohesive design",
+          "React 19 + Vite 6 latest tooling",
+          "Dedicated SEO strategy document"
+        ],
+        "portfolio_summary": "Designed and developed the flagship OPTIMA brand website with Three.js 3D elements, i18next bilingual support, and Framer Motion animations. Demonstrates expertise in 3D web development and internationalization."
+      }
+    },
+    {
+      "index": 15,
+      "name": "gig-map",
+      "full_name": "Yussef-Makhlouf/gig-map",
+      "description": "GIG Insurance Portal — Interactive journey mapping tool visualizing user flows across Broker, Admin, Travel, and Motor insurance products. Pure HTML/CSS/JS with custom CSS variables and IBM Plex Mono + Inter fonts.",
+      "language": "HTML",
+      "category": "Other",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "insurance-portal",
+        "journey-mapping",
+        "data-visualization",
+        "interactive-map",
+        "ibm-plex-fonts",
+        "css-custom-properties"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/gig-map",
+      "clone_url": "https://github.com/Yussef-Makhlouf/gig-map.git",
+      "homepage": null,
+      "created_at": "2026-03-25T16:14:24Z",
+      "updated_at": "2026-03-25T16:14:30Z",
+      "pushed_at": "2026-03-25T16:14:27Z",
+      "size_kb": 22,
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3 (custom properties/variables)",
+          "Vanilla JavaScript",
+          "IBM Plex Mono + Inter fonts"
+        ],
+        "problem_solved": "Insurance companies need to visualize complex user journeys across multiple products. Provides an interactive mapping tool for understanding insurance product workflows.",
+        "strengths": [
+          "Domain-specific tool for insurance industry",
+          "Zero dependencies — pure HTML/CSS/JS",
+          "Design system with CSS custom properties",
+          "Custom-built interactive data visualization"
+        ],
+        "portfolio_summary": "Built an interactive journey mapping tool for GIG Insurance visualizing user flows across 4 insurance products. Pure HTML/CSS/JS demonstrating data visualization skills and domain-specific UX design."
+      }
+    },
+    {
+      "index": 16,
+      "name": "apex-dark-website",
+      "full_name": "Yussef-Makhlouf/apex-dark-website",
+      "description": "APEX Studio — Premium dark-theme agency website with 6 interconnected pages (Home, About, Services, Industries, Work, Careers, Contact). Pure HTML/CSS/JS with grid backgrounds, pulse animations, and 3-font typography system (Bebas Neue, DM Sans, DM Mono).",
+      "language": "HTML",
+      "category": "Other",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "dark-theme",
+        "agency-website",
+        "multi-page",
+        "typography",
+        "css-animations",
+        "pulse-effects",
+        "grid-backgrounds"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/apex-dark-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/apex-dark-website.git",
+      "homepage": null,
+      "created_at": "2026-03-13T05:38:57Z",
+      "updated_at": "2026-03-13T05:45:41Z",
+      "pushed_at": "2026-03-13T05:45:38Z",
+      "size_kb": 45,
+      "analysis": {
+        "tech_stack": [
+          "HTML5 (6 pages)",
+          "CSS3 (7 stylesheets)",
+          "JavaScript",
+          "Google Fonts (Bebas Neue, DM Sans, DM Mono)"
+        ],
+        "problem_solved": "Digital agencies need visually striking websites. Delivers a premium dark-theme experience where the website itself is the portfolio piece.",
+        "strengths": [
+          "6-page architecture — comprehensive, not just a landing page",
+          "Pure CSS mastery — no frameworks",
+          "Dark theme consistency across all pages",
+          "Modular CSS (shared.css + page-specific stylesheets)",
+          "Typography excellence with 3-font system"
+        ],
+        "portfolio_summary": "Designed and developed a 6-page dark-theme agency website using pure HTML/CSS. Features custom animations, modular CSS architecture, and premium typography. Demonstrates deep CSS mastery and design sensibility."
+      }
+    },
+    {
+      "index": 17,
+      "name": "fifth-floor-website",
+      "full_name": "Yussef-Makhlouf/fifth-floor-website",
+      "description": "Fifth Floor — Modern website built with Next.js 16 + React 19 and full shadcn/ui component library. Features Tailwind CSS v4, Vercel Analytics, dark mode via next-themes, carousels, charts (Recharts), and form validation (Zod).",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "tailwindcss",
+        "shadcn-ui",
+        "next-themes",
+        "dark-mode",
+        "vercel-analytics",
+        "recharts",
+        "embla-carousel",
+        "react-hook-form",
+        "zod"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/fifth-floor-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/fifth-floor-website.git",
+      "homepage": null,
+      "created_at": "2026-01-21T07:12:54Z",
+      "updated_at": "2026-03-13T05:43:12Z",
+      "pushed_at": "2026-03-13T05:43:08Z",
+      "size_kb": 16300,
+      "analysis": {
+        "tech_stack": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "shadcn/ui (25+ Radix components)",
+          "next-themes (dark mode)",
+          "Vercel Analytics",
+          "Embla Carousel",
+          "Recharts",
+          "Vaul (drawers)",
+          "React Hook Form + Zod",
+          "date-fns",
+          "React Day Picker"
+        ],
+        "problem_solved": "Modern businesses need professional websites with analytics, dark mode, and rich interactive components. Provides a production-ready template with all essential UI patterns.",
+        "strengths": [
+          "Bleeding-edge stack (Next.js 16 + React 19 + Tailwind v4)",
+          "Vercel Analytics integration",
+          "25+ accessible UI components",
+          "Complete form validation pipeline with Zod + React Hook Form"
+        ],
+        "portfolio_summary": "Developed a modern website with Next.js 16, React 19, and Tailwind CSS v4 featuring 25+ accessible components, Vercel Analytics, dark mode, and comprehensive form validation."
+      }
+    },
+    {
+      "index": 18,
+      "name": "Ticket-Booker-Bot",
+      "full_name": "Yussef-Makhlouf/Ticket-Booker-Bot",
+      "description": "Webook Pro Bot — Enterprise-grade Telegram ticket booking automation system using Playwright for browser automation on webook.com. Features browser pool for concurrent operations, SQLite caching, Pydantic config, and graceful lifecycle management.",
+      "language": "Python",
+      "category": "Backend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "python",
+        "telegram-bot",
+        "aiogram",
+        "playwright",
+        "browser-automation",
+        "sqlite",
+        "pydantic",
+        "beautifulsoup4",
+        "ticket-booking",
+        "webook",
+        "bot-automation"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Ticket-Booker-Bot",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Ticket-Booker-Bot.git",
+      "homepage": null,
+      "created_at": "2026-03-07T01:32:59Z",
+      "updated_at": "2026-03-08T02:36:05Z",
+      "pushed_at": "2026-03-08T02:36:01Z",
+      "size_kb": 2482,
+      "analysis": {
+        "tech_stack": [
+          "Python",
+          "aiogram v3 (Telegram Bot API)",
+          "Playwright (browser automation)",
+          "SQLite (local database + cache)",
+          "Pydantic v2 (config + validation)",
+          "BeautifulSoup4 + lxml (HTML parsing)",
+          "aiofiles (async file I/O)",
+          "PyYAML",
+          "Replit deployment"
+        ],
+        "problem_solved": "Booking tickets on webook.com is competitive — events sell out in seconds. Automates the entire booking flow via Telegram: users send commands, bot navigates and books faster than manual interaction.",
+        "strengths": [
+          "Browser automation with Playwright",
+          "Concurrent operations via browser pool",
+          "Enterprise architecture (config, logging, error handling)",
+          "Telegram bot interface for user-friendliness",
+          "Background cleanup tasks",
+          "Test suite for booking flow validation"
+        ],
+        "portfolio_summary": "Engineered an enterprise Telegram bot automating ticket bookings on webook.com using Playwright browser automation. Features concurrent browser pool management, SQLite caching, and production bot architecture."
+      }
+    },
+    {
+      "index": 19,
+      "name": "todo-list-task",
+      "full_name": "Yussef-Makhlouf/todo-list-task",
+      "description": "Kanban Board — Full task management application with drag-and-drop (Hello Pangea DnD), Zustand state management, TanStack Query for server state, MUI components, and mock REST API via json-server.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "vite",
+        "kanban-board",
+        "drag-and-drop",
+        "material-ui",
+        "zustand",
+        "tanstack-query",
+        "json-server",
+        "task-management",
+        "crud"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/todo-list-task",
+      "clone_url": "https://github.com/Yussef-Makhlouf/todo-list-task.git",
+      "homepage": null,
+      "created_at": "2026-02-24T01:26:18Z",
+      "updated_at": "2026-02-24T01:48:27Z",
+      "pushed_at": "2026-02-24T01:48:24Z",
+      "size_kb": 86,
+      "analysis": {
+        "tech_stack": [
+          "React 19",
+          "TypeScript",
+          "Vite 6",
+          "Material UI 7",
+          "Zustand (global state)",
+          "TanStack Query v5 (server state)",
+          "@hello-pangea/dnd (drag-and-drop)",
+          "Axios (HTTP client)",
+          "json-server (mock REST API)",
+          "Express"
+        ],
+        "problem_solved": "Teams need visual task management tools. Provides a Trello-like experience with drag-and-drop task movement, persistent state via mock API, and type-safe state management.",
+        "strengths": [
+          "Drag-and-drop with Hello Pangea DnD",
+          "State management separation (Zustand client + TanStack Query server)",
+          "Full CRUD with json-server mock API",
+          "TypeScript across the entire stack",
+          "Modern server/client state patterns"
+        ],
+        "portfolio_summary": "Built a Trello-style Kanban board with drag-and-drop using React + MUI + Zustand. Features server/client state separation with TanStack Query and Zustand, mock REST API, and full TypeScript coverage."
+      }
+    },
+    {
+      "index": 20,
+      "name": "admin-dashboard-macc",
+      "full_name": "Yussef-Makhlouf/admin-dashboard-macc",
+      "description": "Admin Dashboard — Next.js application serving as an administrative interface for the MACC platform. Bootstrapped with create-next-app using App Router and Geist font optimization.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "admin-dashboard",
+        "app-router",
+        "management-interface",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/admin-dashboard-macc",
+      "clone_url": "https://github.com/Yussef-Makhlouf/admin-dashboard-macc.git",
+      "homepage": "https://admin-dashboard-macc.vercel.app",
+      "created_at": "2026-01-05T22:08:10Z",
+      "updated_at": "2026-02-17T13:11:30Z",
+      "pushed_at": "2026-02-17T13:11:26Z",
+      "size_kb": 179,
+      "analysis": {
+        "tech_stack": [
+          "Next.js (App Router)",
+          "TypeScript",
+          "Geist font (next/font optimization)",
+          "Vercel"
+        ],
+        "problem_solved": "Admin interfaces are essential for managing application data. Provides a structured Next.js-based admin panel with modern font optimization.",
+        "strengths": [
+          "Next.js foundation for scalability",
+          "Font optimization via next/font",
+          "Clean starting point for extension"
+        ],
+        "portfolio_summary": "Recommendation: Expand with charts, user management, and data tables to strengthen portfolio value, or merge with the Enterprisewebportal project.",
+        "status": "basic"
+      }
+    },
+    {
+      "index": 21,
+      "name": "MaccLanding",
+      "full_name": "Yussef-Makhlouf/MaccLanding",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "landing-page",
+        "app-router",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/MaccLanding",
+      "clone_url": "https://github.com/Yussef-Makhlouf/MaccLanding.git",
+      "homepage": "https://macc-landing-six.vercel.app",
+      "created_at": "2026-02-17T04:12:14Z",
+      "updated_at": "2026-02-17T11:37:42Z",
+      "pushed_at": "2026-02-17T11:37:38Z",
+      "size_kb": 163938,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 22,
+      "name": "Yussef-Dev-Studio",
+      "full_name": "Yussef-Makhlouf/Yussef-Dev-Studio",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 1,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "portfolio-website",
+        "developer-studio",
+        "personal-brand",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Yussef-Dev-Studio",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Yussef-Dev-Studio.git",
+      "homepage": "https://yussef-dev-studio.vercel.app",
+      "created_at": "2025-05-22T14:36:54Z",
+      "updated_at": "2026-02-08T02:10:44Z",
+      "pushed_at": "2026-02-08T02:10:41Z",
+      "size_kb": 21463,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 23,
+      "name": "saudi-law-firm-website",
+      "full_name": "Yussef-Makhlouf/saudi-law-firm-website",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "law-firm",
+        "legal-services",
+        "saudi-arabia",
+        "arabic-rtl",
+        "professional-services"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/saudi-law-firm-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/saudi-law-firm-website.git",
+      "homepage": null,
+      "created_at": "2026-02-01T21:23:59Z",
+      "updated_at": "2026-02-01T21:39:17Z",
+      "pushed_at": "2026-02-01T21:39:13Z",
+      "size_kb": 1442,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 24,
+      "name": "el-fakher-company-website",
+      "full_name": "Yussef-Makhlouf/el-fakher-company-website",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "corporate-website",
+        "company-website",
+        "arabic-design",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/el-fakher-company-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/el-fakher-company-website.git",
+      "homepage": null,
+      "created_at": "2026-01-31T17:32:55Z",
+      "updated_at": "2026-02-01T20:16:40Z",
+      "pushed_at": "2026-02-01T20:16:36Z",
+      "size_kb": 7103,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 25,
+      "name": "riyadh-primo-Moves",
+      "full_name": "Yussef-Makhlouf/riyadh-primo-Moves",
+      "description": "Website using Next.js",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "real-estate",
+        "riyadh",
+        "property-listings",
+        "nextjs14",
+        "webpack",
+        "website"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/riyadh-primo-Moves",
+      "clone_url": "https://github.com/Yussef-Makhlouf/riyadh-primo-Moves.git",
+      "homepage": "https://primomoves.com/",
+      "created_at": "2024-12-21T18:30:25Z",
+      "updated_at": "2026-01-31T15:19:03Z",
+      "pushed_at": "2026-01-31T15:19:00Z",
+      "size_kb": 7557,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 26,
+      "name": "edu_smart-al-habsi",
+      "full_name": "Yussef-Makhlouf/edu_smart-al-habsi",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "educational-platform",
+        "smart-learning",
+        "e-learning",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/edu_smart-al-habsi",
+      "clone_url": "https://github.com/Yussef-Makhlouf/edu_smart-al-habsi.git",
+      "homepage": "https://edu-smart-al-habsi-8dk2.vercel.app",
+      "created_at": "2026-01-08T05:02:03Z",
+      "updated_at": "2026-01-22T20:04:50Z",
+      "pushed_at": "2026-01-22T20:04:46Z",
+      "size_kb": 31652,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 27,
+      "name": "arabic-website-ryiadh",
+      "full_name": "Yussef-Makhlouf/arabic-website-ryiadh",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "arabic-website",
+        "riyadh",
+        "rtl-design",
+        "vercel"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "master",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/arabic-website-ryiadh",
+      "clone_url": "https://github.com/Yussef-Makhlouf/arabic-website-ryiadh.git",
+      "homepage": "https://arabic-website-ryiadh.vercel.app",
+      "created_at": "2025-12-31T14:49:29Z",
+      "updated_at": "2026-01-21T23:33:12Z",
+      "pushed_at": "2026-01-21T23:33:07Z",
+      "size_kb": 10059,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 28,
+      "name": "arabic-e-commerce-ui",
+      "full_name": "Yussef-Makhlouf/arabic-e-commerce-ui",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "e-commerce",
+        "arabic-ui",
+        "rtl-design",
+        "online-store"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/arabic-e-commerce-ui",
+      "clone_url": "https://github.com/Yussef-Makhlouf/arabic-e-commerce-ui.git",
+      "homepage": null,
+      "created_at": "2026-01-18T02:27:35Z",
+      "updated_at": "2026-01-18T03:08:56Z",
+      "pushed_at": "2026-01-18T03:08:53Z",
+      "size_kb": 738,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 29,
+      "name": "Try-landinig",
+      "full_name": "Yussef-Makhlouf/Try-landinig",
+      "description": "Try landing page LEDs generate",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "landing-page",
+        "led-generation",
+        "experimental"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Try-landinig",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Try-landinig.git",
+      "homepage": null,
+      "created_at": "2026-01-14T04:39:43Z",
+      "updated_at": "2026-01-14T04:45:32Z",
+      "pushed_at": "2026-01-14T04:45:28Z",
+      "size_kb": 30,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 30,
+      "name": "Oaael-services",
+      "full_name": "Yussef-Makhlouf/Oaael-services",
+      "description": "",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 1,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "react",
+        "typescript",
+        "services-website",
+        "corporate",
+        "arabic-design"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/Oaael-services",
+      "clone_url": "https://github.com/Yussef-Makhlouf/Oaael-services.git",
+      "homepage": null,
+      "created_at": "2026-01-05T17:02:46Z",
+      "updated_at": "2026-01-13T13:49:05Z",
+      "pushed_at": "2026-01-13T13:49:01Z",
+      "size_kb": 6295,
+      "analysis": {
+        "status": "not_analyzed"
+      }
+    },
+    {
+      "index": 31,
+      "name": "gig-jordan",
+      "full_name": "Yussef-Makhlouf/gig-jordan",
+      "description": "A comprehensive agent and broker management portal for Gulf Insurance Group Jordan (v2.1). Enables insurance agents and brokers to manage policies, process claims, track commissions, generate reports, and communicate with the head office — all within a single enterprise-grade web application.",
+      "language": "TypeScript",
+      "category": "Full-Stack",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "typescript",
+        "insurance-portal",
+        "enterprise-platform",
+        "agent-management",
+        "policy-management",
+        "claims-processing",
+        "shadcn-ui",
+        "postgresql",
+        "figma-design",
+        "vuejs",
+        "fintech",
+        "broker-portal",
+        "commission-tracking"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/gig-jordan",
+      "clone_url": "https://github.com/Yussef-Makhlouf/gig-jordan.git",
+      "homepage": null,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-12-31T23:59:59Z",
+      "pushed_at": "2024-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "gig-jordan",
+        "title": "GIG Jordan — Agent & Broker Portal",
+        "slug": "gig-jordan",
+        "category": "Enterprise & Platforms",
+        "sector": "InsurTech / Fintech",
+        "type": "Enterprise Web Portal",
+        "status": "Production",
+        "year": "2024",
+        "client": "Gulf Insurance Group (GIG) — Jordan",
+        "market": [
+          "Jordan",
+          "Gulf Region"
+        ],
+        "features": [
+          "Policy management: create, renew, endorse, and cancel insurance policies",
+          "Claims processing workflow with status tracking (Pending/In Review/Approved/Rejected)",
+          "Commission tracking dashboard with monthly/quarterly earnings breakdown",
+          "Client database with full policy history and contact management",
+          "Document upload and digital signature support for policy documents",
+          "Broker performance analytics: KPIs, conversion rates, renewal rates",
+          "Interactive screen architecture map (47 screens across 8 modules)",
+          "Customer journey mapping for Broker Onboarding, Policy Sale, and Claims flows"
+        ],
+        "value": [
+          "Reduces agent administrative time by 60%",
+          "Centralized policy and claims management",
+          "Real-time performance visibility for management",
+          "Eliminates paper-based processes"
+        ],
+        "techHighlights": [
+          "shadcn/ui component library with custom GIG theme",
+          "TypeScript strict mode throughout",
+          "PostgreSQL with Prisma ORM",
+          "Full design system documented in Figma"
+        ],
+        "coverImage": "/projects/gig-jordan/cover.jpg",
+        "images": [
+          "/projects/gig-jordan/1.jpg",
+          "/projects/gig-jordan/2.jpg"
+        ],
+        "featured": true,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "Next.js 14",
+          "TypeScript",
+          "TailwindCSS",
+          "shadcn/ui",
+          "PostgreSQL",
+          "Figma",
+          "Vue.js"
+        ],
+        "problem_solved": "Reduces agent administrative time by 60%. Centralized policy and claims management. Real-time performance visibility for management. Eliminates paper-based processes.",
+        "strengths": [
+          "shadcn/ui component library with custom GIG theme",
+          "TypeScript strict mode throughout",
+          "PostgreSQL with Prisma ORM",
+          "Full design system documented in Figma",
+          "Jordan & Gulf Region market focus",
+          "Production-deployed solution"
+        ],
+        "portfolio_summary": "A comprehensive agent and broker management portal for Gulf Insurance Group Jordan (v2.1). Key features include policy management: create, renew, endorse, and cancel insurance policies, claims processing workflow with status tracking (pending/in review/approved/rejected), commission tracking dashboard with monthly/quarterly earnings breakdown.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 32,
+      "name": "admaf-website",
+      "full_name": "Yussef-Makhlouf/admaf-website",
+      "description": "Official website for ADMAF — the Abu Dhabi Music & Arts Foundation. Features event listings, artist profiles, foundation programs, news section, and donation portal. Built with full Arabic RTL support as the primary language, reflecting the organization's mission to promote Arabic cultural heritage.",
+      "language": "JavaScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "bootstrap",
+        "arts-culture",
+        "music-foundation",
+        "arabic-first",
+        "rtl-design",
+        "event-listings",
+        "artist-profiles",
+        "donation-portal",
+        "public-organization",
+        "abu-dhabi"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/admaf-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/admaf-website.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "admaf-website",
+        "title": "ADMAF Website",
+        "slug": "admaf-website",
+        "category": "Business Websites",
+        "sector": "Arts & Culture",
+        "type": "Organization Website",
+        "status": "Production",
+        "year": "2023",
+        "client": "ADMAF (Abu Dhabi Music & Arts Foundation)",
+        "market": [
+          "UAE",
+          "Abu Dhabi"
+        ],
+        "features": [
+          "Arabic-first RTL design with full right-to-left layout and typography",
+          "Event management system with filtering by art form and date",
+          "Artist and performer profile pages with biography and media",
+          "Foundation programs showcase: music, visual arts, theater, heritage",
+          "News and press release section with category filtering",
+          "Multi-language support (Arabic primary, English secondary)",
+          "Accessibility compliance for public organization standards",
+          "Donation and sponsorship inquiry portal"
+        ],
+        "value": [
+          "Digital presence for Abu Dhabi's leading arts foundation",
+          "Arabic cultural heritage platform",
+          "Accessible to Arabic-speaking audience",
+          "Event discovery and engagement tool"
+        ],
+        "techHighlights": [
+          "Bootstrap 5 RTL build",
+          "CSS Grid and Flexbox bilingual layouts",
+          "Vanilla JS event filtering",
+          "Responsive across all device sizes"
+        ],
+        "coverImage": "/projects/admaf-website/cover.jpg",
+        "images": [
+          "/projects/admaf-website/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap 5"
+        ],
+        "problem_solved": "Digital presence for Abu Dhabi's leading arts foundation. Arabic cultural heritage platform. Accessible to Arabic-speaking audience. Event discovery and engagement tool.",
+        "strengths": [
+          "Bootstrap 5 RTL build",
+          "CSS Grid and Flexbox bilingual layouts",
+          "Vanilla JS event filtering",
+          "Responsive across all device sizes",
+          "UAE & Abu Dhabi market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "Official website for ADMAF — the Abu Dhabi Music & Arts Foundation. Features event listings, artist profiles, foundation programs, news section, and donation portal. Key features include arabic-first rtl design with full right-to-left layout and typography, event management system with filtering by art form and date, artist and performer profile pages with biography and media.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 33,
+      "name": "ahcp-platform",
+      "full_name": "Yussef-Makhlouf/ahcp-platform",
+      "description": "A dual-component healthcare platform comprising a React-based management dashboard and a Node.js/Express backend API. Designed for Arabian healthcare providers to manage patient records, appointments, medical staff, and billing — all in one system.",
+      "language": "TypeScript",
+      "category": "Healthcare",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "nodejs",
+        "express",
+        "mongodb",
+        "healthcare-management",
+        "patient-records",
+        "appointment-scheduling",
+        "medical-staff",
+        "billing-module",
+        "jwt-auth",
+        "chartjs",
+        "role-based-access",
+        "arabic-interface"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/ahcp-platform",
+      "clone_url": "https://github.com/Yussef-Makhlouf/ahcp-platform.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "ahcp-platform",
+        "title": "AHCP Platform",
+        "slug": "ahcp-platform",
+        "category": "Healthcare & Medical",
+        "sector": "Healthcare",
+        "type": "Healthcare Management System",
+        "status": "Production",
+        "year": "2023",
+        "client": "AHCP (Arabian Healthcare Platform)",
+        "market": [
+          "Gulf Region",
+          "Saudi Arabia"
+        ],
+        "features": [
+          "Patient management: registration, medical history, diagnosis records",
+          "Appointment scheduling with doctor availability calendar",
+          "Medical staff management: doctors, nurses, admin — with shift tracking",
+          "Billing module with insurance claim support and payment tracking",
+          "Analytics dashboard: patient volume, revenue, appointment trends",
+          "Role-based access: Admin, Doctor, Receptionist, Billing",
+          "JWT authentication with refresh token security",
+          "Arabic RTL interface option for Arabic-speaking medical staff"
+        ],
+        "value": [
+          "Digitizes clinic operations end-to-end",
+          "Reduces appointment management overhead",
+          "Insurance billing support for Gulf market",
+          "Bilingual for multi-national medical teams"
+        ],
+        "techHighlights": [
+          "RESTful API with Express.js and MongoDB",
+          "Chart.js for analytics visualizations",
+          "JWT + bcrypt authentication",
+          "React state management with Context API"
+        ],
+        "coverImage": "/projects/ahcp-platform/cover.jpg",
+        "images": [
+          "/projects/ahcp-platform/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JWT",
+          "TailwindCSS",
+          "Chart.js"
+        ],
+        "problem_solved": "Digitizes clinic operations end-to-end. Reduces appointment management overhead. Insurance billing support for Gulf market. Bilingual for multi-national medical teams.",
+        "strengths": [
+          "RESTful API with Express.js and MongoDB",
+          "Chart.js for analytics visualizations",
+          "JWT + bcrypt authentication",
+          "React state management with Context API",
+          "Gulf Region & Saudi Arabia market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A dual-component healthcare platform comprising a React-based management dashboard and a Node.js/Express backend API. Key features include patient management: registration, medical history, diagnosis records, appointment scheduling with doctor availability calendar, medical staff management: doctors, nurses, admin — with shift tracking.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 34,
+      "name": "goory-ecommerce",
+      "full_name": "Yussef-Makhlouf/goory-ecommerce",
+      "description": "Arabic-first electronics and communications retail store for Goory — an established Gulf electronics brand. Built with refined minimal luxury aesthetics, featuring IBM Plex Serif Arabic typography, full RTL product browsing, and Core Web Vitals performance optimization (LCP 98, CLS 100).",
+      "language": "TypeScript",
+      "category": "E-Commerce",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "typescript",
+        "e-commerce",
+        "electronics-store",
+        "arabic-first",
+        "rtl-design",
+        "product-catalog",
+        "ibm-plex-serif",
+        "core-web-vitals",
+        "performance-optimized",
+        "kuwait-market",
+        "kwd-currency"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/goory-ecommerce",
+      "clone_url": "https://github.com/Yussef-Makhlouf/goory-ecommerce.git",
+      "homepage": null,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-12-31T23:59:59Z",
+      "pushed_at": "2024-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "goory-ecommerce",
+        "title": "Goory E-Commerce Store (متجر الجوري)",
+        "slug": "goory-ecommerce",
+        "category": "E-Commerce & Retail",
+        "sector": "Electronics",
+        "type": "Electronics E-Commerce Store",
+        "status": "Production",
+        "year": "2024",
+        "client": "Goory — متجر الجوري للاتصالات",
+        "market": [
+          "Kuwait",
+          "Gulf Region"
+        ],
+        "features": [
+          "Arabic-first product pages with RTL layout and Arabic numerals option",
+          "Electronics categories: smartphones, accessories, smart home, gaming",
+          "Full-width product detail page with Arabic specifications table",
+          "Currency display in KWD with right-to-left formatting",
+          "Annotated RTL design showcase: mirrored chevrons, currency position, Arabic numerals",
+          "CSS browser-frame product mockup for case study presentation",
+          "SVG circular Core Web Vitals progress indicators",
+          "Minimal animation philosophy: subtle fade-ins only"
+        ],
+        "value": [
+          "Arabic-first UX for Kuwaiti electronics shoppers",
+          "Premium brand identity differentiates from competitors",
+          "Performance-first builds trust with users",
+          "RTL design excellence attracts Arabic market clients"
+        ],
+        "techHighlights": [
+          "next/image with automatic blur placeholder",
+          "Core Web Vitals optimization (LCP 98/100)",
+          "CSS custom properties for RTL/LTR switching",
+          "TypeScript strict mode"
+        ],
+        "coverImage": "/projects/goory-ecommerce/cover.jpg",
+        "images": [
+          "/projects/goory-ecommerce/1.jpg"
+        ],
+        "featured": true,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "Next.js 14",
+          "TypeScript",
+          "TailwindCSS",
+          "MongoDB",
+          "Node.js"
+        ],
+        "problem_solved": "Arabic-first UX for Kuwaiti electronics shoppers. Premium brand identity differentiates from competitors. Performance-first builds trust with users. RTL design excellence attracts Arabic market clients.",
+        "strengths": [
+          "next/image with automatic blur placeholder",
+          "Core Web Vitals optimization (LCP 98/100)",
+          "CSS custom properties for RTL/LTR switching",
+          "TypeScript strict mode",
+          "Kuwait & Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "Arabic-first electronics and communications retail store for Goory — an established Gulf electronics brand. Built with refined minimal luxury aesthetics, featuring IBM Plex Serif Arabic typography, full RTL product browsing, and Core Web Vitals performance optimization (LCP 98, CLS 100). Key features include arabic-first product pages with rtl layout and arabic numerals option, electronics categories: smartphones, accessories, smart home, gaming, full-width product detail page with arabic specifications table.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 35,
+      "name": "jeddah-real-estate",
+      "full_name": "Yussef-Makhlouf/jeddah-real-estate",
+      "description": "A bilingual real estate platform for Jeddah, Saudi Arabia — enabling property search, listing, and agent contact for residential and commercial properties. Features map-based search, Saudi Riyal pricing with VAT calculations, and special handling for Saudi Vision 2030 development zone properties.",
+      "language": "TypeScript",
+      "category": "Real Estate",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "nodejs",
+        "express",
+        "mongodb",
+        "real-estate",
+        "property-listings",
+        "google-maps-api",
+        "jeddah",
+        "saudi-arabia",
+        "arabic-rtl",
+        "mortgage-calculator",
+        "vat-calculations",
+        "vision-2030",
+        "geospatial-queries"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/jeddah-real-estate",
+      "clone_url": "https://github.com/Yussef-Makhlouf/jeddah-real-estate.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "dashboard-real-estate",
+        "title": "RAF Real Estate Platform",
+        "slug": "jeddah-real-estate",
+        "category": "Real Estate & PropTech",
+        "sector": "Real Estate",
+        "type": "Property Listing Platform",
+        "status": "Production",
+        "year": "2023",
+        "client": "Real Estate Developer (Jeddah, KSA)",
+        "market": [
+          "Saudi Arabia",
+          "Jeddah"
+        ],
+        "features": [
+          "Map-based property search with Google Maps integration",
+          "Advanced filters: neighborhood, property type, price, area, rooms, amenities",
+          "Saudi Riyal pricing with 15% VAT display option",
+          "Arabic property descriptions with RTL text formatting",
+          "Agent profiles with contact and listing management",
+          "Property comparison tool (up to 4 properties)",
+          "Mortgage calculator with Saudi bank rate presets",
+          "Vision 2030 development zone property tagging"
+        ],
+        "value": [
+          "Arabic-first property search for Saudi buyers",
+          "VAT-compliant pricing display",
+          "Map-based discovery reduces search friction",
+          "Agent-buyer direct connection tool"
+        ],
+        "techHighlights": [
+          "Google Maps JavaScript API with Places",
+          "MongoDB geospatial queries for radius search",
+          "Express.js REST API",
+          "RTL-aware React components"
+        ],
+        "coverImage": "/projects/jeddah-real-estate/cover.jpg",
+        "images": [
+          "/projects/jeddah-real-estate/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "TailwindCSS",
+          "Google Maps API"
+        ],
+        "problem_solved": "Arabic-first property search for Saudi buyers. VAT-compliant pricing display. Map-based discovery reduces search friction. Agent-buyer direct connection tool.",
+        "strengths": [
+          "Google Maps JavaScript API with Places",
+          "MongoDB geospatial queries for radius search",
+          "Express.js REST API",
+          "RTL-aware React components",
+          "Saudi Arabia & Jeddah market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A bilingual real estate platform for Jeddah, Saudi Arabia — enabling property search, listing, and agent contact for residential and commercial properties. Features map-based search, Saudi Riyal pricing with VAT calculations, and special handling for Saudi Vision 2030 development zone properties. Key features include map-based property search with google maps integration, advanced filters: neighborhood, property type, price, area, rooms, amenities, saudi riyal pricing with 15% vat display option.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 36,
+      "name": "real-estate-dashboard",
+      "full_name": "Yussef-Makhlouf/real-estate-dashboard",
+      "description": "A comprehensive real estate management dashboard for property developers and agencies to track portfolio performance, manage listings, monitor agent performance, and visualize market analytics. Features customizable widgets and data visualization with Chart.js.",
+      "language": "TypeScript",
+      "category": "Dashboard",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "management-dashboard",
+        "real-estate",
+        "chartjs",
+        "mongodb",
+        "portfolio-analytics",
+        "agent-leaderboard",
+        "lead-pipeline",
+        "maintenance-management",
+        "pdf-export",
+        "excel-export"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/real-estate-dashboard",
+      "clone_url": "https://github.com/Yussef-Makhlouf/real-estate-dashboard.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "real-estate-dashboard",
+        "title": "Tasis Real Estate Dashboard",
+        "slug": "real-estate-dashboard",
+        "category": "Admin Dashboards",
+        "sector": "Real Estate",
+        "type": "Management Dashboard",
+        "status": "Production",
+        "year": "2023",
+        "client": "Real Estate Management Companies",
+        "market": [
+          "Gulf Region"
+        ],
+        "features": [
+          "Portfolio overview: total properties, occupancy rate, revenue, vacancy trends",
+          "Interactive bar charts, line graphs, and pie charts for key metrics",
+          "Agent performance leaderboard with listing and closing statistics",
+          "Property listing management with status workflow (Available/Reserved/Sold)",
+          "Lead pipeline tracking with source attribution",
+          "Maintenance request management and contractor assignment",
+          "Financial reporting with export to Excel/PDF",
+          "Mobile-responsive dashboard with collapsible sidebar"
+        ],
+        "value": [
+          "Real-time portfolio health visibility",
+          "Agent performance accountability",
+          "Data-driven property pricing decisions",
+          "Reduced manual reporting overhead"
+        ],
+        "techHighlights": [
+          "Chart.js with custom color themes",
+          "TypeScript with strict typing",
+          "React Context for dashboard state",
+          "PDF/Excel export via FileSaver.js"
+        ],
+        "coverImage": "/projects/real-estate-dashboard/cover.jpg",
+        "images": [
+          "/projects/real-estate-dashboard/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Chart.js",
+          "MongoDB"
+        ],
+        "problem_solved": "Real-time portfolio health visibility. Agent performance accountability. Data-driven property pricing decisions. Reduced manual reporting overhead.",
+        "strengths": [
+          "Chart.js with custom color themes",
+          "TypeScript with strict typing",
+          "React Context for dashboard state",
+          "PDF/Excel export via FileSaver.js",
+          "Gulf Region market focus",
+          "Production-deployed solution"
+        ],
+        "portfolio_summary": "A comprehensive real estate management dashboard for property developers and agencies to track portfolio performance, manage listings, monitor agent performance, and visualize market analytics. Features customizable widgets and data visualization with Chart. Key features include portfolio overview: total properties, occupancy rate, revenue, vacancy trends, interactive bar charts, line graphs, and pie charts for key metrics, agent performance leaderboard with listing and closing statistics.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 37,
+      "name": "clean-company-ksa",
+      "full_name": "Yussef-Makhlouf/clean-company-ksa",
+      "description": "SEO-optimized Arabic website for a Riyadh-based cleaning and home services company. Focuses heavily on Arabic local SEO with keyword-rich content for high-intent cleaning service searches. Includes service packages, pricing tables, booking form, and trust-building section.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "cleaning-services",
+        "saudi-arabia",
+        "arabic-seo",
+        "service-catalog",
+        "pricing-packages",
+        "booking-form",
+        "whatsapp-integration",
+        "local-seo",
+        "mobile-optimized",
+        "riyadh"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/clean-company-ksa",
+      "clone_url": "https://github.com/Yussef-Makhlouf/clean-company-ksa.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "clean-company-ksa",
+        "title": "Clean Company KSA (شركة تنظيف في السعودية)",
+        "slug": "clean-company-ksa",
+        "category": "Business Websites",
+        "sector": "Home Services",
+        "type": "Service Business Website",
+        "status": "Production",
+        "year": "2023",
+        "client": "Cleaning Company (Riyadh, Saudi Arabia)",
+        "market": [
+          "Saudi Arabia"
+        ],
+        "features": [
+          "Arabic SEO content optimized for Saudi cleaning service keywords",
+          "Service catalog: villa cleaning, apartment, offices, post-construction",
+          "Pricing packages with clear tiered service levels",
+          "Online booking form with service type, location, and date selection",
+          "Trust signals section: certifications, years in business, clients served",
+          "WhatsApp integration as primary contact channel",
+          "Before/after photo gallery for service quality showcase",
+          "Mobile-optimized for Saudi mobile-first users"
+        ],
+        "value": [
+          "Arabic SEO drives organic lead generation",
+          "WhatsApp integration matches Saudi customer behavior",
+          "Clear pricing reduces sales friction",
+          "Before/after gallery builds purchase confidence"
+        ],
+        "techHighlights": [
+          "Next.js for SEO with server-side rendering",
+          "Arabic RTL TailwindCSS configuration",
+          "Structured data markup for local SEO",
+          "WhatsApp Business API link integration"
+        ],
+        "coverImage": "/projects/clean-company-ksa/cover.jpg",
+        "images": [
+          "/projects/clean-company-ksa/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "Next.js",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Arabic SEO drives organic lead generation. WhatsApp integration matches Saudi customer behavior. Clear pricing reduces sales friction. Before/after gallery builds purchase confidence.",
+        "strengths": [
+          "Next.js for SEO with server-side rendering",
+          "Arabic RTL TailwindCSS configuration",
+          "Structured data markup for local SEO",
+          "WhatsApp Business API link integration",
+          "Saudi Arabia market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "SEO-optimized Arabic website for a Riyadh-based cleaning and home services company. Focuses heavily on Arabic local SEO with keyword-rich content for high-intent cleaning service searches. Key features include arabic seo content optimized for saudi cleaning service keywords, service catalog: villa cleaning, apartment, offices, post-construction, pricing packages with clear tiered service levels.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 38,
+      "name": "sopol-logistics",
+      "full_name": "Yussef-Makhlouf/sopol-logistics",
+      "description": "Corporate website for Sopol — a Gulf-market logistics and supply chain company. Showcases freight and transportation services, logistics network coverage, and client-facing tracking capabilities. Designed with a professional dark navy and orange brand identity and bilingual Arabic/English content.",
+      "language": "JavaScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "bootstrap",
+        "logistics",
+        "supply-chain",
+        "corporate-website",
+        "gulf-region",
+        "arabic-rtl",
+        "service-map",
+        "fleet-overview",
+        "quote-request",
+        "bilingual"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/sopol-logistics",
+      "clone_url": "https://github.com/Yussef-Makhlouf/sopol-logistics.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "sopol-logistics",
+        "title": "Sopol Logistics Company",
+        "slug": "sopol-logistics",
+        "category": "Business Websites",
+        "sector": "Logistics & Supply Chain",
+        "type": "Corporate Website",
+        "status": "Production",
+        "year": "2023",
+        "client": "Sopol Logistics",
+        "market": [
+          "Gulf Region"
+        ],
+        "features": [
+          "Service showcase: freight, warehousing, customs clearance, last-mile delivery",
+          "Interactive Gulf region service map",
+          "Fleet overview with vehicle types and capacities",
+          "Client testimonials and case studies section",
+          "Quote request form with cargo type and route selection",
+          "Partner network and certifications display",
+          "Arabic RTL primary layout with English toggle",
+          "WhatsApp and direct call CTAs"
+        ],
+        "value": [
+          "Professional digital presence for logistics brand",
+          "Service coverage clarity drives qualified leads",
+          "Bilingual for Gulf's multinational business environment",
+          "Quote form captures pre-qualified prospects"
+        ],
+        "techHighlights": [
+          "Bootstrap 5 RTL distribution",
+          "Vanilla JavaScript for form validation",
+          "CSS Grid service showcase layout",
+          "Mobile-responsive throughout"
+        ],
+        "coverImage": "/projects/sopol-logistics/cover.jpg",
+        "images": [
+          "/projects/sopol-logistics/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap 5"
+        ],
+        "problem_solved": "Professional digital presence for logistics brand. Service coverage clarity drives qualified leads. Bilingual for Gulf's multinational business environment. Quote form captures pre-qualified prospects.",
+        "strengths": [
+          "Bootstrap 5 RTL distribution",
+          "Vanilla JavaScript for form validation",
+          "CSS Grid service showcase layout",
+          "Mobile-responsive throughout",
+          "Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "Corporate website for Sopol — a Gulf-market logistics and supply chain company. Showcases freight and transportation services, logistics network coverage, and client-facing tracking capabilities. Key features include service showcase: freight, warehousing, customs clearance, last-mile delivery, interactive gulf region service map, fleet overview with vehicle types and capacities.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 39,
+      "name": "moqael-construction",
+      "full_name": "Yussef-Makhlouf/moqael-construction",
+      "description": "Corporate website for Moqael — a Saudi construction and contracting company. Showcases project portfolio, construction capabilities, client credentials, and tender submission capabilities. Features a project gallery with category filtering and GSAP scroll-reveal animations.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "construction",
+        "corporate-website",
+        "project-portfolio",
+        "gsap",
+        "scroll-animations",
+        "arabic-first",
+        "tender-submission",
+        "saudi-arabia",
+        "contractor-website",
+        "capabilities-showcase"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/moqael-construction",
+      "clone_url": "https://github.com/Yussef-Makhlouf/moqael-construction.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "moqael-construction",
+        "title": "Moqael Company Website",
+        "slug": "moqael-construction",
+        "category": "Business Websites",
+        "sector": "Construction",
+        "type": "Corporate Website",
+        "status": "Production",
+        "year": "2023",
+        "client": "Moqael Construction Company",
+        "market": [
+          "Saudi Arabia",
+          "Gulf"
+        ],
+        "features": [
+          "Project portfolio gallery with category filter (residential/commercial/industrial)",
+          "Capabilities showcase: general contracting, MEP, interior fit-out",
+          "Team and credentials section with certifications",
+          "Tender and RFQ submission form",
+          "Client logos and testimonials section",
+          "Arabic-first RTL layout",
+          "GSAP scroll-reveal animations on project cards",
+          "Mobile-responsive with touch-friendly gallery"
+        ],
+        "value": [
+          "Tender-ready digital presence for B2B construction",
+          "Portfolio builds credibility with developers",
+          "Arabic-first for Saudi procurement teams",
+          "GSAP animations elevate brand perception"
+        ],
+        "techHighlights": [
+          "React with TailwindCSS RTL",
+          "GSAP ScrollTrigger for project cards",
+          "Image optimization with lazy loading",
+          "Contact form with email integration"
+        ],
+        "coverImage": "/projects/moqael-construction/cover.jpg",
+        "images": [
+          "/projects/moqael-construction/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TailwindCSS",
+          "GSAP"
+        ],
+        "problem_solved": "Tender-ready digital presence for B2B construction. Portfolio builds credibility with developers. Arabic-first for Saudi procurement teams. GSAP animations elevate brand perception.",
+        "strengths": [
+          "React with TailwindCSS RTL",
+          "GSAP ScrollTrigger for project cards",
+          "Image optimization with lazy loading",
+          "Contact form with email integration",
+          "Saudi Arabia & Gulf market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "Corporate website for Moqael — a Saudi construction and contracting company. Showcases project portfolio, construction capabilities, client credentials, and tender submission capabilities. Key features include project portfolio gallery with category filter (residential/commercial/industrial), capabilities showcase: general contracting, mep, interior fit-out, team and credentials section with certifications.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 40,
+      "name": "al-qemma-app",
+      "full_name": "Yussef-Makhlouf/al-qemma-app",
+      "description": "A full-stack Arabic web application for Al-Qemma — a Saudi services company. Provides a client-facing portal for service booking, order management, and status tracking. Backend built with Node.js/Express serving a MongoDB database, with React frontend featuring Arabic RTL interface.",
+      "language": "TypeScript",
+      "category": "Full-Stack",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "nodejs",
+        "express",
+        "mongodb",
+        "full-stack",
+        "web-application",
+        "service-booking",
+        "order-management",
+        "arabic-rtl",
+        "jwt-auth",
+        "sms-notifications",
+        "saudi-arabia",
+        "mern-stack"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/al-qemma-app",
+      "clone_url": "https://github.com/Yussef-Makhlouf/al-qemma-app.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "al-qemma-app",
+        "title": "Al-Qemma Application",
+        "slug": "al-qemma-app",
+        "category": "Enterprise & Platforms",
+        "sector": "Business Services",
+        "type": "Web Application",
+        "status": "Production",
+        "year": "2023",
+        "client": "Al-Qemma Services",
+        "market": [
+          "Saudi Arabia"
+        ],
+        "features": [
+          "Arabic-first service booking interface",
+          "Order management and status tracking",
+          "Client portal with service history",
+          "Admin panel for order management",
+          "SMS notification integration",
+          "Mobile-optimized for Saudi users",
+          "Secure JWT authentication",
+          "Real-time order status updates"
+        ],
+        "value": [
+          "Digitizes service booking workflow",
+          "Reduces phone-based order management",
+          "Customer self-service reduces support load",
+          "Arabic-first for Saudi client base"
+        ],
+        "techHighlights": [
+          "MERN stack (MongoDB, Express, React, Node.js)",
+          "JWT authentication with refresh tokens",
+          "SMS API integration for notifications",
+          "Arabic RTL React interface"
+        ],
+        "coverImage": "/projects/al-qemma-app/cover.jpg",
+        "images": [
+          "/projects/al-qemma-app/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "Express",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Digitizes service booking workflow. Reduces phone-based order management. Customer self-service reduces support load. Arabic-first for Saudi client base.",
+        "strengths": [
+          "MERN stack (MongoDB, Express, React, Node.js)",
+          "JWT authentication with refresh tokens",
+          "SMS API integration for notifications",
+          "Arabic RTL React interface",
+          "Saudi Arabia market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A full-stack Arabic web application for Al-Qemma — a Saudi services company. Provides a client-facing portal for service booking, order management, and status tracking. Key features include arabic-first service booking interface, order management and status tracking, client portal with service history.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 41,
+      "name": "eamaar-elevator-company",
+      "full_name": "Yussef-Makhlouf/eamaar-elevator-company",
+      "description": "Professional B2B website for a Saudi elevator and escalator installation and maintenance company. Targets real estate developers, contractors, and facility managers across Saudi Arabia. Features product catalog, maintenance service plans, project references, and a tender inquiry system.",
+      "language": "JavaScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "bootstrap",
+        "elevator-company",
+        "b2b-website",
+        "product-catalog",
+        "industrial",
+        "saudi-arabia",
+        "arabic-rtl",
+        "maintenance-plans",
+        "saso-compliance",
+        "tender-inquiry"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/eamaar-elevator-company",
+      "clone_url": "https://github.com/Yussef-Makhlouf/eamaar-elevator-company.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "eamaar-elevator-company",
+        "title": "Eamaar Elevator Company Website",
+        "slug": "eamaar-elevator-company",
+        "category": "Business Websites",
+        "sector": "Industrial",
+        "type": "B2B Corporate Website",
+        "status": "Production",
+        "year": "2023",
+        "client": "Saudi Elevator & Escalator Company",
+        "market": [
+          "Saudi Arabia"
+        ],
+        "features": [
+          "Product catalog: passenger elevators, cargo lifts, escalators, dumbwaiters",
+          "Technical specifications with load capacity and dimension tables",
+          "Maintenance service plans: basic, standard, premium",
+          "Project references with photos and client names",
+          "Tender and quotation request form",
+          "Saudi Standards & Metrology Organization (SASO) compliance section",
+          "Arabic RTL primary interface",
+          "Emergency service contact with 24/7 hotline CTA"
+        ],
+        "value": [
+          "B2B lead generation for Saudi construction market",
+          "Technical credibility through specifications",
+          "SASO compliance section reassures procurement teams",
+          "24/7 emergency CTA captures maintenance contracts"
+        ],
+        "techHighlights": [
+          "Bootstrap 5 responsive grid",
+          "Arabic RTL CSS configuration",
+          "Product catalog with filtering",
+          "PDF specification sheet downloads"
+        ],
+        "coverImage": "/projects/ksa-elevator-company/cover.jpg",
+        "images": [
+          "/projects/ksa-elevator-company/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "problem_solved": "B2B lead generation for Saudi construction market. Technical credibility through specifications. SASO compliance section reassures procurement teams. 24/7 emergency CTA captures maintenance contracts.",
+        "strengths": [
+          "Bootstrap 5 responsive grid",
+          "Arabic RTL CSS configuration",
+          "Product catalog with filtering",
+          "PDF specification sheet downloads",
+          "Saudi Arabia market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "Professional B2B website for a Saudi elevator and escalator installation and maintenance company. Targets real estate developers, contractors, and facility managers across Saudi Arabia. Key features include product catalog: passenger elevators, cargo lifts, escalators, dumbwaiters, technical specifications with load capacity and dimension tables, maintenance service plans: basic, standard, premium.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 42,
+      "name": "law-firm-landing",
+      "full_name": "Yussef-Makhlouf/law-firm-landing",
+      "description": "High-conversion landing page for a Saudi law firm targeting corporate and individual legal service clients. Designed with authority-building elements specific to Gulf legal culture: attorney credentials, practice area expertise, court representation experience, and Arabic-language SEO optimization.",
+      "language": "TypeScript",
+      "category": "Landing Page",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "law-firm",
+        "legal-services",
+        "landing-page",
+        "saudi-arabia",
+        "arabic-seo",
+        "authority-design",
+        "consultation-booking",
+        "practice-areas",
+        "conversion-optimized",
+        "whatsapp-cta"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/law-firm-landing",
+      "clone_url": "https://github.com/Yussef-Makhlouf/law-firm-landing.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "law-firm-landing",
+        "title": "Law Firm Landing Page",
+        "slug": "law-firm-landing",
+        "category": "Business Websites",
+        "sector": "Legal Services",
+        "type": "Landing Page",
+        "status": "Production",
+        "year": "2023",
+        "client": "Saudi Law Firm",
+        "market": [
+          "Saudi Arabia",
+          "Gulf Region"
+        ],
+        "features": [
+          "Authority hero section with attorney headshots and credentials",
+          "Practice areas: corporate law, real estate, labor law, commercial disputes",
+          "Case success statistics and years of experience",
+          "Client testimonials with confidentiality protection",
+          "Arabic SEO content for Saudi legal search terms",
+          "Contact form with case type selection and free consultation offer",
+          "Urgency elements: same-day consultation for urgent matters",
+          "WhatsApp and phone as primary contact channels"
+        ],
+        "value": [
+          "Authority positioning in competitive Saudi legal market",
+          "Arabic SEO captures high-intent legal searches",
+          "Free consultation CTA drives conversions",
+          "Trust signals reduce prospect hesitation"
+        ],
+        "techHighlights": [
+          "Next.js SSR for SEO optimization",
+          "Structured data for legal firm schema",
+          "Google Analytics conversion tracking",
+          "Arabic RTL with professional typography"
+        ],
+        "coverImage": "/projects/law-firm-landing/cover.jpg",
+        "images": [
+          "/projects/law-firm-landing/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "Next.js",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Authority positioning in competitive Saudi legal market. Arabic SEO captures high-intent legal searches. Free consultation CTA drives conversions. Trust signals reduce prospect hesitation.",
+        "strengths": [
+          "Next.js SSR for SEO optimization",
+          "Structured data for legal firm schema",
+          "Google Analytics conversion tracking",
+          "Arabic RTL with professional typography",
+          "Saudi Arabia & Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "High-conversion landing page for a Saudi law firm targeting corporate and individual legal service clients. Designed with authority-building elements specific to Gulf legal culture: attorney credentials, practice area expertise, court representation experience, and Arabic-language SEO optimization. Key features include authority hero section with attorney headshots and credentials, practice areas: corporate law, real estate, labor law, commercial disputes, case success statistics and years of experience.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 43,
+      "name": "hotel-booking-frontend",
+      "full_name": "Yussef-Makhlouf/hotel-booking-frontend",
+      "description": "A premium hotel booking frontend for Gulf hospitality clients. Features search-and-filter room discovery, room detail pages with image galleries, availability calendar, booking flow with guest information collection, and confirmation management.",
+      "language": "TypeScript",
+      "category": "Events",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "hotel-booking",
+        "booking-platform",
+        "react-query",
+        "date-fns",
+        "availability-calendar",
+        "multi-step-form",
+        "image-gallery",
+        "wishlist",
+        "mobile-first",
+        "hospitality"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/hotel-booking-frontend",
+      "clone_url": "https://github.com/Yussef-Makhlouf/hotel-booking-frontend.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "hotel-booking-frontend",
+        "title": "Hotel Booking Frontend",
+        "slug": "hotel-booking-frontend",
+        "category": "Hospitality & Events",
+        "sector": "Hospitality",
+        "type": "Booking Platform Frontend",
+        "status": "MVP",
+        "year": "2023",
+        "client": "Hospitality Client (Gulf Region)",
+        "market": [
+          "Gulf Region",
+          "MENA"
+        ],
+        "features": [
+          "Hotel search with filters: location, dates, guests, amenities, price",
+          "Room listing cards with thumbnail gallery preview",
+          "Full room detail pages with image carousel and amenity list",
+          "Availability calendar with price-per-night display",
+          "Multi-step booking flow: room selection, guest details, payment, confirmation",
+          "Booking confirmation with email summary",
+          "Wishlist for saved rooms",
+          "Mobile-first responsive booking flow"
+        ],
+        "value": [
+          "Modern booking UX increases conversion rate",
+          "Visual room showcase reduces booking abandonment",
+          "Mobile-first for mobile-heavy Gulf travellers",
+          "Reusable template for multiple hotel clients"
+        ],
+        "techHighlights": [
+          "React Query for server state management",
+          "Date-fns for availability calendar logic",
+          "TypeScript for booking flow type safety",
+          "Multi-step form with step validation"
+        ],
+        "coverImage": "/projects/hotel-booking-frontend/cover.jpg",
+        "images": [
+          "/projects/hotel-booking-frontend/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "React Query",
+          "Date-fns"
+        ],
+        "problem_solved": "Modern booking UX increases conversion rate. Visual room showcase reduces booking abandonment. Mobile-first for mobile-heavy Gulf travellers. Reusable template for multiple hotel clients.",
+        "strengths": [
+          "React Query for server state management",
+          "Date-fns for availability calendar logic",
+          "TypeScript for booking flow type safety",
+          "Multi-step form with step validation",
+          "Gulf Region & MENA market focus"
+        ],
+        "portfolio_summary": "A premium hotel booking frontend for Gulf hospitality clients. Features search-and-filter room discovery, room detail pages with image galleries, availability calendar, booking flow with guest information collection, and confirmation management. Key features include hotel search with filters: location, dates, guests, amenities, price, room listing cards with thumbnail gallery preview, full room detail pages with image carousel and amenity list.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 44,
+      "name": "digital-events-platform",
+      "full_name": "Yussef-Makhlouf/digital-events-platform",
+      "description": "A digital events management and ticketing platform for Gulf-market event companies. Enables event creation, publishing, registration management, payment processing, and attendee communication. Supports both virtual and in-person events with separate attendee experiences.",
+      "language": "TypeScript",
+      "category": "Events",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "nodejs",
+        "mongodb",
+        "events-platform",
+        "ticketing",
+        "stripe-payment",
+        "qr-code",
+        "registration-management",
+        "event-dashboard",
+        "analytics",
+        "email-communication",
+        "bilingual-events"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/digital-events-platform",
+      "clone_url": "https://github.com/Yussef-Makhlouf/digital-events-platform.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "digital-events-platform",
+        "title": "Digital Events Platform",
+        "slug": "digital-events-platform",
+        "category": "Hospitality & Events",
+        "sector": "Events",
+        "type": "Events Management Platform",
+        "status": "Production",
+        "year": "2023",
+        "client": "Events Company (Gulf Region)",
+        "market": [
+          "UAE",
+          "Gulf Region"
+        ],
+        "features": [
+          "Event creation and publishing workflow",
+          "Ticket type management (Free, Paid, VIP)",
+          "Stripe payment integration for ticket purchases",
+          "Attendee registration and check-in management",
+          "QR code ticket generation and validation",
+          "Event dashboard: registrations, revenue, attendance analytics",
+          "Email communication to registered attendees",
+          "Arabic and English event listing support"
+        ],
+        "value": [
+          "End-to-end event management in one platform",
+          "Stripe ticketing reduces cash handling",
+          "QR check-in speeds event entry",
+          "Analytics provide event ROI visibility"
+        ],
+        "techHighlights": [
+          "Stripe payment API integration",
+          "QR code generation with qrcode.js",
+          "MongoDB for event and registration data",
+          "JWT-secured organizer dashboard"
+        ],
+        "coverImage": "/projects/digital-events-platform/cover.jpg",
+        "images": [
+          "/projects/digital-events-platform/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "TailwindCSS",
+          "Stripe"
+        ],
+        "problem_solved": "End-to-end event management in one platform. Stripe ticketing reduces cash handling. QR check-in speeds event entry. Analytics provide event ROI visibility.",
+        "strengths": [
+          "Stripe payment API integration",
+          "QR code generation with qrcode.js",
+          "MongoDB for event and registration data",
+          "JWT-secured organizer dashboard",
+          "UAE & Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A digital events management and ticketing platform for Gulf-market event companies. Enables event creation, publishing, registration management, payment processing, and attendee communication. Key features include event creation and publishing workflow, ticket type management (free, paid, vip), stripe payment integration for ticket purchases.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 45,
+      "name": "arabic-admin-dashboard",
+      "full_name": "Yussef-Makhlouf/arabic-admin-dashboard",
+      "description": "A production-grade Arabic admin dashboard template used across multiple Gulf client deployments. Features a complete Arabic RTL interface with sidebar navigation, data tables, analytics charts, form management, and user administration.",
+      "language": "TypeScript",
+      "category": "Dashboard",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "admin-dashboard",
+        "arabic-rtl",
+        "shadcn-ui",
+        "chartjs",
+        "data-tables",
+        "crud-forms",
+        "role-based-access",
+        "dark-light-mode",
+        "multi-project-template",
+        "gulf-clients",
+        "reusable-template"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/arabic-admin-dashboard",
+      "clone_url": "https://github.com/Yussef-Makhlouf/arabic-admin-dashboard.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "arabic-admin-dashboard",
+        "title": "Admin Dashboard — Arabic (Multi-Project)",
+        "slug": "arabic-admin-dashboard",
+        "category": "Admin Dashboards",
+        "sector": "SaaS / Dashboard",
+        "type": "Admin Dashboard Template",
+        "status": "Production",
+        "year": "2023-2024",
+        "client": "Multiple Gulf Clients",
+        "market": [
+          "Gulf Region",
+          "MENA"
+        ],
+        "features": [
+          "Full Arabic RTL sidebar navigation with collapsible sections",
+          "Data tables with sorting, filtering, and pagination",
+          "Chart.js analytics: bar charts, line graphs, donut charts",
+          "CRUD forms for entity management with validation",
+          "User management with role-based access controls",
+          "Dark/Light mode toggle with localStorage persistence",
+          "Responsive: desktop sidebar, mobile bottom navigation",
+          "Configurable color theme via CSS custom properties"
+        ],
+        "value": [
+          "Reusable across multiple client projects",
+          "Arabic-first for Gulf admin users",
+          "Dark/light mode for user preference",
+          "Reduces custom development time significantly"
+        ],
+        "techHighlights": [
+          "shadcn/ui component library",
+          "TailwindCSS RTL configuration",
+          "Chart.js with custom Arabic labels",
+          "TypeScript for component type safety"
+        ],
+        "coverImage": "/projects/arabic-admin-dashboard/cover.jpg",
+        "images": [
+          "/projects/arabic-admin-dashboard/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Chart.js",
+          "shadcn/ui"
+        ],
+        "problem_solved": "Reusable across multiple client projects. Arabic-first for Gulf admin users. Dark/light mode for user preference. Reduces custom development time significantly.",
+        "strengths": [
+          "shadcn/ui component library",
+          "TailwindCSS RTL configuration",
+          "Chart.js with custom Arabic labels",
+          "TypeScript for component type safety",
+          "Gulf Region & MENA market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A production-grade Arabic admin dashboard template used across multiple Gulf client deployments. Features a complete Arabic RTL interface with sidebar navigation, data tables, analytics charts, form management, and user administration. Key features include full arabic rtl sidebar navigation with collapsible sections, data tables with sorting, filtering, and pagination, chart.js analytics: bar charts, line graphs, donut charts.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 46,
+      "name": "sport-dashboard",
+      "full_name": "Yussef-Makhlouf/sport-dashboard",
+      "description": "A sports performance analytics dashboard for Gulf sports organizations. Tracks team and player performance metrics, match results, league standings, and training data. Features rich data visualizations with Recharts and a mobile-responsive layout suitable for coaches, analysts, and club administrators.",
+      "language": "TypeScript",
+      "category": "Dashboard",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "sports-analytics",
+        "dashboard",
+        "recharts",
+        "player-performance",
+        "team-statistics",
+        "league-standings",
+        "match-results",
+        "training-tracking",
+        "pdf-reports",
+        "nodejs"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/sport-dashboard",
+      "clone_url": "https://github.com/Yussef-Makhlouf/sport-dashboard.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "sport-dashboard",
+        "title": "Sport Dashboard Application",
+        "slug": "sport-dashboard",
+        "category": "Admin Dashboards",
+        "sector": "Sports & Fitness",
+        "type": "Analytics Dashboard",
+        "status": "Production",
+        "year": "2023",
+        "client": "Sports Organization",
+        "market": [
+          "Gulf Region"
+        ],
+        "features": [
+          "Player performance metrics: goals, assists, distance, speed, rating",
+          "Team statistics: win/loss record, goal difference, form tracker",
+          "Match result logging with scoreline and match events",
+          "League standings table with real-time sorting",
+          "Training session tracking with attendance",
+          "Radar chart for player attribute comparison",
+          "Export player reports as PDF",
+          "Admin panel for club/team management"
+        ],
+        "value": [
+          "Data-driven player and team performance insights",
+          "Coach decision support tool",
+          "Digital replacement for paper-based tracking",
+          "Club administration efficiency"
+        ],
+        "techHighlights": [
+          "Recharts for data visualization",
+          "TypeScript strict mode",
+          "Node.js backend with sports data API",
+          "PDF report generation"
+        ],
+        "coverImage": "/projects/sport-dashboard/cover.jpg",
+        "images": [
+          "/projects/sport-dashboard/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TypeScript",
+          "TailwindCSS",
+          "Recharts",
+          "Node.js"
+        ],
+        "problem_solved": "Data-driven player and team performance insights. Coach decision support tool. Digital replacement for paper-based tracking. Club administration efficiency.",
+        "strengths": [
+          "Recharts for data visualization",
+          "TypeScript strict mode",
+          "Node.js backend with sports data API",
+          "PDF report generation",
+          "Gulf Region market focus",
+          "Production-deployed solution"
+        ],
+        "portfolio_summary": "A sports performance analytics dashboard for Gulf sports organizations. Tracks team and player performance metrics, match results, league standings, and training data. Key features include player performance metrics: goals, assists, distance, speed, rating, team statistics: win/loss record, goal difference, form tracker, match result logging with scoreline and match events.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 47,
+      "name": "secure-portal",
+      "full_name": "Yussef-Makhlouf/secure-portal",
+      "description": "A secure enterprise portal system with two versions implementing advanced authentication, role-based access control, audit logging, and document management. Built for Gulf enterprise clients requiring secure internal portals with compliance-ready security features.",
+      "language": "TypeScript",
+      "category": "Full-Stack",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "typescript",
+        "nodejs",
+        "enterprise-security",
+        "secure-portal",
+        "mfa-authentication",
+        "totp",
+        "jwt",
+        "bcrypt",
+        "role-based-access",
+        "audit-logging",
+        "document-management",
+        "ip-whitelisting",
+        "sso-integration"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/secure-portal",
+      "clone_url": "https://github.com/Yussef-Makhlouf/secure-portal.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "secure-portal",
+        "title": "Secure Portal (v1 + v2)",
+        "slug": "secure-portal",
+        "category": "Enterprise & Platforms",
+        "sector": "Enterprise Security",
+        "type": "Secure Access Portal",
+        "status": "Production",
+        "year": "2023-2024",
+        "client": "Enterprise Clients",
+        "market": [
+          "Gulf Region"
+        ],
+        "features": [
+          "Multi-factor authentication (MFA) with TOTP",
+          "Role-based access control with granular permissions",
+          "Audit trail: all actions logged with timestamp and user",
+          "Document management with access permission levels",
+          "Session management with automatic timeout",
+          "IP whitelisting for additional security layer",
+          "V2 additions: SSO integration, enhanced audit dashboard",
+          "Compliance-ready activity reports export"
+        ],
+        "value": [
+          "Enterprise-grade security for sensitive portals",
+          "Compliance audit trail built-in",
+          "MFA reduces unauthorized access risk",
+          "V2 SSO integration for corporate environments"
+        ],
+        "techHighlights": [
+          "TOTP with speakeasy library",
+          "JWT with short expiry + refresh tokens",
+          "bcrypt password hashing",
+          "Comprehensive audit log middleware"
+        ],
+        "coverImage": "/projects/secure-portal/cover.jpg",
+        "images": [
+          "/projects/secure-portal/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TypeScript",
+          "Node.js",
+          "JWT",
+          "bcrypt",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Enterprise-grade security for sensitive portals. Compliance audit trail built-in. MFA reduces unauthorized access risk. V2 SSO integration for corporate environments.",
+        "strengths": [
+          "TOTP with speakeasy library",
+          "JWT with short expiry + refresh tokens",
+          "bcrypt password hashing",
+          "Comprehensive audit log middleware",
+          "Gulf Region market focus",
+          "Production-deployed solution"
+        ],
+        "portfolio_summary": "A secure enterprise portal system with two versions implementing advanced authentication, role-based access control, audit logging, and document management. Built for Gulf enterprise clients requiring secure internal portals with compliance-ready security features. Key features include multi-factor authentication (mfa) with totp, role-based access control with granular permissions, audit trail: all actions logged with timestamp and user.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 48,
+      "name": "saudi-invoice-system",
+      "full_name": "Yussef-Makhlouf/saudi-invoice-system",
+      "description": "A Saudi Arabia-compliant invoicing and billing system designed for SMEs operating under Saudi VAT requirements. Generates ZATCA-compliant invoices with QR codes, manages client accounts, tracks payment status, and produces VAT reports for quarterly filing.",
+      "language": "TypeScript",
+      "category": "Tool",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "nodejs",
+        "mongodb",
+        "invoicing",
+        "billing-system",
+        "zatca-compliant",
+        "qr-code",
+        "saudi-vat",
+        "payment-tracking",
+        "pdfmake",
+        "arabic-invoices",
+        "vat-reports",
+        "nodemailer",
+        "sme-tools"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/saudi-invoice-system",
+      "clone_url": "https://github.com/Yussef-Makhlouf/saudi-invoice-system.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "saudi-invoice-system",
+        "title": "Saudi Invoice System",
+        "slug": "saudi-invoice-system",
+        "category": "Automation & Tools",
+        "sector": "Business Tools",
+        "type": "Invoicing System",
+        "status": "Production",
+        "year": "2023",
+        "client": "Saudi SME Clients",
+        "market": [
+          "Saudi Arabia"
+        ],
+        "features": [
+          "ZATCA-compliant invoice generation with QR code",
+          "15% Saudi VAT calculation and display",
+          "Client and product/service database management",
+          "Invoice status tracking: Draft, Sent, Paid, Overdue",
+          "Payment reminder system with email notifications",
+          "VAT report generation for quarterly filing",
+          "Arabic and English invoice templates",
+          "PDF export with Saudi invoice formatting standards"
+        ],
+        "value": [
+          "Saudi ZATCA compliance out of the box",
+          "Reduces VAT filing preparation time",
+          "Professional invoicing builds client trust",
+          "Arabic invoices for Saudi client relationships"
+        ],
+        "techHighlights": [
+          "PDFMake for invoice PDF generation",
+          "QR code generation for ZATCA compliance",
+          "MongoDB for invoice and client data",
+          "Email notification with NodeMailer"
+        ],
+        "coverImage": "/projects/saudi-invoice-system/cover.jpg",
+        "images": [
+          "/projects/saudi-invoice-system/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "PDFMake",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Saudi ZATCA compliance out of the box. Reduces VAT filing preparation time. Professional invoicing builds client trust. Arabic invoices for Saudi client relationships.",
+        "strengths": [
+          "PDFMake for invoice PDF generation",
+          "QR code generation for ZATCA compliance",
+          "MongoDB for invoice and client data",
+          "Email notification with NodeMailer",
+          "Saudi Arabia market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A Saudi Arabia-compliant invoicing and billing system designed for SMEs operating under Saudi VAT requirements. Generates ZATCA-compliant invoices with QR codes, manages client accounts, tracks payment status, and produces VAT reports for quarterly filing. Key features include zatca-compliant invoice generation with qr code, 15% saudi vat calculation and display, client and product/service database management.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 49,
+      "name": "figma-design-system-generator",
+      "full_name": "Yussef-Makhlouf/figma-design-system-generator",
+      "description": "An internal Figma plugin and automation tool for generating consistent design system components across OPTIMA client projects. Automates the creation of color palettes, typography scales, spacing tokens, and component libraries from a configuration JSON.",
+      "language": "JavaScript",
+      "category": "Tool",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "javascript",
+        "figma-plugin",
+        "figma-api",
+        "design-system",
+        "design-tokens",
+        "automation-tool",
+        "color-palette",
+        "typography-scale",
+        "spacing-tokens",
+        "css-variables",
+        "tailwind-config",
+        "nodejs-cli"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/figma-design-system-generator",
+      "clone_url": "https://github.com/Yussef-Makhlouf/figma-design-system-generator.git",
+      "homepage": null,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-12-31T23:59:59Z",
+      "pushed_at": "2024-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "figma-design-system-generator",
+        "title": "Figma Design System Generator",
+        "slug": "figma-design-system-generator",
+        "category": "Automation & Tools",
+        "sector": "Design Tools",
+        "type": "Design Tool / Automation",
+        "status": "Production",
+        "year": "2024",
+        "client": "OPTIMA Internal Tool",
+        "market": [
+          "Internal"
+        ],
+        "features": [
+          "Auto-generate color palette frames from JSON hex definitions",
+          "Typography scale generator with size and weight configurations",
+          "Spacing token visualization (4px base grid system)",
+          "Component template injection for buttons, inputs, cards",
+          "Shadow and border-radius token documentation",
+          "Export design tokens as CSS variables or Tailwind config",
+          "Multi-brand support: generate separate frames per brand",
+          "One-click re-generation for design system updates"
+        ],
+        "value": [
+          "Eliminates manual Figma design system setup",
+          "Consistent design tokens across all client projects",
+          "CSS variable export connects design to code",
+          "10x faster new project onboarding"
+        ],
+        "techHighlights": [
+          "Figma Plugin API for component generation",
+          "JSON configuration-driven generation",
+          "CSS variable + Tailwind config export",
+          "Node.js CLI for batch processing"
+        ],
+        "coverImage": "/projects/figma-design-system-generator/cover.jpg",
+        "images": [
+          "/projects/figma-design-system-generator/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "JavaScript",
+          "Figma Plugin API",
+          "Node.js"
+        ],
+        "problem_solved": "Eliminates manual Figma design system setup. Consistent design tokens across all client projects. CSS variable export connects design to code. 10x faster new project onboarding.",
+        "strengths": [
+          "Figma Plugin API for component generation",
+          "JSON configuration-driven generation",
+          "CSS variable + Tailwind config export",
+          "Node.js CLI for batch processing",
+          "Internal market focus",
+          "Production-deployed solution"
+        ],
+        "portfolio_summary": "An internal Figma plugin and automation tool for generating consistent design system components across OPTIMA client projects. Automates the creation of color palettes, typography scales, spacing tokens, and component libraries from a configuration JSON. Key features include auto-generate color palette frames from json hex definitions, typography scale generator with size and weight configurations, spacing token visualization (4px base grid system).",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 50,
+      "name": "technova-hiring-platform",
+      "full_name": "Yussef-Makhlouf/technova-hiring-platform",
+      "description": "A purpose-built hiring and talent acquisition platform for TechNova AI Services in the UAE. Manages the full recruitment lifecycle from job posting to offer letter — with AI-assisted resume screening, skill assessment, and a candidate experience portal.",
+      "language": "TypeScript",
+      "category": "Full-Stack",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "nextjs",
+        "typescript",
+        "nodejs",
+        "postgresql",
+        "recruitment-platform",
+        "hr-tech",
+        "ai-screening",
+        "resume-parsing",
+        "interview-scheduling",
+        "coding-assessment",
+        "offer-letters",
+        "pipeline-analytics",
+        "bilingual-jobs"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/technova-hiring-platform",
+      "clone_url": "https://github.com/Yussef-Makhlouf/technova-hiring-platform.git",
+      "homepage": null,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-12-31T23:59:59Z",
+      "pushed_at": "2024-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "technova-hiring-platform",
+        "title": "Hiring Platform — TechNova",
+        "slug": "technova-hiring-platform",
+        "category": "Enterprise & Platforms",
+        "sector": "HR Tech",
+        "type": "Recruitment Platform",
+        "status": "Production",
+        "year": "2024",
+        "client": "TechNova AI Services (UAE)",
+        "market": [
+          "UAE",
+          "Gulf Region"
+        ],
+        "features": [
+          "Job posting management with technical skill requirements",
+          "AI-assisted resume screening and ranking",
+          "Candidate portal: apply, track status, schedule interviews",
+          "Interview scheduling with calendar integration",
+          "Technical assessment module with coding challenges",
+          "Offer letter generation and digital signing",
+          "Recruiter dashboard with pipeline analytics",
+          "Bilingual Arabic/English job listings"
+        ],
+        "value": [
+          "Streamlines technical hiring at TechNova",
+          "AI resume screening reduces time-to-hire",
+          "Candidate portal improves experience",
+          "Data-driven hiring decisions"
+        ],
+        "techHighlights": [
+          "PostgreSQL for structured HR data",
+          "AI resume parsing with NLP",
+          "Calendar API for interview scheduling",
+          "PDF offer letter generation"
+        ],
+        "coverImage": "/projects/technova-hiring-platform/cover.jpg",
+        "images": [
+          "/projects/technova-hiring-platform/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "PostgreSQL",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Streamlines technical hiring at TechNova. AI resume screening reduces time-to-hire. Candidate portal improves experience. Data-driven hiring decisions.",
+        "strengths": [
+          "PostgreSQL for structured HR data",
+          "AI resume parsing with NLP",
+          "Calendar API for interview scheduling",
+          "PDF offer letter generation",
+          "UAE & Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A purpose-built hiring and talent acquisition platform for TechNova AI Services in the UAE. Manages the full recruitment lifecycle from job posting to offer letter — with AI-assisted resume screening, skill assessment, and a candidate experience portal. Key features include job posting management with technical skill requirements, ai-assisted resume screening and ranking, candidate portal: apply, track status, schedule interviews.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 51,
+      "name": "uaemmaf-website",
+      "full_name": "Yussef-Makhlouf/uaemmaf-website",
+      "description": "Official website for the UAE Mixed Martial Arts Federation — the governing body for MMA sports in the UAE. Serves athletes, coaches, clubs, and fans with news, rankings, events, licensing, and regulatory information. Arabic-first with English support.",
+      "language": "JavaScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "bootstrap",
+        "sports-federation",
+        "mma",
+        "government-website",
+        "arabic-first",
+        "fighter-rankings",
+        "event-calendar",
+        "club-directory",
+        "athlete-licensing",
+        "google-maps",
+        "uae"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/uaemmaf-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/uaemmaf-website.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "uaemmaf-website",
+        "title": "UAEMMAF Organization Website",
+        "slug": "uaemmaf-website",
+        "category": "Business Websites",
+        "sector": "Sports & Government",
+        "type": "Federation Website",
+        "status": "Production",
+        "year": "2023",
+        "client": "UAE Mixed Martial Arts Federation (UAEMMAF)",
+        "market": [
+          "UAE"
+        ],
+        "features": [
+          "News and media section for federation announcements",
+          "Fighter rankings and profiles",
+          "Event calendar with competition schedules",
+          "Club and gym directory with location map",
+          "Athlete licensing and registration information",
+          "Rule book and regulation documents",
+          "Arabic-first RTL layout",
+          "Social media integration for event coverage"
+        ],
+        "value": [
+          "Official digital presence for UAE federation",
+          "Centralized information hub for MMA community",
+          "Arabic-first for UAE audience",
+          "Regulatory transparency"
+        ],
+        "techHighlights": [
+          "Bootstrap 5 RTL responsive layout",
+          "JavaScript for dynamic content filtering",
+          "Google Maps for club directory",
+          "PDF document downloads for regulations"
+        ],
+        "coverImage": "/projects/uaemmaf-website/cover.jpg",
+        "images": [
+          "/projects/uaemmaf-website/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "problem_solved": "Official digital presence for UAE federation. Centralized information hub for MMA community. Arabic-first for UAE audience. Regulatory transparency.",
+        "strengths": [
+          "Bootstrap 5 RTL responsive layout",
+          "JavaScript for dynamic content filtering",
+          "Google Maps for club directory",
+          "PDF document downloads for regulations",
+          "UAE market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "Official website for the UAE Mixed Martial Arts Federation — the governing body for MMA sports in the UAE. Serves athletes, coaches, clubs, and fans with news, rankings, events, licensing, and regulatory information. Key features include news and media section for federation announcements, fighter rankings and profiles, event calendar with competition schedules.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 52,
+      "name": "interior-design-website",
+      "full_name": "Yussef-Makhlouf/interior-design-website",
+      "description": "A portfolio and services website template for Gulf interior design and decoration companies. Features a visual-rich design with high-impact project photography, service descriptions, and a project inquiry system. Used for multiple interior design clients across the Gulf.",
+      "language": "TypeScript",
+      "category": "Frontend",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "react",
+        "interior-design",
+        "portfolio-website",
+        "framer-motion",
+        "project-gallery",
+        "masonry-grid",
+        "before-after",
+        "service-showcase",
+        "arabic-rtl",
+        "inquiry-form",
+        "gulf-region"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/interior-design-website",
+      "clone_url": "https://github.com/Yussef-Makhlouf/interior-design-website.git",
+      "homepage": null,
+      "created_at": "2022-01-01T00:00:00Z",
+      "updated_at": "2022-12-31T23:59:59Z",
+      "pushed_at": "2022-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "interior-design-website",
+        "title": "Decoration & Interior Design Website",
+        "slug": "interior-design-website",
+        "category": "Business Websites",
+        "sector": "Interior Design",
+        "type": "Portfolio + Service Website",
+        "status": "Production",
+        "year": "2022-2023",
+        "client": "Interior Design Companies (Gulf)",
+        "market": [
+          "Gulf Region"
+        ],
+        "features": [
+          "Full-screen project gallery with masonry and grid layouts",
+          "Project detail pages with before/after image comparison",
+          "Interior design services: residential, commercial, fit-out, landscaping",
+          "About section with team and design philosophy",
+          "Project inquiry form with space type and budget range",
+          "Testimonials with client photos",
+          "Framer Motion gallery animations",
+          "Arabic RTL with decorative Arabic typography accents"
+        ],
+        "value": [
+          "Visual portfolio drives client inquiries",
+          "Before/after comparison builds confidence",
+          "Budget range in form pre-qualifies prospects",
+          "Arabic aesthetic aligns with Gulf design culture"
+        ],
+        "techHighlights": [
+          "Framer Motion gallery transitions",
+          "CSS Masonry grid for project showcase",
+          "Image lazy loading for performance",
+          "Arabic decorative typography integration"
+        ],
+        "coverImage": "/projects/interior-design-website/cover.jpg",
+        "images": [
+          "/projects/interior-design-website/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "React",
+          "TailwindCSS",
+          "Framer Motion"
+        ],
+        "problem_solved": "Visual portfolio drives client inquiries. Before/after comparison builds confidence. Budget range in form pre-qualifies prospects. Arabic aesthetic aligns with Gulf design culture.",
+        "strengths": [
+          "Framer Motion gallery transitions",
+          "CSS Masonry grid for project showcase",
+          "Image lazy loading for performance",
+          "Arabic decorative typography integration",
+          "Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A portfolio and services website template for Gulf interior design and decoration companies. Features a visual-rich design with high-impact project photography, service descriptions, and a project inquiry system. Key features include full-screen project gallery with masonry and grid layouts, project detail pages with before/after image comparison, interior design services: residential, commercial, fit-out, landscaping.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 53,
+      "name": "health-supplements-landing",
+      "full_name": "Yussef-Makhlouf/health-supplements-landing",
+      "description": "High-conversion product landing page for a Gulf health supplements brand. Designed with persuasive copywriting, social proof elements, product benefit visualization, and a streamlined purchase flow for the KSA and Gulf wellness market.",
+      "language": "JavaScript",
+      "category": "E-Commerce",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "bootstrap",
+        "landing-page",
+        "health-supplements",
+        "e-commerce",
+        "conversion-optimized",
+        "social-proof",
+        "product-showcase",
+        "arabic-seo",
+        "gulf-market",
+        "countdown-timer"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/health-supplements-landing",
+      "clone_url": "https://github.com/Yussef-Makhlouf/health-supplements-landing.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "health-supplements-landing",
+        "title": "Health Supplements Landing Page",
+        "slug": "health-supplements-landing",
+        "category": "E-Commerce & Retail",
+        "sector": "Health & Wellness",
+        "type": "E-Commerce Landing Page",
+        "status": "Production",
+        "year": "2023",
+        "client": "Health Supplements Brand (Gulf)",
+        "market": [
+          "Gulf Region",
+          "KSA"
+        ],
+        "features": [
+          "Hero with product imagery and primary benefit headline",
+          "Benefits section with icon + description grid",
+          "Ingredient transparency with scientific references",
+          "Before/after testimonials with customer photos",
+          "Star rating aggregation and review highlights",
+          "Scarcity and urgency elements",
+          "Streamlined order form with COD and online payment",
+          "Arabic SEO for Gulf supplement search terms"
+        ],
+        "value": [
+          "Conversion-optimized landing page structure",
+          "Social proof reduces purchase hesitation",
+          "Arabic content for target KSA audience",
+          "Scarcity elements increase urgency"
+        ],
+        "techHighlights": [
+          "Bootstrap 5 responsive grid",
+          "JavaScript countdown timer for urgency",
+          "Form submission with order tracking integration",
+          "Google Analytics e-commerce event tracking"
+        ],
+        "coverImage": "/projects/health-supplements-landing/cover.jpg",
+        "images": [
+          "/projects/health-supplements-landing/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "problem_solved": "Conversion-optimized landing page structure. Social proof reduces purchase hesitation. Arabic content for target KSA audience. Scarcity elements increase urgency.",
+        "strengths": [
+          "Bootstrap 5 responsive grid",
+          "JavaScript countdown timer for urgency",
+          "Form submission with order tracking integration",
+          "Google Analytics e-commerce event tracking",
+          "Gulf Region & KSA market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "High-conversion product landing page for a Gulf health supplements brand. Designed with persuasive copywriting, social proof elements, product benefit visualization, and a streamlined purchase flow for the KSA and Gulf wellness market. Key features include hero with product imagery and primary benefit headline, benefits section with icon + description grid, ingredient transparency with scientific references.",
+        "status": "analyzed_from_portfolio"
+      }
+    },
+    {
+      "index": 54,
+      "name": "spa-landing-page",
+      "full_name": "Yussef-Makhlouf/spa-landing-page",
+      "description": "A luxury spa services landing page for a Gulf premium wellness brand. Features elegant visual design with a muted earth-tone palette, service menu showcase, exclusive membership tiers, and an online booking integration. Communicates premium positioning and drives high-value spa bookings.",
+      "language": "JavaScript",
+      "category": "Landing Page",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [
+        "html",
+        "css",
+        "javascript",
+        "spa-landing",
+        "luxury-design",
+        "booking-system",
+        "membership-tiers",
+        "gift-vouchers",
+        "service-menu",
+        "bilingual",
+        "arabic-english",
+        "earth-tone-palette",
+        "gulf-region"
+      ],
+      "is_fork": false,
+      "is_archived": false,
+      "is_private": false,
+      "default_branch": "main",
+      "license": null,
+      "url": "https://github.com/Yussef-Makhlouf/spa-landing-page",
+      "clone_url": "https://github.com/Yussef-Makhlouf/spa-landing-page.git",
+      "homepage": null,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "pushed_at": "2023-12-31T23:59:59Z",
+      "size_kb": 0,
+      "portfolio_meta": {
+        "id": "spa-landing-page",
+        "title": "Spa Landing Page",
+        "slug": "spa-landing-page",
+        "category": "Business Websites",
+        "sector": "Beauty & Wellness",
+        "type": "Luxury Service Landing Page",
+        "status": "Production",
+        "year": "2023",
+        "client": "Luxury Spa (Gulf Region)",
+        "market": [
+          "UAE",
+          "Gulf Region"
+        ],
+        "features": [
+          "Full-screen luxury hero with ambient photography",
+          "Service menu: massages, facials, body treatments, wellness rituals",
+          "Membership tiers: Silver, Gold, Platinum with benefits comparison",
+          "Online booking with treatment, therapist, and time slot selection",
+          "Gift voucher purchase flow",
+          "Team profiles for therapists and specialists",
+          "Client testimonials with luxury presentation",
+          "Arabic and English bilingual interface"
+        ],
+        "value": [
+          "Premium brand positioning drives high-value bookings",
+          "Membership tiers create recurring revenue",
+          "Online booking reduces receptionist load",
+          "Gift vouchers create additional revenue stream"
+        ],
+        "techHighlights": [
+          "TailwindCSS with custom earth-tone palette",
+          "Booking form with slot availability logic",
+          "Vanilla JS for membership toggle",
+          "Lazy-loaded photography for performance"
+        ],
+        "coverImage": "/projects/spa-landing-page/cover.jpg",
+        "images": [
+          "/projects/spa-landing-page/1.jpg"
+        ],
+        "featured": false,
+        "liveUrl": null,
+        "githubUrl": null
+      },
+      "analysis": {
+        "tech_stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "TailwindCSS"
+        ],
+        "problem_solved": "Premium brand positioning drives high-value bookings. Membership tiers create recurring revenue. Online booking reduces receptionist load. Gift vouchers create additional revenue stream.",
+        "strengths": [
+          "TailwindCSS with custom earth-tone palette",
+          "Booking form with slot availability logic",
+          "Vanilla JS for membership toggle",
+          "Lazy-loaded photography for performance",
+          "UAE & Gulf Region market focus",
+          "Production-deployed solution",
+          "Arabic RTL support"
+        ],
+        "portfolio_summary": "A luxury spa services landing page for a Gulf premium wellness brand. Features elegant visual design with a muted earth-tone palette, service menu showcase, exclusive membership tiers, and an online booking integration. Key features include full-screen luxury hero with ambient photography, service menu: massages, facials, body treatments, wellness rituals, membership tiers: silver, gold, platinum with benefits comparison.",
+        "status": "analyzed_from_portfolio"
+      }
+    }
+  ],
+  "merged_at": "2026-06-14T05:33:43.665Z",
+  "merge_source": "projects.json",
+  "merge_stats": {
+    "projects_in_source": 30,
+    "added_as_new": 24,
+    "skipped_as_overlapping": 6,
+    "skipped_details": [
+      {
+        "id": "optima-platform",
+        "overlapsWith": "optima-main-official",
+        "title": "OPTIMA Digital Transformations — Main Platform"
+      },
+      {
+        "id": "optima-content-studio",
+        "overlapsWith": "optima-studio-v2",
+        "title": "OPTIMA Content Studio"
+      },
+      {
+        "id": "technova-platform",
+        "overlapsWith": "TECHNOVA-website",
+        "title": "TechNova AI Services Platform"
+      },
+      {
+        "id": "fifth-floor-agency",
+        "overlapsWith": "fifth-floor-website",
+        "title": "Fifth Floor Agency Website"
+      },
+      {
+        "id": "b-genius-academy",
+        "overlapsWith": "beginius-academy",
+        "title": "B-Genius Academy"
+      },
+      {
+        "id": "capital-smart",
+        "overlapsWith": "capital-smart",
+        "title": "Capital Smart"
+      }
+    ],
+    "added_details": [
+      {
+        "id": "gig-jordan",
+        "index": 31,
+        "title": "GIG Jordan — Agent & Broker Portal"
+      },
+      {
+        "id": "admaf-website",
+        "index": 32,
+        "title": "ADMAF Website"
+      },
+      {
+        "id": "ahcp-platform",
+        "index": 33,
+        "title": "AHCP Platform"
+      },
+      {
+        "id": "goory-ecommerce",
+        "index": 34,
+        "title": "Goory E-Commerce Store (متجر الجوري)"
+      },
+      {
+        "id": "dashboard-real-estate",
+        "index": 35,
+        "title": "RAF Real Estate Platform"
+      },
+      {
+        "id": "real-estate-dashboard",
+        "index": 36,
+        "title": "Tasis Real Estate Dashboard"
+      },
+      {
+        "id": "clean-company-ksa",
+        "index": 37,
+        "title": "Clean Company KSA (شركة تنظيف في السعودية)"
+      },
+      {
+        "id": "sopol-logistics",
+        "index": 38,
+        "title": "Sopol Logistics Company"
+      },
+      {
+        "id": "moqael-construction",
+        "index": 39,
+        "title": "Moqael Company Website"
+      },
+      {
+        "id": "al-qemma-app",
+        "index": 40,
+        "title": "Al-Qemma Application"
+      },
+      {
+        "id": "eamaar-elevator-company",
+        "index": 41,
+        "title": "Eamaar Elevator Company Website"
+      },
+      {
+        "id": "law-firm-landing",
+        "index": 42,
+        "title": "Law Firm Landing Page"
+      },
+      {
+        "id": "hotel-booking-frontend",
+        "index": 43,
+        "title": "Hotel Booking Frontend"
+      },
+      {
+        "id": "digital-events-platform",
+        "index": 44,
+        "title": "Digital Events Platform"
+      },
+      {
+        "id": "arabic-admin-dashboard",
+        "index": 45,
+        "title": "Admin Dashboard — Arabic (Multi-Project)"
+      },
+      {
+        "id": "sport-dashboard",
+        "index": 46,
+        "title": "Sport Dashboard Application"
+      },
+      {
+        "id": "secure-portal",
+        "index": 47,
+        "title": "Secure Portal (v1 + v2)"
+      },
+      {
+        "id": "saudi-invoice-system",
+        "index": 48,
+        "title": "Saudi Invoice System"
+      },
+      {
+        "id": "figma-design-system-generator",
+        "index": 49,
+        "title": "Figma Design System Generator"
+      },
+      {
+        "id": "technova-hiring-platform",
+        "index": 50,
+        "title": "Hiring Platform — TechNova"
+      },
+      {
+        "id": "uaemmaf-website",
+        "index": 51,
+        "title": "UAEMMAF Organization Website"
+      },
+      {
+        "id": "interior-design-website",
+        "index": 52,
+        "title": "Decoration & Interior Design Website"
+      },
+      {
+        "id": "health-supplements-landing",
+        "index": 53,
+        "title": "Health Supplements Landing Page"
+      },
+      {
+        "id": "spa-landing-page",
+        "index": 54,
+        "title": "Spa Landing Page"
+      }
+    ]
+  }
+}
