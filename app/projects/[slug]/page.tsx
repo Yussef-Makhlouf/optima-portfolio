@@ -61,7 +61,7 @@ export default function ProjectPage({ params }: Props) {
   const coverUrl = getCoverImage(params.slug, 1400, 900)
 
   return (
-    <article className="min-h-screen bg-off-white dark:bg-navy text-navy dark:text-off-white overflow-x-hidden relative transition-colors duration-300" style={{ fontFeatureSettings: '"kern" 1, "liga" 1', textRendering: 'optimizeLegibility' }}>
+    <article className="min-h-screen bg-off-white dark:bg-navy text-navy dark:text-off-white overflow-x-hidden relative transition-colors duration-300" style={{ fontFeatureSettings: '"kern" 1, "liga" 1', textRendering: 'optimizeLegibility', WebkitTextSizeAdjust: '100%' }}>
 
       {/* ── Cybernetic background grid ─────────────────── */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -71,7 +71,7 @@ export default function ProjectPage({ params }: Props) {
       </div>
 
       {/* ── Floating HUD nav bar ────────────────────────── */}
-      <div className="fixed top-16 left-0 right-0 z-30 hidden lg:block">
+      <div className="fixed top-14 sm:top-16 left-0 right-0 z-30 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="relative flex items-center justify-between bg-white/90 dark:bg-navy/90 backdrop-blur-xl border border-primary/20 dark:border-cyber/20 px-4 md:px-6 py-2 shadow-sm dark:shadow-none">
             <span className="absolute top-0 left-0 w-2.5 h-1 border-t border-l border-primary dark:border-cyber" />
@@ -113,7 +113,7 @@ export default function ProjectPage({ params }: Props) {
       {/* ═══════════════════════════════════════════════════
           §1 — HERO
       ═══════════════════════════════════════════════════ */}
-      <section className="relative min-h-[60vh] md:min-h-[75vh] flex items-end pb-12 md:pb-16 px-4 md:px-6 overflow-hidden border-b border-primary/10 dark:border-cyber/10 z-10">
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] md:min-h-[75vh] flex items-end pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-6 overflow-hidden border-b border-primary/10 dark:border-cyber/10 z-10">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image src={coverUrl} alt={project.title} fill className="object-cover opacity-10 dark:opacity-15 grayscale contrast-125" priority />
@@ -140,12 +140,12 @@ export default function ProjectPage({ params }: Props) {
 
         <div className="relative max-w-7xl mx-auto w-full z-10">
           {/* Breadcrumb */}
-          <nav className="flex flex-wrap items-center gap-1.5 md:gap-2 font-mono text-[9px] md:text-[10px] text-muted-dark/60 dark:text-muted-light/60 mb-5 md:mb-6 uppercase tracking-wider" aria-label="Breadcrumb">
-            <Link href="/projects" className="hover:text-primary dark:hover:text-cyber transition-colors">[PROJECTS]</Link>
+          <nav className="flex flex-wrap items-center gap-1.5 sm:gap-2 font-mono text-[9px] sm:text-[10px] text-muted-dark/60 dark:text-muted-light/60 mb-4 sm:mb-5 md:mb-6 uppercase tracking-wider" aria-label="Breadcrumb">
+            <Link href="/projects" className="hover:text-primary dark:hover:text-cyber transition-colors min-h-[44px] flex items-center">[PROJECTS]</Link>
             <span className="text-primary/30 dark:text-cyber/30 hidden sm:inline">›</span>
-            <span className="truncate max-w-[150px] md:max-w-none">{project.category}</span>
+            <span className="truncate max-w-[120px] sm:max-w-[200px] md:max-w-none">{project.category}</span>
             <span className="text-primary/30 dark:text-cyber/30 hidden sm:inline">›</span>
-            <span className="text-primary dark:text-cyber truncate">{project.title}</span>
+            <span className="text-primary dark:text-cyber truncate max-w-[160px] sm:max-w-none">{project.title}</span>
           </nav>
 
           {/* Status + badges */}
@@ -164,28 +164,28 @@ export default function ProjectPage({ params }: Props) {
 
           {/* Giant title */}
           <h1
-            className="font-hud font-black text-navy dark:text-white uppercase leading-[0.9] mb-4 md:mb-6 tracking-[0.04em] md:tracking-[0.06em]"
-            style={{ fontSize: 'clamp(1.8rem, 6vw, 5.5rem)' }}
+            className="font-hud font-black text-navy dark:text-white uppercase leading-[0.9] mb-3 sm:mb-4 md:mb-6 tracking-[0.02em] sm:tracking-[0.04em] md:tracking-[0.06em] break-words"
+            style={{ fontSize: 'clamp(1.6rem, 5vw + 0.5rem, 5.5rem)' }}
           >
             {project.title}
           </h1>
 
           {/* Telemetry row */}
-          <div className="flex flex-wrap items-center gap-3 md:gap-6 mb-6 md:mb-8">
-            <div className="flex items-center gap-1.5 md:gap-2">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-6 mb-4 sm:mb-6 md:mb-8">
+            <div className="flex items-center gap-1.5 sm:gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary dark:bg-cyber" />
-              <span className="font-mono text-[8px] md:text-[9px] tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/70 dark:text-muted-light/70 uppercase">{`TYPE // ${project.type}`}</span>
+              <span className="font-mono text-[8px] sm:text-[9px] tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/70 dark:text-muted-light/70 uppercase">{`TYPE // ${project.type}`}</span>
             </div>
-            <div className="flex items-center gap-1.5 md:gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-              <span className="font-mono text-[8px] md:text-[9px] tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/70 dark:text-muted-light/70 uppercase">{`CLASS // ${project.category}`}</span>
+              <span className="font-mono text-[8px] sm:text-[9px] tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/70 dark:text-muted-light/70 uppercase">{`CLASS // ${project.category}`}</span>
             </div>
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 md:gap-2 font-mono text-[8px] md:text-[9px] tracking-[0.15em] md:tracking-[0.2em] text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors uppercase"
+                className="flex items-center gap-1.5 sm:gap-2 font-mono text-[8px] sm:text-[9px] tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors uppercase min-h-[44px] sm:min-h-0"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
                 LIVE ↗
@@ -194,9 +194,9 @@ export default function ProjectPage({ params }: Props) {
           </div>
 
           {/* Market tags */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {project.market.slice(0, 8).map((m) => (
-              <span key={m} className="font-mono text-[9px] tracking-[0.05em] text-primary/70 dark:text-cyber/70 border border-primary/15 dark:border-cyber/15 px-2 py-0.5 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary/40 dark:hover:border-cyber/40 hover:text-primary dark:hover:text-cyber transition-all duration-200">
+              <span key={m} className="font-mono text-[8px] sm:text-[9px] tracking-[0.05em] text-primary/70 dark:text-cyber/70 border border-primary/15 dark:border-cyber/15 px-2 sm:px-2.5 py-1 sm:py-0.5 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary/40 dark:hover:border-cyber/40 hover:text-primary dark:hover:text-cyber transition-all duration-200 min-h-[32px] sm:min-h-0 flex items-center">
                 {`#${m}`}
               </span>
             ))}
@@ -205,14 +205,14 @@ export default function ProjectPage({ params }: Props) {
       </section>
 
       {/* ── Live Metrics Telemetry Grid ─────────────────── */}
-      <section className="border-y border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-mid/30 py-4 md:py-6 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+      <section className="border-y border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-mid/30 py-3 sm:py-4 md:py-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
             <TelemetryMetric label="FILE SIZE" value={`${project.sizeKb.toLocaleString()} KB`} code="LOC.SIZE" />
             <TelemetryMetric label="STARS" value={`★ ${project.stars}`} code="GIT.STAR" />
             <TelemetryMetric label="FORKS" value={`⑂ ${project.forks}`} code="GIT.FORK" />
             <TelemetryMetric label="OPEN ISSUES" value={`⊘ ${project.openIssues}`} code="GIT.ISSU" />
-            <TelemetryMetric label="LANGUAGE" value={project.language || 'N/A'} code="SYS.LANG" />
+            <TelemetryMetric label="LANGUAGE" value={project.language || 'N/A'} code="SYS.LANG" className="col-span-2 sm:col-span-1" />
           </div>
         </div>
       </section>
@@ -220,7 +220,7 @@ export default function ProjectPage({ params }: Props) {
       {/* ═══════════════════════════════════════════════════
           §2 — DEVICE SHOWCASE
       ═══════════════════════════════════════════════════ */}
-      <section className="relative z-10 bg-white dark:bg-navy-soft border-b border-primary/10 dark:border-cyber/10 py-12 md:py-20 px-4 md:px-6 overflow-hidden">
+      <section className="relative z-10 bg-white dark:bg-navy-soft border-b border-primary/10 dark:border-cyber/10 py-8 sm:py-12 md:py-20 px-3 sm:px-4 md:px-6 overflow-hidden">
         <div className="absolute inset-0 hud-grid opacity-5 pointer-events-none" />
         <div className="max-w-6xl mx-auto">
           <RevealSection>
@@ -249,7 +249,7 @@ export default function ProjectPage({ params }: Props) {
       {/* ═══════════════════════════════════════════════════
           §3 — SCREENSHOT VIEWER
       ═══════════════════════════════════════════════════ */}
-      <section className="relative z-10 bg-off-white dark:bg-navy border-b border-primary/10 dark:border-cyber/10 py-12 md:py-20 px-4 md:px-6">
+      <section className="relative z-10 bg-off-white dark:bg-navy border-b border-primary/10 dark:border-cyber/10 py-8 sm:py-12 md:py-20 px-3 sm:px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <RevealSection>
             <div className="flex items-center gap-3 mb-3">
@@ -277,16 +277,16 @@ export default function ProjectPage({ params }: Props) {
       {/* ═══════════════════════════════════════════════════
           §4 — MAIN CONTENT GRID
       ═══════════════════════════════════════════════════ */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20">
-        <div className="grid lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_360px] gap-10 md:gap-14 lg:gap-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-20">
+        <div className="grid lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_360px] gap-6 sm:gap-8 md:gap-14 lg:gap-16">
 
           {/* ── Left column ─────────────────────────────── */}
-          <div className="space-y-14">
+          <div className="space-y-8 sm:space-y-10 md:space-y-14">
 
             {/* Overview */}
             <RevealSection>
               <HudPanel title="PROJECT OVERVIEW" sectionCode="PROJ.01" status="STABLE">
-                <p className="text-muted-dark dark:text-muted-light text-base leading-relaxed max-w-[65ch]">
+                <p className="text-muted-dark dark:text-muted-light text-[15px] sm:text-base leading-relaxed max-w-[65ch]">
                   {project.description}
                 </p>
               </HudPanel>
@@ -299,17 +299,17 @@ export default function ProjectPage({ params }: Props) {
                   <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
                   <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[CORE_CAPABILITIES]</h2>
                 </div>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   {project.features.map((feature, i) => (
                     <div
                       key={i}
-                      className="group relative p-5 border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-mid/30 hover:border-primary/35 dark:hover:border-cyber/35 hover:bg-white dark:hover:bg-navy-mid/50 transition-all duration-300 shadow-sm dark:shadow-none"
+                      className="group relative p-4 sm:p-5 border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-mid/30 hover:border-primary/35 dark:hover:border-cyber/35 hover:bg-white dark:hover:bg-navy-mid/50 transition-all duration-300 shadow-sm dark:shadow-none active:border-primary/50 dark:active:border-cyber/50"
                     >
                       <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary/25 dark:border-cyber/25 group-hover:border-primary dark:group-hover:border-cyber transition-colors" />
                       <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary/25 dark:border-cyber/25 group-hover:border-primary dark:group-hover:border-cyber transition-colors" />
                       <div className="flex items-start gap-3">
                         <span className="font-mono text-[9px] text-primary dark:text-cyber font-bold mt-0.5 flex-shrink-0">{`[F.${String(i+1).padStart(2,'0')}]`}</span>
-                        <p className="text-muted-dark dark:text-muted-light text-sm leading-relaxed">{feature}</p>
+                        <p className="text-muted-dark dark:text-muted-light text-[13px] sm:text-sm leading-relaxed">{feature}</p>
                       </div>
                     </div>
                   ))}
@@ -320,13 +320,13 @@ export default function ProjectPage({ params }: Props) {
             {/* Business value */}
             <RevealSection>
               <HudPanel title="BUSINESS VALUE & IMPACT" sectionCode="VAL.02" status="ACTIVE">
-                <div className="space-y-3" id="section-business-value">
+                <div className="space-y-2 sm:space-y-3" id="section-business-value">
                   {project.value.map((v, i) => (
-                    <div key={i} className="flex items-start gap-4 p-3 border-l-2 border-primary/40 dark:border-cyber/40 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary dark:hover:border-cyber transition-all duration-200">
-                      <span className="font-mono text-[10px] text-primary dark:text-cyber font-bold mt-0.5 flex-shrink-0">
+                    <div key={i} className="flex items-start gap-3 sm:gap-4 p-2.5 sm:p-3 border-l-2 border-primary/40 dark:border-cyber/40 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary dark:hover:border-cyber transition-all duration-200 active:bg-primary/15 dark:active:bg-cyber/15">
+                      <span className="font-mono text-[9px] sm:text-[10px] text-primary dark:text-cyber font-bold mt-0.5 flex-shrink-0">
                         {`> ${String(i+1).padStart(2,'0')}`}
                       </span>
-                      <p className="text-muted-dark dark:text-muted-light text-sm leading-relaxed">{v}</p>
+                      <p className="text-muted-dark dark:text-muted-light text-[13px] sm:text-sm leading-relaxed">{v}</p>
                     </div>
                   ))}
                 </div>
@@ -352,11 +352,11 @@ export default function ProjectPage({ params }: Props) {
                       optima@project ~ tech-highlights
                     </span>
                   </div>
-                  <div className="p-5 space-y-2.5">
+                  <div className="p-3 sm:p-4 md:p-5 space-y-2 sm:space-y-2.5">
                     {project.techHighlights.map((t, i) => (
-                      <div key={i} className="flex items-start gap-3 group">
-                        <span className="text-primary dark:text-cyber font-mono text-[10px] font-bold mt-0.5 flex-shrink-0">$</span>
-                        <p className="font-mono text-xs text-muted-dark dark:text-muted-light group-hover:text-primary dark:group-hover:text-cyber transition-colors duration-200 leading-relaxed">{t}</p>
+                      <div key={i} className="flex items-start gap-2 sm:gap-3 group">
+                        <span className="text-primary dark:text-cyber font-mono text-[9px] sm:text-[10px] font-bold mt-0.5 flex-shrink-0">$</span>
+                        <p className="font-mono text-[11px] sm:text-xs text-muted-dark dark:text-muted-light group-hover:text-primary dark:group-hover:text-cyber transition-colors duration-200 leading-relaxed break-words">{t}</p>
                       </div>
                     ))}
                     <div className="flex items-center gap-2 mt-4 pt-4 border-t border-primary/5 dark:border-cyber/5">
@@ -375,7 +375,7 @@ export default function ProjectPage({ params }: Props) {
                   <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
                   <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[BEFORE_AFTER_COMPARISON]</h2>
                 </div>
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                   {Array.from({ length: 2 }, (_, i) => {
                     const seed1 = (parseInt(project.id) * 10) + i * 10
                     const seed2 = seed1 + 1
@@ -398,123 +398,43 @@ export default function ProjectPage({ params }: Props) {
               </div>
             </RevealSection>
 
-            {/* Business value */}
-            <RevealSection>
-              <HudPanel title="BUSINESS VALUE & IMPACT" sectionCode="VAL.02" status="ACTIVE">
-                <div className="space-y-3">
-                  {project.value.map((v, i) => (
-                    <div key={i} className="flex items-start gap-4 p-3 border-l-2 border-primary/40 dark:border-cyber/40 bg-primary/5 dark:bg-cyber/5 hover:bg-primary/10 dark:hover:bg-cyber/10 hover:border-primary dark:hover:border-cyber transition-all duration-200">
-                      <span className="font-mono text-[10px] text-primary dark:text-cyber font-bold mt-0.5 flex-shrink-0">
-                        {`> ${String(i+1).padStart(2,'0')}`}
-                      </span>
-                      <p className="text-muted-dark dark:text-muted-light text-sm leading-relaxed">{v}</p>
-                    </div>
-                  ))}
-                </div>
-              </HudPanel>
-            </RevealSection>
-
-            {/* Tech highlights terminal */}
-            <RevealSection>
-              <div>
-                <div className="flex items-center gap-3 mb-5">
-                  <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
-                  <h2 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[TECH_HIGHLIGHTS]</h2>
-                </div>
-                <div className="bg-white dark:bg-navy-mid/50 border border-primary/10 dark:border-cyber/10 overflow-hidden shadow-sm dark:shadow-none">
-                  {/* Terminal title bar */}
-                  <div className="bg-gray-50 dark:bg-navy-soft flex items-center gap-2 px-4 py-2 border-b border-primary/10 dark:border-cyber/10">
-                    <div className="flex gap-1.5">
-                      <div className="w-2 h-2 rounded-full bg-rose-500/50" />
-                      <div className="w-2 h-2 rounded-full bg-amber-400/50" />
-                      <div className="w-2 h-2 rounded-full bg-emerald-400/50" />
-                    </div>
-                    <span className="font-mono text-[9px] text-primary/50 dark:text-cyber/50 tracking-wider ml-2">
-                      optima@project ~ tech-highlights
-                    </span>
-                  </div>
-                  <div className="p-5 space-y-2.5">
-                    {project.techHighlights.map((t, i) => (
-                      <div key={i} className="flex items-start gap-3 group">
-                        <span className="text-primary dark:text-cyber font-mono text-[10px] font-bold mt-0.5 flex-shrink-0">$</span>
-                        <p className="font-mono text-xs text-muted-dark dark:text-muted-light group-hover:text-primary dark:group-hover:text-cyber transition-colors duration-200 leading-relaxed max-w-[65ch]">{t}</p>
-                      </div>
-                    ))}
-                    <div className="flex items-center gap-2 mt-4 pt-4 border-t border-primary/5 dark:border-cyber/5">
-                      <span className="text-primary dark:text-cyber font-mono text-[10px] font-bold">$</span>
-                      <span className="font-mono text-[10px] text-primary/40 dark:text-cyber/40 animate-pulse">_</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            {/* Before / After */}
-            <RevealSection>
-              <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="w-4 h-[1px] bg-primary dark:bg-cyber" />
-                  <h3 className="font-hud text-[10px] uppercase tracking-[0.25em] text-primary dark:text-cyber">[BEFORE_AFTER_COMPARISON]</h3>
-                </div>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {Array.from({ length: 2 }, (_, i) => {
-                    const seed1 = (parseInt(project.id) * 10) + i * 10
-                    const seed2 = seed1 + 1
-                    return (
-                      <div key={i} className="relative border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy/70 hover:border-primary/30 dark:hover:border-cyber/30 transition-all duration-300 p-1 shadow-sm dark:shadow-none">
-                        <span className="absolute top-1.5 left-1.5 font-mono text-[8px] text-primary dark:text-cyber tracking-widest z-10 bg-white/95 dark:bg-navy/90 px-1.5 py-0.5">
-                          {`COMPARISON #${String(i+1).padStart(2,'0')}`}
-                        </span>
-                        <BeforeAfterSlider
-                          beforeSrc={`https://picsum.photos/seed/${seed1}/1400/900`}
-                          afterSrc={`https://picsum.photos/seed/${seed2}/1400/900`}
-                          beforeLabel="LEGACY"
-                          afterLabel="REDESIGNED"
-                          alt={`${project.title} comparison ${i + 1}`}
-                        />
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
-            </RevealSection>
           </div>
 
           {/* ── Right sidebar ──────────────────────────────── */}
-          <aside className="space-y-6">
+          <aside className="space-y-5 sm:space-y-6 lg:sticky lg:top-24 md:top-28 lg:self-start">
 
-            {/* Sticky project info card */}
-            <div className="relative border border-primary/20 dark:border-cyber/20 bg-white dark:bg-navy-mid/60 p-4 md:p-6 sticky top-24 md:top-28 hover:border-primary/40 dark:hover:border-cyber/40 transition-all duration-300 shadow-sm dark:shadow-none">
+            {/* Project info card */}
+            <div className="relative border border-primary/20 dark:border-cyber/20 bg-white dark:bg-navy-mid/60 p-4 sm:p-5 md:p-6 hover:border-primary/40 dark:hover:border-cyber/40 transition-all duration-300 shadow-sm dark:shadow-none">
               <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary dark:border-cyber" />
               <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary dark:border-cyber" />
               <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-primary dark:border-cyber" />
               <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary dark:border-cyber" />
 
-              <div className="flex items-center gap-2 mb-6 pb-4 border-b border-primary/10 dark:border-cyber/10">
+              <div className="flex items-center gap-2 mb-5 sm:mb-6 pb-3 sm:pb-4 border-b border-primary/10 dark:border-cyber/10">
                 <span className="w-1.5 h-1.5 bg-primary dark:bg-cyber rounded-full animate-ping" />
-                <p className="font-hud text-[10px] uppercase tracking-[0.2em] text-navy dark:text-white">PROJECT_INTEL</p>
+                <p className="font-hud text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy dark:text-white">PROJECT_INTEL</p>
               </div>
 
-              <dl className="space-y-4 mb-6">
+              <dl className="space-y-3 sm:space-y-4 mb-5 sm:mb-6">
                 {[
                   { label: 'CLIENT', value: project.client },
                   { label: 'YEAR', value: project.year },
                   { label: 'SECTOR', value: project.sector },
                   { label: 'STATUS', value: project.status },
                 ].map(({ label, value }) => (
-                  <div key={label} className="border-b border-primary/5 dark:border-cyber/5 pb-3">
-                    <dt className="font-mono text-[8px] tracking-[0.2em] text-primary/50 dark:text-cyber/50 mb-1">{label}</dt>
-                    <dd className="font-hud text-[11px] text-navy dark:text-white uppercase font-bold tracking-wider truncate">{value}</dd>
+                  <div key={label} className="border-b border-primary/5 dark:border-cyber/5 pb-2.5 sm:pb-3">
+                    <dt className="font-mono text-[8px] sm:text-[9px] tracking-[0.15em] sm:tracking-[0.2em] text-primary/50 dark:text-cyber/50 mb-1">{label}</dt>
+                    <dd className="font-hud text-[11px] sm:text-[12px] text-navy dark:text-white uppercase font-bold tracking-wider truncate">{value}</dd>
                   </div>
                 ))}
               </dl>
 
               {/* Markets */}
-              <div className="mb-6">
-                <p className="font-mono text-[8px] tracking-[0.2em] text-primary/50 dark:text-cyber/50 mb-3">MARKETS</p>
+              <div className="mb-5 sm:mb-6">
+                <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.15em] sm:tracking-[0.2em] text-primary/50 dark:text-cyber/50 mb-2.5 sm:mb-3">MARKETS</p>
                 <div className="flex flex-wrap gap-1.5">
                   {project.market.slice(0, 6).map((m) => (
-                    <span key={m} className="font-mono text-[8px] tracking-wide text-muted-dark dark:text-muted-light/80 border border-primary/15 dark:border-cyber/15 px-2 py-0.5 bg-off-white dark:bg-navy/60 uppercase hover:border-primary/40 dark:hover:border-cyber/40 hover:text-primary dark:hover:text-cyber transition-all duration-200">
+                    <span key={m} className="font-mono text-[8px] sm:text-[9px] tracking-wide text-muted-dark dark:text-muted-light/80 border border-primary/15 dark:border-cyber/15 px-2 py-1 sm:py-0.5 bg-off-white dark:bg-navy/60 uppercase hover:border-primary/40 dark:hover:border-cyber/40 hover:text-primary dark:hover:text-cyber transition-all duration-200">
                       {m}
                     </span>
                   ))}
@@ -522,17 +442,17 @@ export default function ProjectPage({ params }: Props) {
               </div>
 
               {/* CTAs */}
-              <div className="space-y-3">
-                <Link href="/contact" className="block">
+              <div className="space-y-2.5 sm:space-y-3">
+                <Link href="/contact" className="block min-h-[44px]">
                   <GlitchButton label="DISCUSS PROJECT" className="w-full justify-center" variant="cyber" />
                 </Link>
                 {project.liveUrl && (
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block">
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block min-h-[44px]">
                     <GlitchButton label="VIEW LIVE SITE ↗" className="w-full justify-center" variant="primary" />
                   </a>
                 )}
                 {project.githubUrl && (
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="block">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="block min-h-[44px]">
                     <GlitchButton label="SOURCE CODE ↗" className="w-full justify-center" variant="outline" />
                   </a>
                 )}
@@ -562,24 +482,24 @@ export default function ProjectPage({ params }: Props) {
       ═══════════════════════════════════════════════════ */}
       {related.length > 0 && (
         <RevealSection>
-          <section className="relative z-10 border-t border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-soft py-12 md:py-20 px-4 md:px-6 overflow-hidden">
+          <section className="relative z-10 border-t border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-soft py-8 sm:py-12 md:py-20 px-3 sm:px-4 md:px-6 overflow-hidden">
             <div className="absolute inset-0 hud-grid opacity-5 pointer-events-none" />
             <div className="max-w-7xl mx-auto">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-6 h-[1px] bg-primary dark:bg-cyber" />
-                <p className="font-mono text-[10px] text-primary dark:text-cyber uppercase tracking-[0.25em]">
+              <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <span className="w-4 sm:w-6 h-[1px] bg-primary dark:bg-cyber" />
+                <p className="font-mono text-[9px] sm:text-[10px] text-primary dark:text-cyber uppercase tracking-[0.2em] sm:tracking-[0.25em]">
                   {`MORE // ${project.category}`}
                 </p>
               </div>
-              <h2 className="font-hud font-bold text-navy dark:text-white text-xl md:text-2xl uppercase tracking-[0.1em] md:tracking-[0.15em] mb-8 md:mb-12">
+              <h2 className="font-hud font-bold text-navy dark:text-white text-lg sm:text-xl md:text-2xl uppercase tracking-[0.08em] sm:tracking-[0.1em] md:tracking-[0.15em] mb-6 sm:mb-8 md:mb-12">
                 RELATED SYSTEM NODES
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
                 {related.map((rp) => (
                   <Link
                     key={rp.id}
                     href={`/projects/${rp.slug}`}
-                    className="group relative border border-primary/10 dark:border-cyber/10 bg-off-white dark:bg-navy/80 hover:border-primary/40 dark:hover:border-cyber/40 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden block shadow-sm dark:shadow-none"
+                    className="group relative border border-primary/10 dark:border-cyber/10 bg-off-white dark:bg-navy/80 hover:border-primary/40 dark:hover:border-cyber/40 hover:-translate-y-1 sm:hover:-translate-y-1.5 active:translate-y-0 transition-all duration-300 overflow-hidden block shadow-sm dark:shadow-none"
                   >
                     <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary/30 dark:border-cyber/30 group-hover:border-primary dark:group-hover:border-cyber transition-colors z-10" />
                     <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary/30 dark:border-cyber/30 group-hover:border-primary dark:group-hover:border-cyber transition-colors z-10" />
@@ -629,27 +549,27 @@ export default function ProjectPage({ params }: Props) {
       {/* ═══════════════════════════════════════════════════
           §6 — PREV / NEXT NAV
       ═══════════════════════════════════════════════════ */}
-      <div className="relative z-10 border-t border-primary/10 dark:border-cyber/10 bg-off-white dark:bg-navy py-10 md:py-12 px-4 md:px-6">
+      <div className="relative z-10 border-t border-primary/10 dark:border-cyber/10 bg-off-white dark:bg-navy py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-3 md:gap-6 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-2.5 sm:gap-3 md:gap-6 items-center">
             <div>
               {prevProject && (
                 <Link
                   href={`/projects/${prevProject.slug}`}
-                  className="group flex items-center gap-2 md:gap-4 p-3 md:p-4 border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-soft/40 hover:border-primary/30 dark:hover:border-cyber/30 hover:bg-white dark:hover:bg-navy-soft/80 transition-all duration-300 shadow-sm dark:shadow-none"
+                  className="group flex items-center gap-2 sm:gap-3 md:gap-4 p-2.5 sm:p-3 md:p-4 border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-soft/40 hover:border-primary/30 dark:hover:border-cyber/30 hover:bg-white dark:hover:bg-navy-soft/80 active:bg-navy-soft/60 transition-all duration-300 shadow-sm dark:shadow-none min-h-[52px] sm:min-h-0"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary/50 dark:text-cyber/50 group-hover:text-primary dark:group-hover:text-cyber transition-colors flex-shrink-0">
                     <polyline points="15 18 9 12 15 6" />
                   </svg>
                   <div className="min-w-0">
-                    <p className="font-mono text-[7px] md:text-[8px] tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/35 dark:text-muted-light/35 mb-0.5 uppercase">PREVIOUS</p>
-                    <p className="font-hud text-[9px] md:text-[10px] text-navy dark:text-white group-hover:text-primary dark:group-hover:text-cyber transition-colors truncate uppercase tracking-widest">{prevProject.title}</p>
+                    <p className="font-mono text-[7px] sm:text-[8px] tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/35 dark:text-muted-light/35 mb-0.5 uppercase">PREVIOUS</p>
+                    <p className="font-hud text-[9px] sm:text-[10px] text-navy dark:text-white group-hover:text-primary dark:group-hover:text-cyber transition-colors truncate uppercase tracking-wider sm:tracking-widest max-w-[140px] sm:max-w-none">{prevProject.title}</p>
                   </div>
                 </Link>
               )}
             </div>
             <div className="flex flex-col items-center gap-2 md:gap-3">
-              <Link href="/projects" className="font-mono text-[9px] md:text-[10px] tracking-[0.2em] text-primary dark:text-cyber hover:text-primary-light dark:hover:text-white transition-colors uppercase flex items-center gap-1.5 md:gap-2">
+              <Link href="/projects" className="font-mono text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] text-primary dark:text-cyber hover:text-primary-light dark:hover:text-white transition-colors uppercase flex items-center gap-1.5 sm:gap-2 min-h-[44px] justify-center">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="15 18 9 12 15 6" /></svg>
                 ALL PROJECTS
               </Link>
@@ -658,11 +578,11 @@ export default function ProjectPage({ params }: Props) {
               {nextProject && (
                 <Link
                   href={`/projects/${nextProject.slug}`}
-                  className="group flex items-center justify-end gap-2 md:gap-4 p-3 md:p-4 border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-soft/40 hover:border-primary/30 dark:hover:border-cyber/30 hover:bg-white dark:hover:bg-navy-soft/80 transition-all duration-300 text-right shadow-sm dark:shadow-none"
+                  className="group flex items-center justify-end gap-2 sm:gap-3 md:gap-4 p-2.5 sm:p-3 md:p-4 border border-primary/10 dark:border-cyber/10 bg-white dark:bg-navy-soft/40 hover:border-primary/30 dark:hover:border-cyber/30 hover:bg-white dark:hover:bg-navy-soft/80 active:bg-navy-soft/60 transition-all duration-300 text-right shadow-sm dark:shadow-none min-h-[52px] sm:min-h-0"
                 >
                   <div className="min-w-0">
-                    <p className="font-mono text-[7px] md:text-[8px] tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/35 dark:text-muted-light/35 mb-0.5 uppercase">NEXT</p>
-                    <p className="font-hud text-[9px] md:text-[10px] text-navy dark:text-white group-hover:text-primary dark:group-hover:text-cyber transition-colors truncate uppercase tracking-widest">{nextProject.title}</p>
+                    <p className="font-mono text-[7px] sm:text-[8px] tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-muted-dark/35 dark:text-muted-light/35 mb-0.5 uppercase">NEXT</p>
+                    <p className="font-hud text-[9px] sm:text-[10px] text-navy dark:text-white group-hover:text-primary dark:group-hover:text-cyber transition-colors truncate uppercase tracking-wider sm:tracking-widest max-w-[140px] sm:max-w-none">{nextProject.title}</p>
                   </div>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary/50 dark:text-cyber/50 group-hover:text-primary dark:group-hover:text-cyber transition-colors flex-shrink-0">
                     <polyline points="9 18 15 12 9 6" />
@@ -700,14 +620,14 @@ export default function ProjectPage({ params }: Props) {
   )
 }
 
-function TelemetryMetric({ label, value, code }: { label: string; value: string; code: string }) {
+function TelemetryMetric({ label, value, code, className = '' }: { label: string; value: string; code: string; className?: string }) {
   return (
-    <div className="group relative p-4 bg-white/50 dark:bg-navy-soft/30 border border-primary/10 dark:border-cyber/10 rounded-sm hover:border-primary/30 dark:hover:border-cyber/30 transition-all duration-300">
-      <div className="flex justify-between items-center font-mono text-[8px] text-primary/60 dark:text-cyber/60 mb-2 select-none">
+    <div className={`group relative p-3 sm:p-4 bg-white/50 dark:bg-navy-soft/30 border border-primary/10 dark:border-cyber/10 rounded-sm hover:border-primary/30 dark:hover:border-cyber/30 transition-all duration-300 active:border-primary/40 dark:active:border-cyber/40 ${className}`}>
+      <div className="flex justify-between items-center font-mono text-[7px] sm:text-[8px] text-primary/60 dark:text-cyber/60 mb-1.5 sm:mb-2 select-none">
         <span>{label}</span>
-        <span>[{code}]</span>
+        <span className="hidden xs:inline">[{code}]</span>
       </div>
-      <div className="text-lg md:text-xl font-hud font-bold text-navy dark:text-white tracking-widest truncate uppercase">
+      <div className="text-base sm:text-lg md:text-xl font-hud font-bold text-navy dark:text-white tracking-wider sm:tracking-widest truncate uppercase">
         {value}
       </div>
       {/* Corner accents */}

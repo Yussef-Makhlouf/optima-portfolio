@@ -16,7 +16,7 @@ export const HudPanel: React.FC<HudPanelProps> = ({
   className = '',
 }) => {
   return (
-    <div className={`group relative p-6 bg-white dark:bg-navy-mid/60 border border-primary/20 dark:border-primary/20 hover:border-primary/50 dark:hover:border-cyber/50 transition-all duration-500 hover:translate-y-[-2px] shadow-sm dark:shadow-lg ${className}`}>
+    <div className={`group relative p-4 sm:p-5 md:p-6 bg-white dark:bg-navy-mid/60 border border-primary/20 dark:border-primary/20 hover:border-primary/50 dark:hover:border-cyber/50 transition-all duration-500 hover:translate-y-[-2px] shadow-sm dark:shadow-lg ${className}`}>
       {/* HUD Corner Vector Brackets */}
       <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary group-hover:border-primary-light dark:group-hover:border-cyber transition-colors"></div>
       <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary group-hover:border-primary-light dark:group-hover:border-cyber transition-colors"></div>
@@ -25,7 +25,7 @@ export const HudPanel: React.FC<HudPanelProps> = ({
 
       {/* Header Telemetry bar */}
       {(sectionCode || status) && (
-        <div className="flex justify-between items-center border-b border-primary/10 pb-3 mb-4 font-mono text-[9px] tracking-wider text-muted-dark dark:text-muted-light">
+        <div className="flex justify-between items-center border-b border-primary/10 pb-2.5 sm:pb-3 mb-3 sm:mb-4 font-mono text-[8px] sm:text-[9px] tracking-wider text-muted-dark dark:text-muted-light">
           {sectionCode ? (
             <span className="text-accent dark:text-cyber font-medium uppercase">{`[${sectionCode}]`}</span>
           ) : (
@@ -45,12 +45,12 @@ export const HudPanel: React.FC<HudPanelProps> = ({
       )}
 
       {title && (
-        <h4 className="font-hud text-base font-bold text-navy dark:text-white uppercase mb-4 tracking-[0.15em] group-hover:text-primary-light dark:group-hover:text-cyber transition-colors">
+        <h4 className="font-hud text-sm sm:text-base font-bold text-navy dark:text-white uppercase mb-3 sm:mb-4 tracking-[0.1em] sm:tracking-[0.15em] group-hover:text-primary-light dark:group-hover:text-cyber transition-colors break-words">
           {title}
         </h4>
       )}
 
-      <div className="text-sm leading-relaxed font-light">{children}</div>
+      <div className="text-[13px] sm:text-sm leading-relaxed font-light">{children}</div>
 
       {/* Decorative Grid Line */}
       <div className="absolute bottom-1 right-6 left-6 h-[1px] bg-gradient-to-r from-transparent via-primary/25 to-transparent"></div>

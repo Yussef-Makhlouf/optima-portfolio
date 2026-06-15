@@ -38,29 +38,29 @@ export function TechRadar({ projectTitle, stack, metrics, category, type, year, 
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5 sm:space-y-6">
       {/* ── Metric Scores ─────────────────────────────── */}
-      <div className="border border-primary/15 dark:border-cyber/15 bg-white dark:bg-navy-mid/40 p-6 relative">
+      <div className="border border-primary/15 dark:border-cyber/15 bg-white dark:bg-navy-mid/40 p-4 sm:p-5 md:p-6 relative">
         <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary/50 dark:border-cyber/50" />
         <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-primary/50 dark:border-cyber/50" />
         <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-primary/50 dark:border-cyber/50" />
         <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary/50 dark:border-cyber/50" />
 
-        <div className="flex items-center gap-2 mb-5">
+        <div className="flex items-center gap-2 mb-4 sm:mb-5">
           <span className="w-1.5 h-1.5 bg-primary dark:bg-cyber rounded-full animate-pulse" />
-          <p className="font-mono text-[9px] tracking-[0.2em] text-primary dark:text-cyber uppercase">[QUALITY_METRICS]</p>
+          <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.15em] sm:tracking-[0.2em] text-primary dark:text-cyber uppercase">[QUALITY_METRICS]</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 md:gap-4">
           {displayMetrics.map((metric) => {
             const col = colorMap[metric.color ?? 'cyber']
             const pct = parseInt(metric.value)
             return (
-              <div key={metric.label} className="space-y-2">
-                <div className="flex items-end justify-between">
-                  <span className="font-mono text-[8px] tracking-[0.15em] text-muted-dark/60 dark:text-muted-light/60 uppercase">{metric.label}</span>
-                  <span className={`font-hud text-sm font-bold ${col.text}`}>
-                    {metric.value}<span className="text-[8px] font-normal opacity-60">{metric.unit}</span>
+              <div key={metric.label} className="space-y-1.5 sm:space-y-2">
+                <div className="flex items-end justify-between gap-1">
+                  <span className="font-mono text-[7px] sm:text-[8px] tracking-[0.1em] sm:tracking-[0.15em] text-muted-dark/60 dark:text-muted-light/60 uppercase truncate">{metric.label}</span>
+                  <span className={`font-hud text-xs sm:text-sm font-bold flex-shrink-0 ${col.text}`}>
+                    {metric.value}<span className="text-[7px] sm:text-[8px] font-normal opacity-60">{metric.unit}</span>
                   </span>
                 </div>
                 {/* Progress bar */}
@@ -77,23 +77,23 @@ export function TechRadar({ projectTitle, stack, metrics, category, type, year, 
       </div>
 
       {/* ── Tech Stack Tags (interactive) ─────────────── */}
-      <div className="border border-primary/15 dark:border-cyber/15 bg-white dark:bg-navy-mid/40 p-6 relative">
+      <div className="border border-primary/15 dark:border-cyber/15 bg-white dark:bg-navy-mid/40 p-4 sm:p-5 md:p-6 relative">
         <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary/30 dark:border-cyber/30" />
         <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-primary/30 dark:border-cyber/30" />
 
-        <div className="flex items-center gap-2 mb-5">
+        <div className="flex items-center gap-2 mb-4 sm:mb-5">
           <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
-          <p className="font-mono text-[9px] tracking-[0.2em] text-primary dark:text-cyber uppercase">[STACK_COMPOSITION]</p>
+          <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.15em] sm:tracking-[0.2em] text-primary dark:text-cyber uppercase">[STACK_COMPOSITION]</p>
         </div>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5 sm:gap-2">
           {stack.map((tech) => (
             <button
               key={tech}
               onMouseEnter={() => setHoveredStack(tech)}
               onMouseLeave={() => setHoveredStack(null)}
               className={`
-                font-mono text-[9px] tracking-wider px-2.5 py-1.5 border transition-all duration-200
+                font-mono text-[8px] sm:text-[9px] tracking-wider px-2 sm:px-2.5 py-1 sm:py-1.5 border transition-all duration-200
                 ${hoveredStack === tech
                   ? 'border-primary bg-primary/15 text-primary shadow-sm dark:border-cyber dark:bg-cyber/15 dark:text-cyber dark:shadow-cyber'
                   : 'border-primary/15 text-muted-dark/80 hover:border-primary/30 dark:border-cyber/15 dark:text-muted-light/80 dark:hover:border-cyber/30'}
@@ -106,18 +106,18 @@ export function TechRadar({ projectTitle, stack, metrics, category, type, year, 
       </div>
 
       {/* ── Project Classification ─────────────────────── */}
-      <div className="border border-primary/10 dark:border-cyber/10 bg-off-white dark:bg-navy-mid/20 p-5 relative">
-        <p className="font-mono text-[8px] tracking-[0.2em] text-primary/50 dark:text-cyber/50 uppercase mb-4">[CLASSIFICATION_NODE]</p>
-        <dl className="space-y-3">
+      <div className="border border-primary/10 dark:border-cyber/10 bg-off-white dark:bg-navy-mid/20 p-4 sm:p-5 relative">
+        <p className="font-mono text-[8px] tracking-[0.15em] sm:tracking-[0.2em] text-primary/50 dark:text-cyber/50 uppercase mb-3 sm:mb-4">[CLASSIFICATION_NODE]</p>
+        <dl className="space-y-2.5 sm:space-y-3">
           {[
             { k: 'CATEGORY', v: category },
             { k: 'TYPE', v: type },
             { k: 'YEAR', v: year },
             { k: 'STATUS', v: status },
           ].map(({ k, v }) => (
-            <div key={k} className="flex items-center justify-between">
-              <dt className="font-mono text-[8px] text-muted-dark/40 dark:text-muted-light/40 tracking-widest">{k}</dt>
-              <dd className="font-hud text-[10px] text-primary dark:text-cyber font-bold tracking-wider uppercase">{v}</dd>
+            <div key={k} className="flex items-center justify-between gap-2">
+              <dt className="font-mono text-[7px] sm:text-[8px] text-muted-dark/40 dark:text-muted-light/40 tracking-[0.1em] sm:tracking-widest flex-shrink-0">{k}</dt>
+              <dd className="font-hud text-[9px] sm:text-[10px] text-primary dark:text-cyber font-bold tracking-wider uppercase truncate min-w-0 text-right">{v}</dd>
             </div>
           ))}
         </dl>

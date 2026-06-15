@@ -101,7 +101,7 @@
     },
     {
       "index": 2,
-      "name": "Generatefigmadesignsystem",
+      "name": "Khapeer",
       "full_name": "Yussef-Makhlouf/Generatefigmadesignsystem",
       "description": "Khapeer (خبير) — A full-featured Arabic Q&A platform (Stack Overflow-style) with user authentication, reputation system, badges, streaks, leaderboards, topic-based Spaces, daily challenges, and advanced search. RTL-first design with 25+ Radix UI components.",
       "language": "TypeScript",

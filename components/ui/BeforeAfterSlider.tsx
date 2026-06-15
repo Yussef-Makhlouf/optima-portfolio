@@ -56,11 +56,11 @@ export function BeforeAfterSlider({ beforeSrc, afterSrc, beforeLabel = 'Before',
   return (
     <div className="w-full">
       {/* Label pills */}
-      <div className="flex items-center justify-between mb-3">
-        <span className="font-mono text-[10px] tracking-widest uppercase text-muted/60 dark:text-muted/40">
+      <div className="flex items-center justify-between mb-2 sm:mb-3">
+        <span className="font-mono text-[8px] sm:text-[10px] tracking-wider sm:tracking-widest uppercase text-muted/60 dark:text-muted/40">
           {beforeLabel}
         </span>
-        <span className="font-mono text-[10px] tracking-widest uppercase text-accent">
+        <span className="font-mono text-[8px] sm:text-[10px] tracking-wider sm:tracking-widest uppercase text-accent">
           {afterLabel}
         </span>
       </div>
@@ -105,8 +105,12 @@ export function BeforeAfterSlider({ beforeSrc, afterSrc, beforeLabel = 'Before',
           style={{ left: `${position}%` }}
         >
           {/* Handle circle */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-off-white dark:bg-navy border-2 border-accent flex items-center justify-center shadow-xl">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-off-white dark:bg-navy border-2 border-accent flex items-center justify-center shadow-xl">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent sm:hidden">
+              <polyline points="15 18 9 12 15 6" />
+              <polyline points="9 18 15 12 9 6" transform="rotate(180 12 12)" />
+            </svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent hidden sm:block">
               <polyline points="15 18 9 12 15 6" />
               <polyline points="9 18 15 12 9 6" transform="rotate(180 12 12)" />
             </svg>
@@ -118,9 +122,9 @@ export function BeforeAfterSlider({ beforeSrc, afterSrc, beforeLabel = 'Before',
       </div>
 
       {/* Position indicator */}
-      <div className="flex items-center justify-center mt-3 gap-3">
+      <div className="flex items-center justify-center mt-2 sm:mt-3 gap-2 sm:gap-3">
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-navy/10 dark:via-off-white/10 to-transparent" />
-        <span className="font-mono text-[10px] text-muted/40 tracking-widest">
+        <span className="font-mono text-[8px] sm:text-[10px] text-muted/40 tracking-wider sm:tracking-widest">
           DRAG TO COMPARE
         </span>
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-navy/10 dark:via-off-white/10 to-transparent" />
